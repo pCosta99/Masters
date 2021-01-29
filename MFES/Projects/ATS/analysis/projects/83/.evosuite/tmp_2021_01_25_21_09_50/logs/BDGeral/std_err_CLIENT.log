@@ -1,0 +1,17 @@
+[MASTER] 21:13:29.719 [pool-2-thread-1] ERROR TestSuiteGenerator - Problem for BDGeral. Full stack:
+java.lang.ArrayIndexOutOfBoundsException: 21
+	at org.evosuite.shaded.org.objectweb.asm.Type.getType(Type.java:490) ~[evosuite-standalone-runtime-1.0.6.jar:1.0.6]
+	at org.evosuite.shaded.org.objectweb.asm.Type.getType(Type.java:217) ~[evosuite-standalone-runtime-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.callgraph.CallGraphGenerator.handleMethodNode(CallGraphGenerator.java:163) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.callgraph.CallGraphGenerator.handle(CallGraphGenerator.java:123) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.callgraph.CallGraphGenerator.analyze(CallGraphGenerator.java:57) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:91) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:110) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-master-1.0.6.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_275]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_275]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_275]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_275]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_275]

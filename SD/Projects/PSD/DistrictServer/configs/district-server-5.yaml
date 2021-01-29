@@ -1,0 +1,9 @@
+districtServer:
+  id: 5
+  name: Coimbra
+  size: 46
+  pushPort: 30000
+  pullPort: 10005
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

@@ -1,0 +1,206 @@
+{
+   "frontend-server": {
+      "pull": 30000,
+      "publisher": 20000
+   },
+   "districts": [
+
+      {
+         "id": 0,
+         "info": {
+            "district": "Aveiro",
+            "size": 25
+         },
+         "server": {
+            "pull": 10000
+         }
+      },
+
+      {
+         "id": 1,
+         "info": {
+            "district": "Beja",
+            "size": 98
+         },
+         "server": {
+            "pull": 10001
+         }
+      },
+
+      {
+         "id": 2,
+         "info": {
+            "district": "Braga",
+            "size": 32
+         },
+         "server": {
+            "pull": 10002
+         }
+      },
+
+      {
+         "id": 3,
+         "info": {
+            "district": "Braganca",
+            "size": 50
+         },
+         "server": {
+            "pull": 10003
+         }
+      },
+
+      {
+         "id": 4,
+         "info": {
+            "district": "Castelo Branco",
+            "size": 76
+         },
+         "server": {
+            "pull": 10004
+         }
+      },
+
+      {
+         "id": 5,
+         "info": {
+            "district": "Coimbra",
+            "size": 46
+         },
+         "server": {
+            "pull": 10005
+         }
+      },
+
+      {
+         "id": 6,
+         "info": {
+            "district": "Evora",
+            "size": 33
+         },
+         "server": {
+            "pull": 10006
+         }
+      },
+
+      {
+         "id": 7,
+         "info": {
+            "district": "Faro",
+            "size": 69
+         },
+         "server": {
+            "pull": 10007
+         }
+      },
+
+      {
+         "id": 8,
+         "info": {
+            "district": "Guarda",
+            "size": 90
+         },
+         "server": {
+            "pull": 10008
+         }
+      },
+
+      {
+         "id": 9,
+         "info": {
+            "district": "Leiria",
+            "size": 48
+         },
+         "server": {
+            "pull": 10009
+         }
+      },
+
+      {
+         "id": 10,
+         "info": {
+            "district": "Lisboa",
+            "size": 26
+         },
+         "server": {
+            "pull": 10010
+         }
+      },
+
+      {
+         "id": 11,
+         "info": {
+            "district": "Portalegre",
+            "size": 70
+         },
+         "server": {
+            "pull": 10011
+         }
+      },
+
+      {
+         "id": 12,
+         "info": {
+            "district": "Porto",
+            "size": 93
+         },
+         "server": {
+            "pull": 10012
+         }
+      },
+
+      {
+         "id": 13,
+         "info": {
+            "district": "Santarem",
+            "size": 73
+         },
+         "server": {
+            "pull": 10013
+         }
+      },
+
+      {
+         "id": 14,
+         "info": {
+            "district": "Setubal",
+            "size": 94
+         },
+         "server": {
+            "pull": 10014
+         }
+      },
+
+      {
+         "id": 15,
+         "info": {
+            "district": "Viana do Castelo",
+            "size": 32
+         },
+         "server": {
+            "pull": 10015
+         }
+      },
+
+      {
+         "id": 16,
+         "info": {
+            "district": "Vila Real",
+            "size": 28
+         },
+         "server": {
+            "pull": 10016
+         }
+      },
+
+      {
+         "id": 17,
+         "info": {
+            "district": "Viseu",
+            "size": 31
+         },
+         "server": {
+            "pull": 10017
+         }
+      }
+   ]
+}

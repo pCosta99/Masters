@@ -1,0 +1,9 @@
+districtServer:
+  id: 6
+  name: Evora
+  size: 33
+  pushPort: 30000
+  pullPort: 10006
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="2783.40641261461" y="5649.0">App</node>
+    <node x="1331.5039364230543" y="2737.0">Model.Comparators.KmComparator</node>
+    <node x="2268.3372697563873" y="2692.5">Model.Atores.Transportadores.Voluntario</node>
+    <node x="3255.561503116912" y="2682.0">View.Input</node>
+    <node x="3431.5615031169123" y="3851.0">View.Navegador</node>
+    <node x="1325.3372697563877" y="2329.0">Model.Atores.Transportadores.EmpresaTransportadora</node>
+    <node x="1058.4450421930455" y="758.0">Model.Atores.User</node>
+    <node x="1130.9450421930455" y="0.0">Model.Atores.Ator</node>
+    <node x="2734.40641261461" y="4933.0">View.View</node>
+    <node x="3199.228169783579" y="3829.0">View.Menu</node>
+    <node x="3669.5615031169123" y="3851.5">Model.Exeptions.ProdutosException</node>
+    <node x="3901.5615031169123" y="0.0">Model.Comparators.ComparatorDistancia</node>
+    <node x="3475.5615031169123" y="2725.5">View.Pagina</node>
+    <node x="1594.028375526379" y="527.0">Model.Atores.Transportadores.Transporte</node>
+    <node x="880.0456030897209" y="2450.5">Model.Comparators.DataComparator</node>
+    <node x="431.6844919786098" y="1438.0">Model.Encomenda</node>
+    <node x="52.88712806386093" y="22.0">Model.Produto</node>
+    <node x="777.187473220671" y="2982.0">Model.TrazAqui</node>
+    <node x="90.81818181818198" y="670.0">Model.Atores.Loja</node>
+    <node x="1013.5456030897209" y="2726.0">Model.Exeptions.LoginErradoException</node>
+    <node x="569.8273951342222" y="2726.0">Model.Exeptions.MailRegistadoException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Model.Atores.Transportadores.Transporte" target="Model.Atores.Ator">
+      <point x="-192.0" y="-355.5" />
+      <point x="1786.028375526379" y="497.0" />
+      <point x="1354.4450421930455" y="497.0" />
+      <point x="74.5" y="223.5" />
+    </edge>
+    <edge source="View.View" target="Model.TrazAqui">
+      <point x="-27.386363636363512" y="-333.0" />
+      <point x="2827.5200489782465" y="4833.0" />
+      <point x="1419.687473220671" y="4833.0" />
+      <point x="257.0" y="905.5" />
+    </edge>
+    <edge source="Model.Atores.Transportadores.EmpresaTransportadora" target="Model.Atores.Transportadores.Transporte">
+      <point x="303.6666666666665" y="-146.5" />
+      <point x="2084.5039364230543" y="2309.0" />
+      <point x="1983.528375526379" y="2309.0" />
+      <point x="1983.528375526379" y="1418.0" />
+      <point x="2010.028375526379" y="1418.0" />
+      <point x="32.0" y="355.5" />
+    </edge>
+    <edge source="View.View" target="Model.Produto">
+      <point x="-115.02272727272748" y="-333.0" />
+      <point x="2739.8836853418825" y="4913.0" />
+      <point x="14.545454545454504" y="4913.0" />
+      <point x="14.545454545454504" y="477.0" />
+      <point x="77.74427092100382" y="477.0" />
+      <point x="-149.1428571428571" y="201.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Atores.User">
+      <point x="61.680000000000064" y="-905.5" />
+      <point x="1224.367473220671" y="2962.0" />
+      <point x="1248.0456030897208" y="2962.0" />
+      <point x="1248.0456030897208" y="1358.0" />
+      <point x="1360.4904967385" y="1358.0" />
+      <point x="80.5454545454545" y="124.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Exeptions.MailRegistadoException">
+      <point x="-154.19999999999982" y="-905.5" />
+      <point x="1008.4874732206712" y="2892.0" />
+      <point x="676.8273951342222" y="2892.0" />
+      <point x="0.0" y="36.0" />
+    </edge>
+    <edge source="View.View" target="View.Menu">
+      <point x="60.25" y="-333.0" />
+      <point x="2915.15641261461" y="4863.0" />
+      <point x="3301.978169783579" y="4863.0" />
+      <point x="34.25" y="58.5" />
+    </edge>
+    <edge source="Model.Encomenda" target="Model.Atores.Loja">
+      <point x="-310.8823529411761" y="-410.5" />
+      <point x="498.3021390374337" y="1418.0" />
+      <point x="511.5000000000002" y="1418.0" />
+      <point x="112.18181818181824" y="212.5" />
+    </edge>
+    <edge source="Model.Atores.Transportadores.EmpresaTransportadora" target="Model.Encomenda">
+      <point x="-303.6666666666665" y="-146.5" />
+      <point x="1477.1706030897212" y="2309.0" />
+      <point x="1060.8511586452764" y="2309.0" />
+      <point x="251.66666666666674" y="410.5" />
+    </edge>
+    <edge source="View.View" target="Model.Atores.User">
+      <point x="27.386363636363512" y="-333.0" />
+      <point x="2882.2927762509735" y="4833.0" />
+      <point x="3052.7463606654783" y="4833.0" />
+      <point x="3052.7463606654783" y="1368.0" />
+      <point x="1441.0359512839545" y="1368.0" />
+      <point x="161.090909090909" y="124.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Produto">
+      <point x="-370.0799999999999" y="-905.5" />
+      <point x="792.6074732206711" y="2962.0" />
+      <point x="80.31818181818198" y="2962.0" />
+      <point x="80.31818181818198" y="497.0" />
+      <point x="177.17284234957515" y="497.0" />
+      <point x="-49.71428571428578" y="201.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Atores.Transportadores.Transporte">
+      <point x="246.72000000000003" y="-905.5" />
+      <point x="1409.407473220671" y="2922.0" />
+      <point x="2246.8372697563873" y="2922.0" />
+      <point x="2246.8372697563873" y="1418.0" />
+      <point x="2074.028375526379" y="1418.0" />
+      <point x="96.0" y="355.5" />
+    </edge>
+    <edge source="Model.Atores.Transportadores.Voluntario" target="Model.Atores.Transportadores.Transporte">
+      <point x="250.66666666666652" y="-69.5" />
+      <point x="2895.0039364230543" y="2662.0" />
+      <point x="2775.1706030897208" y="2662.0" />
+      <point x="2775.1706030897208" y="1388.0" />
+      <point x="2266.028375526379" y="1388.0" />
+      <point x="288.0" y="355.5" />
+    </edge>
+    <edge source="View.View" target="Model.Exeptions.ProdutosException">
+      <point x="115.02272727272748" y="-333.0" />
+      <point x="2969.9291398873374" y="4913.0" />
+      <point x="3763.0615031169123" y="4913.0" />
+      <point x="0.0" y="36.0" />
+    </edge>
+    <edge source="View.View" target="Model.Atores.Transportadores.EmpresaTransportadora">
+      <point x="16.431818181818016" y="-333.0" />
+      <point x="2871.338230796428" y="4823.0" />
+      <point x="3041.7918152109323" y="4823.0" />
+      <point x="3041.7918152109323" y="2642.0" />
+      <point x="2160.420603089721" y="2642.0" />
+      <point x="379.5833333333335" y="146.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Comparators.KmComparator">
+      <point x="123.36000000000013" y="-905.5" />
+      <point x="1286.0474732206712" y="2882.0" />
+      <point x="1519.0039364230543" y="2882.0" />
+      <point x="0.0" y="25.0" />
+    </edge>
+    <edge source="Model.Encomenda" target="Model.Atores.User">
+      <point x="-44.411764705882206" y="-410.5" />
+      <point x="764.7727272727276" y="1288.0" />
+      <point x="1078.5814058294095" y="1288.0" />
+      <point x="-201.36363636363626" y="124.5" />
+    </edge>
+    <edge source="Model.Atores.Loja" target="Model.Atores.Ator">
+      <point x="77.125" y="-212.5" />
+      <point x="476.443181818182" y="487.0" />
+      <point x="1155.7783755263788" y="487.0" />
+      <point x="-124.16666666666674" y="223.5" />
+    </edge>
+    <edge source="Model.Atores.User" target="Model.Encomenda">
+      <point x="-80.5454545454545" y="124.5" />
+      <point x="1199.399587647591" y="1318.0" />
+      <point x="898.0080213903747" y="1318.0" />
+      <point x="88.82352941176487" y="-410.5" />
+    </edge>
+    <edge source="Model.Encomenda" target="Model.Produto">
+      <point x="-133.23529411764684" y="-410.5" />
+      <point x="675.949197860963" y="1268.0" />
+      <point x="779.389563128796" y="1268.0" />
+      <point x="779.389563128796" y="477.0" />
+      <point x="326.31569949243226" y="477.0" />
+      <point x="99.42857142857133" y="201.5" />
+    </edge>
+    <edge source="App" target="View.View">
+      <point x="35.75" y="-25.0" />
+      <point x="2890.65641261461" y="5624.0" />
+      <point x="2915.15641261461" y="5624.0" />
+      <point x="60.25" y="333.0" />
+    </edge>
+    <edge source="View.View" target="Model.Atores.Transportadores.Voluntario">
+      <point x="-16.431818181818016" y="-333.0" />
+      <point x="2838.474594432792" y="4823.0" />
+      <point x="2801.1018671600646" y="4823.0" />
+      <point x="2801.1018671600646" y="2962.0" />
+      <point x="2794.737269756387" y="2962.0" />
+      <point x="150.39999999999964" y="69.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Encomenda">
+      <point x="-185.03999999999996" y="-905.5" />
+      <point x="977.647473220671" y="2902.0" />
+      <point x="559.3273951342222" y="2902.0" />
+      <point x="559.3273951342222" y="2309.0" />
+      <point x="725.2956030897209" y="2309.0" />
+      <point x="-83.88888888888891" y="410.5" />
+    </edge>
+    <edge source="View.View" target="View.Input">
+      <point x="71.2045454545455" y="-333.0" />
+      <point x="2926.1109580691555" y="4873.0" />
+      <point x="3346.728169783579" y="4873.0" />
+      <point x="3346.728169783579" y="2962.0" />
+      <point x="3333.061503116912" y="2962.0" />
+      <point x="0.0" y="80.0" />
+    </edge>
+    <edge source="View.Navegador" target="View.Pagina">
+      <point x="27.25" y="-36.5" />
+      <point x="3567.8115031169123" y="2962.0" />
+      <point x="3573.0615031169123" y="2962.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Exeptions.LoginErradoException">
+      <point x="-30.839999999999918" y="-905.5" />
+      <point x="1131.847473220671" y="2962.0" />
+      <point x="1114.5456030897208" y="2962.0" />
+      <point x="0.0" y="36.0" />
+    </edge>
+    <edge source="Model.Atores.Loja" target="Model.Produto">
+      <point x="-231.375" y="-212.5" />
+      <point x="167.94318181818198" y="507.0" />
+      <point x="226.88712806386093" y="507.0" />
+      <point x="-5.6843418860808015E-14" y="201.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Comparators.DataComparator">
+      <point x="-61.679999999999836" y="-905.5" />
+      <point x="1101.0074732206713" y="2862.0" />
+      <point x="1003.0456030897209" y="2862.0" />
+      <point x="0.0" y="25.0" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Atores.Loja">
+      <point x="-339.24" y="-905.5" />
+      <point x="823.447473220671" y="2952.0" />
+      <point x="249.34656412976187" y="2952.0" />
+      <point x="249.34656412976187" y="1418.0" />
+      <point x="231.04545454545473" y="1418.0" />
+      <point x="-168.27272727272725" y="212.5" />
+    </edge>
+    <edge source="View.Navegador" target="View.Input">
+      <point x="-81.75" y="-36.5" />
+      <point x="3458.8115031169123" y="2962.0" />
+      <point x="3384.7281697835783" y="2962.0" />
+      <point x="51.666666666666515" y="80.0" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Atores.Transportadores.EmpresaTransportadora">
+      <point x="215.8800000000001" y="-905.5" />
+      <point x="1378.5674732206712" y="2912.0" />
+      <point x="1739.0039364230543" y="2912.0" />
+      <point x="1739.0039364230543" y="2662.0" />
+      <point x="1856.7539364230543" y="2662.0" />
+      <point x="75.91666666666652" y="146.5" />
+    </edge>
+    <edge source="Model.Atores.User" target="Model.Atores.Ator">
+      <point x="-110.75" y="-124.5" />
+      <point x="1169.1950421930455" y="507.0" />
+      <point x="1255.1117088597123" y="507.0" />
+      <point x="-24.833333333333258" y="223.5" />
+    </edge>
+    <edge source="Model.Encomenda" target="Model.Atores.Transportadores.Transporte">
+      <point x="177.6470588235295" y="-410.5" />
+      <point x="986.8315508021393" y="1378.0" />
+      <point x="1626.028375526379" y="1378.0" />
+      <point x="-352.0" y="355.5" />
+    </edge>
+    <edge source="Model.Comparators.DataComparator" target="Model.Encomenda">
+      <point x="0.0" y="-25.0" />
+      <point x="1003.0456030897209" y="2309.0" />
+      <point x="976.9622697563876" y="2309.0" />
+      <point x="167.77777777777783" y="410.5" />
+    </edge>
+    <edge source="View.View" target="View.Navegador">
+      <point x="93.11363636363649" y="-333.0" />
+      <point x="2948.0200489782465" y="4893.0" />
+      <point x="3486.0615031169123" y="4893.0" />
+      <point x="-54.5" y="36.5" />
+    </edge>
+    <edge source="Model.Atores.Loja" target="Model.Encomenda">
+      <point x="224.3636363636365" y="212.5" />
+      <point x="623.6818181818185" y="1418.0" />
+      <point x="587.1256684491983" y="1418.0" />
+      <point x="-222.05882352941148" y="-410.5" />
+    </edge>
+    <edge source="Model.Atores.Transportadores.Voluntario" target="Model.Encomenda">
+      <point x="-250.66666666666652" y="-69.5" />
+      <point x="2393.670603089721" y="2662.0" />
+      <point x="2495.5035789906624" y="2662.0" />
+      <point x="2495.5035789906624" y="2299.0" />
+      <point x="1144.7400475341656" y="2299.0" />
+      <point x="335.55555555555566" y="410.5" />
+    </edge>
+    <edge source="View.Menu" target="View.Input">
+      <point x="0.0" y="-58.5" />
+      <point x="3267.728169783579" y="2962.0" />
+      <point x="3281.3948364502453" y="2962.0" />
+      <point x="-51.666666666666515" y="80.0" />
+    </edge>
+    <edge source="Model.Atores.Transportadores.Transporte" target="Model.Encomenda">
+      <point x="-160.0" y="355.5" />
+      <point x="1818.028375526379" y="1408.0" />
+      <point x="1120.0668449197865" y="1408.0" />
+      <point x="310.8823529411766" y="-410.5" />
+    </edge>
+    <edge source="View.View" target="Model.Encomenda">
+      <point x="-60.25" y="-333.0" />
+      <point x="2794.65641261461" y="4863.0" />
+      <point x="69.31818181818198" y="4863.0" />
+      <point x="69.31818181818198" y="2289.0" />
+      <point x="557.5178253119432" y="2289.0" />
+      <point x="-251.66666666666663" y="410.5" />
+    </edge>
+    <edge source="Model.TrazAqui" target="Model.Atores.Transportadores.Voluntario">
+      <point x="339.24" y="-905.5" />
+      <point x="1501.927473220671" y="2952.0" />
+      <point x="2493.9372697563876" y="2952.0" />
+      <point x="-150.4000000000001" y="69.5" />
+    </edge>
+    <edge source="View.View" target="Model.Atores.Loja">
+      <point x="-93.11363636363649" y="-333.0" />
+      <point x="2761.7927762509735" y="4893.0" />
+      <point x="36.454545454545496" y="4893.0" />
+      <point x="36.454545454545496" y="1408.0" />
+      <point x="118.86363636363649" y="1408.0" />
+      <point x="-280.4545454545455" y="212.5" />
+    </edge>
+    <edge source="Model.Comparators.KmComparator" target="Model.Atores.Transportadores.EmpresaTransportadora">
+      <point x="0.0" y="-25.0" />
+      <point x="1519.0039364230543" y="2662.0" />
+      <point x="1401.2539364230543" y="2662.0" />
+      <point x="-379.5833333333335" y="146.5" />
+    </edge>
+    <edge source="View.View" target="Model.Atores.Transportadores.Transporte">
+      <point x="82.15909090909099" y="-333.0" />
+      <point x="2937.065503523701" y="4883.0" />
+      <point x="3421.061503116912" y="4883.0" />
+      <point x="3421.061503116912" y="1348.0" />
+      <point x="2330.028375526379" y="1348.0" />
+      <point x="352.0" y="355.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000004" x="1239.6666666666663" y="883.3333333333333" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

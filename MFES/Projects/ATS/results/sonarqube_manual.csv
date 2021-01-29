@@ -1,0 +1,4 @@
+name,bugs,code_smells,sqale_index,duplicated_blocks,duplicated_lines_density,complexity
+2,3,52,2.1,18,9.7,316
+67,9,93,3.5,4,1.7,535
+83,30,137,5.2,19,5.9,772

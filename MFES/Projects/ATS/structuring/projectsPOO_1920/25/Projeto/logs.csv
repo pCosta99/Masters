@@ -1,0 +1,41 @@
+Utilizador:u40,LuÃ­s AnÃ­bal Barbosa de AraÃºjo,99.15073,-45.263195
+Utilizador:u97,Pedro Filipe Carvalho Barbosa,-68.78327,-50.26914
+Utilizador:u7,Rodrigo Tiago Oliveira Ferreira,-14.681885,72.73595
+Utilizador:u33,TomÃ¡s Salazar Valente,98.079666,-36.973225
+Utilizador:u68,Pedro GonÃ§alo dos Santos Pires Pinheiro,-71.837296,-29.223396
+Utilizador:u78,LuÃ­s Pedro da Silva Vila,64.87256,43.373962
+Utilizador:u48,Francisco EgÃ­dio Coutinho Martins Correia,-97.28862,59.067047
+Utilizador:u80,Guilherme JoÃ£o Cerqueira da Mota Miranda,-18.299461,-35.02321
+Utilizador:u82,Hugo AndrÃ© Coelho Cardoso,57.245117,19.557358
+Utilizador:u81,Rui Pedro Neto Reis,-67.93489,99.649734
+Voluntario:v73,Rui Pedro Gomes Coelho,-45.424522,-79.517136,15.0
+Voluntario:v20,JoÃ£o Pedro Gomes Coelho,-88.56778,-1.4521866,1.0
+Voluntario:v33,SimÃ£o Pedro Santa Cruz Oliveira,11.959328,95.35214,81.0
+Voluntario:v69,Pedro Miguel da Silva Paiva AntÃ³nio,-3.4494247,78.96666,164.0
+Voluntario:v59,JoÃ£o Carlos Delgado Monteiro,87.60193,-67.35995,56.0
+Transportadora:t51,SÃBIA ATITUDE - CONSTRUÃ‡Ã•ES,-39.519154,8.964966,455159118,167.0,3.5
+Transportadora:t31,ZENITHINDEX,31.47522,76.58536,599618020,192.0,1.5
+Transportadora:t9,TORRESTIR TRANSITÃRIOS LDA,-9.798416,29.869064,923953011,128.0,1.5
+Transportadora:t24,TORRESTIR TRANSITÃRIOS LDA,74.59796,12.1732025,881936632,114.0,1.5
+Transportadora:t26,TERCARGO - TRANSITÃRIOS,68.8905,-38.96917,539968772,119.0,0.5
+Loja:l29,TV e TelecomunicaÃ§Ãµes,39.627502,33.60112
+Loja:l83,ColchaoNet.com,95.71132,-57.792557
+Loja:l8,Punt Roma,57.339508,-86.066315
+Loja:l58,Primark,78.73474,66.239685
+Loja:l13,LA Kids & Junior,-27.339592,-54.781532
+Encomenda:e6813,u81,l8,77.31938,p34,Farinha de trigo,5.5159483,2.2728467,p40,Molho de pimenta,42.014664,1.6600878,p4,Detergente,8.621707,9.424281,p60,Banana,9.522067,2.2497952,p49,Leite condensado,0.8051496,5.5749025,p21,Leite integral litro,20.61575,7.543862,p17,Saco de lixo 50l,44.77305,5.0960507,p19,Sumo garrafa 1l,43.476116,6.0144415,p53,Batata,38.945602,3.306492,p48,Creme de leite,17.503843,2.444421,p61,Ovos,15.0444355,1.4774193,p13,Tira manchas,25.874397,6.2518024,p41,Ervilha,30.43119,4.591317,p56,Beterraba,2.5673974,5.814199,p33,Farofa pronta,1.8703786,4.687167,p20,Sumo caixa 500ml,42.498604,9.236412,p16,Saco de lixo 30l,31.850492,2.5450313
+Encomenda:e1014,u78,l8,98.82324,p38,Atum,19.018002,5.5135922,p31,Bolacha,21.35203,2.4596689,p72,Manteiga,1.061309,4.4389067,p41,Ervilha,30.06028,3.6003213,p77,Frango,39.899994,2.618978,p33,Farofa pronta,0.29022777,9.123546,p6,Esponja de aco,9.320234,5.486778,p19,Sumo garrafa 1l,33.87584,3.2766204,p74,Iogurte,35.695297,3.7570014,p24,Feijao 2kg,35.71549,7.507841,p21,Leite integral litro,9.707462,3.4745572,p42,Milho verde,4.3852386,7.771991
+Encomenda:e1440,u33,l8,5.4486156,p62,Uva,6.719572,2.673811,p6,Esponja de aco,30.066063,6.4903765,p52,Couve,9.144804,7.260254,p70,Queijo Mussarela,40.518456,3.5899577,p73,Margarina,0.61904246,2.137976,p24,Feijao 2kg,37.81148,7.4189544,p36,Farinha de mandioca,36.834995,2.8486278,p12,Lustra moveis,30.999483,9.202424,p69,Queijo,39.574135,2.4257464,p80,Salsicha,0.72794086,2.1447115,p44,Goiabada,29.271198,1.668879,p76,Peixe,23.372034,3.1011233,p13,Tira manchas,17.863035,5.560059,p38,Atum,15.687467,9.440757,p55,Cenoura,15.172213,7.282647,p59,Espinafre,6.6387744,4.3669834
+Encomenda:e3233,u48,l58,71.97219,p63,Abacate,0.24796197,1.9603038,p31,Bolacha,37.631218,4.405413,p19,Sumo garrafa 1l,38.56502,3.5922031,p14,Limpa vidros,0.7447652,2.7751846,p9,Shampoo,13.039311,1.9311718,p65,Melancia,45.64743,4.1007533,p38,Atum,29.236803,6.867813,p28,Sal,48.88989,9.335663
+Encomenda:e3013,u68,l58,1.9552767,p19,Sumo garrafa 1l,2.5973449,5.472888,p29,Acucar,2.3291283,7.5829887,p67,Salsa,44.728123,9.587439
+Encomenda:e8476,u78,l83,41.95459,p34,Farinha de trigo,26.366282,9.4330015,p68,Cebola,44.269226,7.620193,p33,Farofa pronta,16.996069,5.805751,p7,Sabao em pedra,14.922269,6.4082794,p11,Desinfetante,2.1354694,3.6653197,p74,Iogurte,37.379745,2.932383,p79,Carne seca,22.794754,1.6444292,p25,Macarrao,23.282433,3.8297682
+Encomenda:e3319,u40,l83,95.51941,p76,Peixe,35.820896,3.5041742,p25,Macarrao,12.5604105,6.441414,p11,Desinfetante,9.954618,4.3322487,p77,Frango,33.094822,8.605059,p36,Farinha de mandioca,14.619806,8.498911,p33,Farofa pronta,23.440195,2.9854317,p59,Espinafre,7.974126,7.380988,p41,Ervilha,31.93044,3.7562246
+Encomenda:e6465,u48,l13,70.94071,p9,Shampoo,0.86281204,5.030349,p43,Doce de leite,18.217018,9.288118,p69,Queijo,48.86587,2.833467,p74,Iogurte,0.96620125,7.09538,p41,Ervilha,22.417736,6.9419327,p8,Sabonete,45.574623,3.018824,p55,Cenoura,29.970015,9.40292
+Encomenda:e5003,u78,l58,23.618465,p10,Condicionador,42.83252,4.293345,p76,Peixe,48.67309,2.4648814,p26,Extrato de tomate,24.705292,3.2023249,p69,Queijo,40.992794,2.194335,p36,Farinha de mandioca,11.26213,5.509804,p51,Alface,35.932766,3.3531518,p12,Lustra moveis,35.91354,2.042992,p72,Manteiga,9.90793,1.3514535,p22,Leite desnatado litro,15.118468,6.3385053,p21,Leite integral litro,43.01251,8.156454,p67,Salsa,4.195448,3.0950258,p11,Desinfetante,40.424934,2.1602468,p5,Agua sanitaria,5.834407,2.7298756,p9,Shampoo,39.237083,6.5982757,p33,Farofa pronta,10.02625,3.2511325,p35,Farinha de milho,38.79504,8.578769
+Encomenda:e8779,u68,l8,70.72074,p10,Condicionador,36.898346,4.7617254,p41,Ervilha,3.3189354,8.82261,p71,Queijo outros,3.197555,6.1653156,p12,Lustra moveis,18.82121,4.0892987,p8,Sabonete,13.939995,5.221398,p37,Sardinha,4.840426,4.479973,p15,Alcool,17.826002,5.610851,p80,Salsicha,13.548766,2.5069861
+Aceite:e1014
+Aceite:e3319
+Aceite:e6465
+Aceite:e3013
+Aceite:e6813
+Aceite:e1440

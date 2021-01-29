@@ -1,0 +1,69 @@
+produto:p4,Detergente,0.4,8.62,0
+produto:p5,Agua sanitaria,1.5,5.83,0
+produto:p6,Esponja de aco,0.2,9.32,0
+produto:p7,Sabao em pedra,0.3,14.92,0
+produto:p8,Sabonete,0.2,13.93,0
+produto:p9,Shampoo,1.5,39.23,0
+produto:p10,Condicionador,2,36.89,0
+produto:p11,Desinfetante,0.33,9.95,0
+produto:p12,Lustra moveis,0.5,35.91,0
+produto:p13,Tira manchas,1.2,17.86,0
+produto:p14,Limpa vidros,1.5,0.75,0
+produto:p15,Alcool,1.5,17.82,0
+produto:p16,Saco de lixo 30l,2,31.85,0
+produto:p17,Saco de lixo 50l,3,44.77,0
+produto:p19,Sumo garrafa 1l,1,38.57,0
+produto:p20,Sumo caixa 500ml,0.5,42.50,0
+produto:p21,Leite integral litro,0.99,20.62,0
+produto:p22,Leite desnatado litro,0.95,15.12,0
+produto:p24,Feijao 2kg,2,35.72,0
+produto:p25,Macarrao,0.5,12.56,0
+produto:p26,Extrato de tomate,0.5,24.71,0
+produto:p28,Sal,1,48.90,0
+produto:p29,Acucar,1,2.33,0
+produto:p31,Bolacha,0.35,37.63,0
+produto:p33,Farofa pronta,1,10.03,0
+produto:p34,Farinha de trigo,1,26.37,0
+produto:p35,Farinha de milho,1,38.79,0
+produto:p36,Farinha de mandioca,1,11.26,0
+produto:p37,Sardinha,0.4,4.84,0
+produto:p38,Atum,0.1,19.02,0
+produto:p40,Molho de pimenta,0.33,42.01,0
+produto:p41,Ervilha,2.5,30.06,0
+produto:p42,Milho verde,0.7,4.39,0
+produto:p44,Goiabada,0.45,29.27,0
+produto:p48,Creme de leite,0.5,17.05,0
+produto:p49,Leite condensado,0.33,0.80,0
+produto:p51,Alface,0.2,35.93,0
+produto:p52,Couve,0.4,9.14,0
+produto:p53,Batata,0.6,38.95,0
+produto:p55,Cenoura,0.3,29.97,0
+produto:p56,Beterraba,0.14,2.57,0
+produto:p59,Espinafre,0.205,7.97,0
+produto:p60,Banana,0.158,9.52,0
+produto:p61,Ovos,0.33,15.04,0
+produto:p62,Uva,0.25,6.71,0
+produto:p63,Abacate,0.4,0.25,0
+produto:p65,Melancia,9.486,45.65,0
+produto:p67,Salsa,0.05,4.19,0
+produto:p68,Cebola,0.185,44.27,0
+produto:p69,Queijo,0.2,48.87,0
+produto:p70,Queijo Mussarela,0.25,40.52,0
+produto:p71,Queijo outros,1.3,3.19,0
+produto:p72,Manteiga,0.25,9.91,0
+produto:p73,Margarina,0.25,0.61,0
+produto:p74,Iogurte,0.4,0.96,0
+produto:p76,Peixe,1.2,46.67,0
+produto:p77,Frango,1.2,33.09,0
+produto:p79,Carne seca,0.2,22.79,0
+produto:p80,Salsicha,0.6,13.54,0
+produto:p85,Vinho Branco Faisão,1.2,2.2,0
+produto:p89,Vinho do Porto 3Velhotes Branco,1.3,6,0
+produto:p91,Brufen,0.1,4.5,1
+produto:p95,Guronsan,0.2,5.5,1
+produto:p98,Sativex,0.25,20.8,1
+loja:l29:p5,p9,p10,p11,p12,p24,p31,p33,p34,p36,p38,p59,p68,p74,p77,p79,p80,p85,p89,p91
+loja:l58:p5,p9,p10,p11,p12,p14,p19,p21,p22,p26,p28,p29,p31,p33,p35,p36,p38,p51,p63,p65,p67,p69,p72,p76,p85,p98
+loja:l8:p4,p6,p12,p13,p16,p17,p19,p20,p21,p24,p31,p33,p34,p36,p38,p40,p41,p42,p44,p48,p49,p52,p53,p55,p56,p59,p60,p61,p62,p69,p70,p72,p73,p74,p76,p77,p80
+loja:l83:p7,p11,p25,p33,p34,p36,p41,p59,p68,p74,p76,p77,p79,p85,p89,p91,p95,p98
+loja:l13:p8,p10,p15,p12,p21,p22,p26,p37,p41,p53,p55,p56,p71,p76,p77,p79,p80,p89,p91,p95

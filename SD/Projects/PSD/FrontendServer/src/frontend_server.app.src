@@ -1,0 +1,15 @@
+{application, frontend_server,
+ [{description, "Frontend Server of Stayaway Covid App"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {frontend_server_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

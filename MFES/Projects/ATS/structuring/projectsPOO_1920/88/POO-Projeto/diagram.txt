@@ -1,0 +1,202 @@
+Ficheiro para gerar o diagrama com PlantUML
+@startuml
+
+Model.Loja *-- Model.GPS
+Model.Transportadora *-- Model.GPS
+Model.Voluntario *-- Model.GPS
+Model.Encomenda *-- Model.LinhaEncomenda
+
+Model.SistemaGestaoVendas *-- Model.Loja
+Model.SistemaGestaoVendas *-- Model.Utilizador
+Model.SistemaGestaoVendas *-- Model.Voluntario
+Model.SistemaGestaoVendas *-- Model.Encomenda
+
+Controller.Controller --- Model.SistemaGestaoVendas
+Main --- Controller.Controller
+Controller.Controller --- View.DefaultView
+
+Class Main {
+    + main() : void
+}
+
+Class View.DefaultView {
+
+}
+
+Class Controller.Controller {
+    + run() : void
+}
+
+Class Model.SistemaGestaoVendas {
+
+}
+Loja *-- GPS
+Transportadora *-- GPS
+Voluntario *-- GPS
+Utilizador *-- GPS
+Encomenda *-- LinhaEncomenda
+
+Class Model.Encomenda {
+    - cod_Encomenda : String
+    - cod_Utilizador : String
+    - cod_Loja : String
+    - peso : double
+    - linha : Model.LinhaEncomenda
+
+    + Model.Encomenda()
+    + Model.Encomenda(cod_Encomenda : String, cod_Utilizador : String, cod_Loja : String, peso : double, linha : Model.LinhaEncomenda)
+    + Model.Encomenda(outro : Model.Encomenda)
+
+    + getCod_Encomenda() : String
+    + setCod_Encomenda(cod_Encomenda : String ) : void
+    + getCod_Utilizador() : String
+    + setCod_Utilizador(cod_Utilizador : String) : void
+    + getCod_Loja() : String
+    + setCod_Loja(cod_Loja : String) : void
+    + getPeso() : double
+    + setPeso(peso : double) : void
+    + getLinha() : Model.LinhaEncomenda
+    + setLinha(linha : Model.LinhaEncomenda) : void
+
+    + equals(o: Object) : boolean
+    + clone() : Model.Encomenda
+    + toString() : String
+}
+
+Class Model.GPS {
+    - x : double
+    - y : double
+
+    + Model.GPS()
+    + Model.GPS(x: double, y : double)
+    + Model.GPS(outro : Model.GPS)
+    + getX() : double
+    + getY() : double
+    + setX(x : double) : void
+    + setY(y : double) : void
+
+    + equals(obj : Object) : boolean
+    + clone() : Model.GPS
+    + toString() : String
+}
+
+class Model.LinhaEncomenda {
+    - cod_Produto : String
+    - descricao : String
+    - quant : int
+    - preco : double
+
+    + () : Model.LinhaEncomenda
+    + Model.LinhaEncomenda(cod_Produto : String, descricao : String, quant : int, preco : double)
+    + Model.LinhaEncomenda(Model.LinhaEncomenda outro)
+
+    + getCod_Produto() : String
+    + setCod_Produto(cod_Produto : String) : void
+    + getDescricao() : String
+    + setDescricao(descricao : String) : void
+    + getQuant() : int
+    + setQuant(quant : int) : void
+    + getPreco() : double
+    + setPreco(preco : double) : void
+
+    + equals(o : Object) : boolean
+    + clone() : Model.LinhaEncomenda
+    + toString() : String
+}
+
+class Model.Loja {
+    - codigo : String
+    - nome : String
+    - local : Model.GPS
+
+    + Model.Loja()
+    + Model.Loja(codigo : String, nome : String, local : Model.GPS)
+    + Model.Loja(outro : Model.Loja)
+
+    + getCodigo() : String
+    + getNome() : String
+    + getLocal() : Model.GPS
+    + setCodigo(codigo : String) : void
+    + setNome(nome : String) : void
+    + setLocal(local : Model.GPS) : void
+
+    + equals(obj : Object) : boolean
+    + clone() : Model.Loja
+    + toString() : String
+}
+
+Class Model.Transportadora {
+    - codigo : String
+    - nome : String
+    - local : Model.GPS
+    - nif : String
+    - raio : double
+    - precoKm : double
+
+    + Model.Transportadora()
+    + Model.Transportadora(codigo : String, nome : String, local : Model.GPS, nif : String, raio : double, precoKm : double)
+    + Model.Transportadora(outro : Model.Transportadora)
+
+    + getCodigo() : String
+    + getNome() : String
+    + getLocal() : Model.GPS
+    + getNif() : String
+    + getRaio() : double
+    + getPrecoKm() : double
+    + setCodigo(codigo : String) : void
+    + setNome(nome : String) : void
+    + setLocal(local : Model.GPS) : void
+    + setNif(nif : String) : void
+    + setRaio(raio : double) : void
+    + setPrecoKm(precoKm : double) : void
+
+    + equals(o : Object) : boolean
+    + clone() : Model.Transportadora
+    + toString() : String
+}
+
+Class Model.Utilizador {
+    - codigo : String
+    - nome : String
+    - local : Model.GPS
+
+    + Model.Utilizador()
+    + Model.Utilizador(codigo : String, nome : String, local : Model.GPS)
+    + Model.Utilizador(outro : Model.Utilizador)
+
+    + getCodigo() : String
+    + getNome() : String
+    + getLocal() : Model.GPS
+    + setCodigo(codigo : String) : void
+    + setNome(nome : String) : void
+    + setLocal(local : Model.GPS) : void
+
+    + equals(o : Object) : boolean
+    + clone() : Model.Utilizador
+    + toString() : String
+}
+
+Class Model.Voluntario {
+    - codigo : String
+    - nome : String
+    - local : Model.GPS
+
+
+    + () : Model.Voluntario
+    + Model.Voluntario(codigo : String, nome : String, local : Model.GPS, raio : double)
+    + Model.Voluntario(outro : Model.Voluntario)
+
+    + getCodigo() : String
+    + setCodigo(codigo : String) : void
+    + getNome() : String
+    + setNome(nome : String) : void
+    + getLocal() : Model.GPS
+    + setLocal(local : Model.GPS) : void
+    + getRaio() : double
+    + setRaio(raio : double) : void
+
+    + equals(o Object) : boolean
+    + clone () : Model.Voluntario
+    + toString() : String
+}
+@enduml

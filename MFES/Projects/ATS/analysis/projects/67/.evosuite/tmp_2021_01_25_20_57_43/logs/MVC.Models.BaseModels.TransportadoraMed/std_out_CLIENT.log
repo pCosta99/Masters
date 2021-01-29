@@ -1,0 +1,76 @@
+* Starting client
+* Connecting to master process on port 6241
+* Analyzing classpath: 
+  - /home/pbr/work_ats/analysis/projects/67/target/classes
+  - /home/pbr/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /home/pbr/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class MVC.Models.BaseModels.TransportadoraMed
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 21:08:36.800 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /home/pbr/work_ats/analysis/projects/67/.evosuite/evosuite-seeds/MVC.Models.BaseModels.TransportadoraMed.seed
+* Loaded 0 tests from /home/pbr/work_ats/analysis/projects/67/.evosuite/evosuite-seeds/MVC.Models.BaseModels.TransportadoraMed.seed
+* Total number of test goals: 
+  - Line 20
+  - Branch 8
+  - Exception 0
+  - MutationFactory 7
+  - Output 28
+  - Method 8
+  - MethodNoException 8
+  - CBranchFitnessFactory 8
+* Using seed 1611608908078
+* Starting evolution
+[MASTER] 21:08:36.909 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 3 seconds more than allowed.
+* Search finished after 40s and 587 generations, 157977 statements, best individual has fitness: 3.5
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 89%
+* Total number of goals: 28
+* Number of covered goals: 25
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Generated 13 tests with total length 31
+* Resulting test suite's coverage: 99% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 67%
+* Compiling and checking tests
+* Writing JUnit test case 'TransportadoraMed_ESTest' to /home/pbr/work_ats/analysis/projects/67/.evosuite/tmp_2021_01_25_20_57_43/tests
+* Done!
+

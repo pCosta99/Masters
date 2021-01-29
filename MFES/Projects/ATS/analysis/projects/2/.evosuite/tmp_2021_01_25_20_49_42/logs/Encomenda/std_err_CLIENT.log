@@ -1,0 +1,2 @@
+[MASTER] 20:52:57.536 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 20:53:05.433 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself

@@ -1,0 +1,9 @@
+districtServer:
+  id: 13
+  name: Santarem
+  size: 73
+  pushPort: 30000
+  pullPort: 10013
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

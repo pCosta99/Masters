@@ -1,0 +1,9 @@
+districtServer:
+  id: 14
+  name: Setubal
+  size: 94
+  pushPort: 30000
+  pullPort: 10014
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

@@ -1,0 +1,369 @@
+Café
+Cereais
+Achocolatado
+Açúcar
+Pão de forma
+Suco
+Adoçante
+Torradas
+Geleia
+Produtos enlatados
+Atum
+Creme de leite
+Leite condensado
+Molho de tomate
+Azeitonas
+Carnes e derivados
+Carne
+Frango
+Iogurte
+Peixe
+Pratos congelados
+Leite
+Queijos
+Requeijão
+Manteiga
+Margarina
+Presunto
+Produtos de Hortifrúti
+Agrião
+Cebola
+Batata
+Alho
+Alface
+Brócolis
+Pimentão
+Tomate
+Cenoura
+Couve
+Espinafre
+Produtos de Mercearia
+Arroz
+Feijão
+Fermento
+Azeite
+Farinha de trigo
+Ovos
+Pipoca
+Farinha de mandioca
+Massa
+Maisena
+Óleo
+Queijo ralado
+Sal
+Temperos
+Vinagre
+Produtos de Limpeza
+Água sanitária
+Álcool
+Amaciante
+Cera
+Desinfetante
+Limpa vidros
+Lustra-móveis
+Multiuso
+Sabão
+Detergente
+Produtos de higiene pessoal
+Absorvente
+Algodão
+Acetona
+Lâmina de barbear
+Condicionador
+Shampoo
+Desodorante
+Sabonete
+Papel higiênico
+Cotonete
+Fio dental
+Creme dental
+Produtos úteis para o dia a dia
+Esponja
+Palha de aço
+Saco de lixo
+Filme plástico
+Fósforos
+Filtros para café
+Guardanapos
+Papel alumínio
+Papel toalha
+Palitos de dente
+Velas
+Açúcar
+Aveia em flocos
+Caldo de carne
+Caldo de galinha
+Caldo de legumes
+Catchup
+Extrato de tomate
+Gelatina em pó
+Iogurte de frutas
+Leite de coco
+Leite fermentado
+Macarrão instantâneo
+Massa de lasanha
+Óleo
+Sal
+Suco de frutas
+Adoçante
+Azeite
+Bebida láctea
+Cereal
+Creme de leite
+Fermento biológico
+Geleia
+Iogurte natural
+Leite desnatado
+Leite integral
+Maionese
+Molho de tomate
+Ovos
+Sal grosso
+Torradas
+Arroz
+Barras de cereal
+Chá em saquinho
+Essência de baunilha
+Fermento em pó
+Granola
+Leite condensado
+Leite em pó
+Macarrão
+Maisena
+Mostarda
+Polpa de tomate
+Sopa
+Vinagre
+Massa de bolo
+Biscoito
+Café
+Farinha de rosca
+Farinha de mandioca
+Farinha de trigo
+Farinha de milho
+Feijão
+Lentilha
+Fubá
+Soja
+Farofa
+Grão de bico
+Achocolatado em pó
+Azeitonas
+Palmito
+Aspargo
+Champignon
+Atum
+Ervilha
+Milho
+Carnes e frios
+Almôndegas
+Margarina
+Requeijão
+Gordura vegetal
+Queijo mozarela
+Queijo branco
+Queijo parmesão ralado
+Manteiga
+Carne bovina
+Filé de peixe
+Linguiça
+Frango
+Peito de frango
+Empanados
+Hambúrguer
+Peixe
+Bebidas
+Água mineral
+Refrigerante
+Suco
+Cerveja
+Vinho
+Frutas e legumes
+Abacate
+Abobrinha
+Agrião
+Alface
+Banana
+Berinjela
+Caju
+Chicória
+Couve-flor
+Goiaba
+Abacaxi
+Açafrão
+Aipo
+Alho
+Batata doce
+Beterraba
+Cebola
+Chuchu
+Espinafre
+Hortelã
+Abóbora
+Acelga
+Alecrim
+Ameixa
+Batata inglesa
+Brócolis
+Cenoura
+Jerimum
+Kiwi
+Laranja
+Mamão
+Maracujá
+Milho verde
+Pepino
+Quiabo
+Salsa
+Uvas
+Limão
+Manga
+Melancia
+Morango
+Pera
+Repolho
+Salsinha
+Vagem
+Maçã
+Manjericão
+Melão
+Nabo
+Pimentão
+Rúcula
+Tomate
+Produtos em geral
+Copos descartáveis
+Pano de chão
+Papel manteiga
+Potes descartáveis
+Rodo
+Fósforos
+Papel alumínio
+Papel toalha
+Prendedor de roupa
+Vassoura
+Lâmpada
+Papel filme
+Pilhas
+Ração para animais
+Velas
+Produtos de higiene e limpeza
+Absorvente
+Álcool
+Antisséptico bucal
+Cotonete
+Desinfetante
+Esponja
+Gel
+Inseticida
+Lenço de papel
+Palha de aço
+Papel higiênico
+Protetor solar
+Sabonete
+Shampoo
+Condicionador
+Acetona
+Algodão
+Aparelho de barbear
+Creme de barbear
+Desodorante
+Escova de cabelo
+Fio dental
+Guardanapos
+Lâmina de barbear
+Limpa-vidros
+Palito de dente
+Pente
+Sabão em pó
+Saco de lixo
+Talco
+Água sanitária
+Amaciante
+Creme dental
+Desodorizador de ambiente
+Escova de dente
+Hidratante
+Lava-roupas
+Lustra móvel
+Pano de limpeza
+Preservativo
+Sabão em pedra
+Sapólio
+Desengordurante
+Produtos de Padaria
+Bolachas
+Pão de forma
+Pão francês
+Bolo
+Temperos
+Cravo da índia
+Noz-moscada
+Bicarbonato de sódio
+Canela
+Louro
+Pimenta
+Curry
+Açúcar
+Sal
+Arroz
+Feijão
+Farinha
+Macarrão
+Café
+Leite
+Óleo
+Temperos
+Molho de tomate
+Queijo ralado
+Ovos
+Fermento
+Pães
+Carnes
+Iogurte
+Margarina ou manteiga
+Maisena
+Biscoitos
+Hortaliças em geral
+Produtos de limpeza
+Sabão em pedra
+Sabão em pó
+Detergente
+Desinfetante
+Amaciante
+Lustra-móveis
+Álcool em gel
+Água sanitária
+Inseticida
+Esponja de pia
+Esponja de aço
+Sacos de lixo
+Luvas plásticas
+Flanelas
+Produtos de higiene e uso pessoal
+Sabonete
+Creme dental
+Escova de dente
+Fio dental
+Absorventes
+Barbeador descartável
+Creme de barbear
+Algodão
+Desodorante
+Shampoo e condicionador
+Papel higiênico
+Água oxigenada
+Gaze
+Hastes flexíveis
+Esparadrapo
+Curativos
+Produtos úteis para o dia a dia
+Papel alumínio
+Papel filme
+Papel toalha
+Guardanapo de papel
+Fósforo
+Velas
+Lâmpadas
+Fita isolante
+Fita crepe

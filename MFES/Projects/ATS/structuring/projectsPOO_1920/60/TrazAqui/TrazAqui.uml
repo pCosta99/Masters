@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>controller.ControllerEmpresas</OriginalElement>
+  <nodes>
+    <node x="4050.399331083519" y="4842.0">controller.ControllerUser</node>
+    <node x="7256.7118310835185" y="5945.0">controller.Main</node>
+    <node x="5780.383026714434" y="4809.0">model.Empresa</node>
+    <node x="6038.945526714434" y="0.0">interfaces.IProduto</node>
+    <node x="677.6250000000005" y="2923.5">view.InterfaceLoja</node>
+    <node x="296.62500000000045" y="2912.5">view.InterfaceVoluntario</node>
+    <node x="7394.053810961271" y="5327.0">model.Login</node>
+    <node x="7083.053810961271" y="5492.5">controller.Parse</node>
+    <node x="4311.96608592496" y="4107.5">model.NaoExisteProdutoException</node>
+    <node x="6856.4618310835185" y="2692.0">model.Loja</node>
+    <node x="5212.456801470588" y="894.0">interfaces.IEntregas</node>
+    <node x="1086.6250000000005" y="4107.5">model.NaoExisteEncomendaException</node>
+    <node x="4862.496801470588" y="2890.5">view.InterfaceUtilizador</node>
+    <node x="1913.6250000000005" y="2144.0">interfaces.IVoluntario</node>
+    <node x="2827.3410859249598" y="2155.0">model.ComparatorQuantidadeKms</node>
+    <node x="1350.6250000000005" y="2923.5">view.InterfaceEmpresa</node>
+    <node x="3372.3410859249598" y="2155.0">model.ComparatorQuantidadeEncomendas</node>
+    <node x="41.625" y="4107.5">model.VoluntarioIndisponivelException</node>
+    <node x="6166.383026714434" y="4919.5">model.Voluntario</node>
+    <node x="3874.9660859249598" y="4107.5">model.ComandoDesconhecidoException</node>
+    <node x="1676.6250000000005" y="4107.5">model.EmpresaIndisponivelException</node>
+    <node x="7565.761831083519" y="4831.5">interfaces.ILogin</node>
+    <node x="1113.8472222222226" y="4897.0">controller.ControllerLoja</node>
+    <node x="5622.2743310835185" y="1467.0">interfaces.IUser</node>
+    <node x="2527.4196930744693" y="5503.0">controller.Teste</node>
+    <node x="2190.6250000000005" y="2879.5">view.InterfaceGeral</node>
+    <node x="6173.4618310835185" y="2692.0">model.Encomenda</node>
+    <node x="6511.4618310835185" y="2000.5">model.User</node>
+    <node x="3214.3993310835194" y="2615.0">model.Sistema</node>
+    <node x="5335.45549053789" y="3765.0">model.Entregas</node>
+    <node x="1856.9581546129311" y="4853.0">controller.ControllerEmpresas</node>
+    <node x="5251.2743310835185" y="2133.0">model.RandomGenerator</node>
+    <node x="4890.383026714434" y="3941.0">model.Produto</node>
+    <node x="5475.2743310835185" y="1968.0">interfaces.ILoja</node>
+    <node x="2228.958154612931" y="4062.5">controller.Input</node>
+    <node x="2492.4242405378905" y="3875.5">interfaces.ISistema</node>
+    <node x="5074.77171092496" y="297.0">interfaces.IEncomenda</node>
+    <node x="4110.96608592496" y="4107.5">model.NaoExisteLojaException</node>
+    <node x="470.92500000000064" y="4853.0">controller.ControllerVoluntarios</node>
+    <node x="2748.8161764705887" y="1489.0">interfaces.IEmpresa</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="interfaces.ILoja" target="interfaces.IUser">
+      <point x="91.0" y="-213.5" />
+      <point x="5702.7743310835185" y="1948.0" />
+      <point x="5768.9930810835185" y="1948.0" />
+      <point x="-9.78125" y="125.5" />
+    </edge>
+    <edge source="interfaces.IEmpresa" target="interfaces.IEntregas">
+      <point x="0.0" y="-103.5" />
+      <point x="2931.8161764705887" y="1447.0" />
+      <point x="5349.394301470588" y="1447.0" />
+      <point x="-19.5625" y="246.5" />
+    </edge>
+    <edge source="view.InterfaceUtilizador" target="interfaces.IVoluntario">
+      <point x="-122.0" y="-114.5" />
+      <point x="4892.996801470588" y="2445.0" />
+      <point x="2067.5250000000005" y="2445.0" />
+      <point x="68.40000000000009" y="37.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.IEntregas">
+      <point x="-57.600000000000364" y="-115.0" />
+      <point x="557.3250000000003" y="4749.0" />
+      <point x="286.125" y="4749.0" />
+      <point x="286.125" y="1417.0" />
+      <point x="5232.019301470588" y="1417.0" />
+      <point x="-136.9375" y="246.5" />
+    </edge>
+    <edge source="model.ComparatorQuantidadeEncomendas" target="interfaces.IUser">
+      <point x="0.0" y="-26.5" />
+      <point x="3589.3410859249598" y="1928.0" />
+      <point x="5729.8680810835185" y="1928.0" />
+      <point x="-48.90625" y="125.5" />
+    </edge>
+    <edge source="model.Voluntario" target="interfaces.IVoluntario">
+      <point x="0.0" y="-48.5" />
+      <point x="6251.883026714434" y="4789.0" />
+      <point x="6275.083026714434" y="4789.0" />
+      <point x="6275.083026714434" y="3495.0" />
+      <point x="4851.996801470588" y="3495.0" />
+      <point x="4851.996801470588" y="2455.0" />
+      <point x="2056.1250000000005" y="2455.0" />
+      <point x="57.0" y="37.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.Produto">
+      <point x="219.36842105263167" y="-126.0" />
+      <point x="4530.267752136151" y="4779.0" />
+      <point x="4930.883026714434" y="4779.0" />
+      <point x="-81.0" y="181.0" />
+    </edge>
+    <edge source="controller.ControllerUser" target="interfaces.IEncomenda">
+      <point x="82.26315789473665" y="-126.0" />
+      <point x="4393.162488978256" y="4729.0" />
+      <point x="4520.46608592496" y="4729.0" />
+      <point x="4520.46608592496" y="3515.0" />
+      <point x="5177.996801470588" y="3515.0" />
+      <point x="5177.996801470588" y="864.0" />
+      <point x="5211.27171092496" y="864.0" />
+      <point x="0.0" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.Entregas">
+      <point x="246.7894736842104" y="-126.0" />
+      <point x="4557.688804767729" y="4789.0" />
+      <point x="5366.75549053789" y="4789.0" />
+      <point x="-125.20000000000005" y="357.0" />
+    </edge>
+    <edge source="view.InterfaceEmpresa" target="interfaces.IEmpresa">
+      <point x="0.0" y="-81.5" />
+      <point x="1503.1250000000005" y="1828.0" />
+      <point x="2867.2279411764707" y="1828.0" />
+      <point x="-64.58823529411802" y="103.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.Produto">
+      <point x="-77.59999999999991" y="-103.5" />
+      <point x="7150.953810961271" y="5257.0" />
+      <point x="7149.45381096127" y="5257.0" />
+      <point x="7149.45381096127" y="4499.0" />
+      <point x="5092.883026714434" y="4499.0" />
+      <point x="81.0" y="181.0" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.IUser">
+      <point x="41.0625" y="-93.0" />
+      <point x="2677.9821930744693" y="5207.0" />
+      <point x="4870.758026714434" y="5207.0" />
+      <point x="4870.758026714434" y="3575.0" />
+      <point x="5971.3993310835185" y="3575.0" />
+      <point x="5971.3993310835185" y="1948.0" />
+      <point x="5788.5555810835185" y="1948.0" />
+      <point x="9.78125" y="125.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.NaoExisteProdutoException">
+      <point x="54.84210526315792" y="-126.0" />
+      <point x="4365.741436346677" y="4719.0" />
+      <point x="4460.46608592496" y="4719.0" />
+      <point x="49.5" y="14.5" />
+    </edge>
+    <edge source="interfaces.ISistema" target="interfaces.ILoja">
+      <point x="157.33333333333303" y="-246.5" />
+      <point x="2826.7575738712235" y="3535.0" />
+      <point x="5606.2743310835185" y="3535.0" />
+      <point x="5606.2743310835185" y="2595.0" />
+      <point x="5602.0243310835185" y="2595.0" />
+      <point x="-9.75" y="213.5" />
+    </edge>
+    <edge source="controller.Teste" target="controller.ControllerEmpresas">
+      <point x="-31.9375" y="-93.0" />
+      <point x="2604.9821930744693" y="5227.0" />
+      <point x="2045.2081546129311" y="5227.0" />
+      <point x="62.75" y="115.0" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.ISistema">
+      <point x="118.11764705882342" y="-115.0" />
+      <point x="2100.5758016717546" y="4749.0" />
+      <point x="2642.193471307121" y="4749.0" />
+      <point x="-27.23076923076951" y="246.5" />
+    </edge>
+    <edge source="controller.Main" target="interfaces.ISistema">
+      <point x="-64.71428571428578" y="-26.5" />
+      <point x="7267.497545369233" y="5925.0" />
+      <point x="2371.0581546129306" y="5925.0" />
+      <point x="2371.0581546129306" y="4759.0" />
+      <point x="2669.4242405378905" y="4759.0" />
+      <point x="0.0" y="246.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.User">
+      <point x="38.80000000000018" y="-103.5" />
+      <point x="7267.353810961271" y="5217.0" />
+      <point x="7491.661831083518" y="5217.0" />
+      <point x="7491.661831083518" y="2415.0" />
+      <point x="6772.295164416852" y="2415.0" />
+      <point x="104.33333333333303" y="181.0" />
+    </edge>
+    <edge source="model.Voluntario" target="model.Entregas">
+      <point x="-34.19999999999999" y="-48.5" />
+      <point x="6217.683026714434" y="4509.0" />
+      <point x="5617.155490537891" y="4509.0" />
+      <point x="125.20000000000005" y="357.0" />
+    </edge>
+    <edge source="model.Empresa" target="interfaces.ILoja">
+      <point x="-114.375" y="-159.0" />
+      <point x="5849.008026714434" y="4589.0" />
+      <point x="5143.883026714434" y="4589.0" />
+      <point x="5143.883026714434" y="3595.0" />
+      <point x="6118.9618310835185" y="3595.0" />
+      <point x="6118.9618310835185" y="2585.0" />
+      <point x="5660.5243310835185" y="2585.0" />
+      <point x="48.75" y="213.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.IEncomenda">
+      <point x="97.0" y="-103.5" />
+      <point x="7325.553810961271" y="5247.0" />
+      <point x="7524.661831083518" y="5247.0" />
+      <point x="7524.661831083518" y="774.0" />
+      <point x="5342.31171092496" y="774.0" />
+      <point x="131.03999999999996" y="213.5" />
+    </edge>
+    <edge source="model.Encomenda" target="interfaces.IEncomenda">
+      <point x="0.0" y="-313.0" />
+      <point x="6309.9618310835185" y="2595.0" />
+      <point x="6311.770617260063" y="2595.0" />
+      <point x="6311.770617260063" y="834.0" />
+      <point x="5276.79171092496" y="834.0" />
+      <point x="65.51999999999998" y="213.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.ILogin">
+      <point x="135.79999999999995" y="-103.5" />
+      <point x="7364.353810961271" y="5287.0" />
+      <point x="7695.261831083519" y="5287.0" />
+      <point x="0.0" y="136.5" />
+    </edge>
+    <edge source="model.Entregas" target="interfaces.IEntregas">
+      <point x="-19.5625" y="-357.0" />
+      <point x="5472.39299053789" y="3695.0" />
+      <point x="6500.9618310835185" y="3695.0" />
+      <point x="6500.9618310835185" y="1417.0" />
+      <point x="5466.769301470588" y="1417.0" />
+      <point x="97.8125" y="246.5" />
+    </edge>
+    <edge source="interfaces.IEmpresa" target="interfaces.ISistema">
+      <point x="21.52941176470631" y="103.5" />
+      <point x="2953.345588235295" y="1868.0" />
+      <point x="2735.6744192582937" y="1868.0" />
+      <point x="2735.6744192582937" y="3475.0" />
+      <point x="2630.0909072045574" y="3475.0" />
+      <point x="-39.33333333333303" y="-246.5" />
+    </edge>
+    <edge source="view.InterfaceUtilizador" target="interfaces.IEncomenda">
+      <point x="61.0" y="-114.5" />
+      <point x="5075.996801470588" y="2525.0" />
+      <point x="5059.27171092496" y="2525.0" />
+      <point x="5059.27171092496" y="854.0" />
+      <point x="5200.35171092496" y="854.0" />
+      <point x="-10.920000000000073" y="213.5" />
+    </edge>
+    <edge source="view.InterfaceGeral" target="interfaces.IVoluntario">
+      <point x="-141.375" y="-125.5" />
+      <point x="2237.7500000000005" y="2525.0" />
+      <point x="1999.1250000000005" y="2525.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.Empresa">
+      <point x="-116.39999999999998" y="-103.5" />
+      <point x="7112.15381096127" y="5157.0" />
+      <point x="6054.883026714434" y="5157.0" />
+      <point x="91.5" y="159.0" />
+    </edge>
+    <edge source="controller.ControllerUser" target="interfaces.IVoluntario">
+      <point x="-164.52631578947376" y="-126.0" />
+      <point x="4146.373015294045" y="4659.0" />
+      <point x="2885.1742405378905" y="4659.0" />
+      <point x="2885.1742405378905" y="3475.0" />
+      <point x="2805.8410859249598" y="3475.0" />
+      <point x="2805.8410859249598" y="2495.0" />
+      <point x="2021.9250000000006" y="2495.0" />
+      <point x="22.800000000000182" y="37.5" />
+    </edge>
+    <edge source="view.InterfaceLoja" target="interfaces.IVoluntario">
+      <point x="125.66666666666697" y="-81.5" />
+      <point x="991.7916666666674" y="2565.0" />
+      <point x="1942.1250000000005" y="2565.0" />
+      <point x="-57.0" y="37.5" />
+    </edge>
+    <edge source="interfaces.ISistema" target="interfaces.IVoluntario">
+      <point x="-157.33333333333303" y="-246.5" />
+      <point x="2512.0909072045574" y="3445.0" />
+      <point x="2589.1250000000005" y="3445.0" />
+      <point x="2589.1250000000005" y="2505.0" />
+      <point x="2010.5250000000005" y="2505.0" />
+      <point x="11.400000000000091" y="37.5" />
+    </edge>
+    <edge source="view.InterfaceUtilizador" target="interfaces.ILoja">
+      <point x="122.0" y="-114.5" />
+      <point x="5136.996801470588" y="2595.0" />
+      <point x="5582.5243310835185" y="2595.0" />
+      <point x="-29.25" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="view.InterfaceLoja">
+      <point x="-46.66666666666697" y="-71.0" />
+      <point x="1137.1805555555557" y="4629.0" />
+      <point x="866.1250000000005" y="4629.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.IVoluntario">
+      <point x="0.0" y="-103.5" />
+      <point x="7228.553810961271" y="5197.0" />
+      <point x="7404.9618310835185" y="5197.0" />
+      <point x="7404.9618310835185" y="2435.0" />
+      <point x="2078.9250000000006" y="2435.0" />
+      <point x="79.80000000000018" y="37.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="view.InterfaceEmpresa">
+      <point x="-59.05882352941171" y="-115.0" />
+      <point x="1923.3993310835194" y="4619.0" />
+      <point x="1503.1250000000005" y="4619.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="view.InterfaceVoluntario" target="interfaces.IEmpresa">
+      <point x="0.0" y="-92.5" />
+      <point x="449.12500000000045" y="1788.0" />
+      <point x="2781.1102941176473" y="1788.0" />
+      <point x="-150.70588235294144" y="103.5" />
+    </edge>
+    <edge source="controller.Main" target="controller.Teste">
+      <point x="-21.57142857142844" y="-26.5" />
+      <point x="7310.64040251209" y="5905.0" />
+      <point x="2691.6696930744693" y="5905.0" />
+      <point x="54.75" y="93.0" />
+    </edge>
+    <edge source="model.Login" target="interfaces.ILogin">
+      <point x="0.0" y="-269.0" />
+      <point x="7525.553810961271" y="5297.0" />
+      <point x="7747.061831083519" y="5297.0" />
+      <point x="51.799999999999955" y="136.5" />
+    </edge>
+    <edge source="model.Entregas" target="interfaces.IUser">
+      <point x="-97.8125" y="-357.0" />
+      <point x="5394.14299053789" y="3665.0" />
+      <point x="6467.9618310835185" y="3665.0" />
+      <point x="6467.9618310835185" y="1788.0" />
+      <point x="5847.2430810835185" y="1788.0" />
+      <point x="68.46875" y="125.5" />
+    </edge>
+    <edge source="model.User" target="interfaces.IEncomenda">
+      <point x="117.375" y="-181.0" />
+      <point x="6785.3368310835185" y="1948.0" />
+      <point x="6771.0643310835185" y="1948.0" />
+      <point x="6771.0643310835185" y="814.0" />
+      <point x="5298.631710924959" y="814.0" />
+      <point x="87.35999999999967" y="213.5" />
+    </edge>
+    <edge source="interfaces.ISistema" target="interfaces.IEmpresa">
+      <point x="-78.66666666666697" y="-246.5" />
+      <point x="2590.7575738712235" y="3465.0" />
+      <point x="2724.6744192582937" y="3465.0" />
+      <point x="2724.6744192582937" y="1858.0" />
+      <point x="2931.8161764705887" y="1858.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="model.Sistema" target="interfaces.IEncomenda">
+      <point x="-14.75" y="-390.0" />
+      <point x="3376.6493310835194" y="2515.0" />
+      <point x="3339.8410859249598" y="2515.0" />
+      <point x="3339.8410859249598" y="834.0" />
+      <point x="5178.5117109249595" y="834.0" />
+      <point x="-32.76000000000022" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="model.RandomGenerator">
+      <point x="44.294117647058556" y="-115.0" />
+      <point x="2026.7522722599897" y="4639.0" />
+      <point x="2117.1250000000005" y="4639.0" />
+      <point x="2117.1250000000005" y="2535.0" />
+      <point x="5285.2743310835185" y="2535.0" />
+      <point x="-68.0" y="48.5" />
+    </edge>
+    <edge source="model.Empresa" target="interfaces.IEncomenda">
+      <point x="68.625" y="-159.0" />
+      <point x="6032.008026714434" y="4549.0" />
+      <point x="5187.883026714434" y="4549.0" />
+      <point x="5187.883026714434" y="3635.0" />
+      <point x="6162.9618310835185" y="3635.0" />
+      <point x="6162.9618310835185" y="844.0" />
+      <point x="5265.87171092496" y="844.0" />
+      <point x="54.59999999999991" y="213.5" />
+    </edge>
+    <edge source="interfaces.IVoluntario" target="interfaces.IEntregas">
+      <point x="0.0" y="-37.5" />
+      <point x="1999.1250000000005" y="1437.0" />
+      <point x="5310.269301470588" y="1437.0" />
+      <point x="-58.6875" y="246.5" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="interfaces.IEmpresa">
+      <point x="-31.111111111111313" y="-71.0" />
+      <point x="1152.7361111111113" y="4619.0" />
+      <point x="1065.1250000000005" y="4619.0" />
+      <point x="1065.1250000000005" y="1818.0" />
+      <point x="2845.6985294117653" y="1818.0" />
+      <point x="-86.11764705882342" y="103.5" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.ILoja">
+      <point x="31.9375" y="-93.0" />
+      <point x="2668.8571930744693" y="5197.0" />
+      <point x="4861.633026714434" y="5197.0" />
+      <point x="4861.633026714434" y="3565.0" />
+      <point x="5962.2743310835185" y="3565.0" />
+      <point x="5962.2743310835185" y="2595.0" />
+      <point x="5641.0243310835185" y="2595.0" />
+      <point x="29.25" y="213.5" />
+    </edge>
+    <edge source="model.Empresa" target="model.Entregas">
+      <point x="114.375" y="-159.0" />
+      <point x="6077.758026714434" y="4539.0" />
+      <point x="5429.35549053789" y="4539.0" />
+      <point x="-62.60000000000002" y="357.0" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.Encomenda">
+      <point x="191.9473684210525" y="-126.0" />
+      <point x="4502.846699504571" y="4769.0" />
+      <point x="4816.60671092496" y="4769.0" />
+      <point x="4816.60671092496" y="3645.0" />
+      <point x="6241.7118310835185" y="3645.0" />
+      <point x="-68.25" y="313.0" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.ISistema">
+      <point x="-4.5625" y="-93.0" />
+      <point x="2632.3571930744693" y="4769.0" />
+      <point x="2696.65500976866" y="4769.0" />
+      <point x="27.23076923076951" y="246.5" />
+    </edge>
+    <edge source="interfaces.IEntregas" target="interfaces.IEncomenda">
+      <point x="0.0" y="-246.5" />
+      <point x="5368.956801470588" y="874.0" />
+      <point x="5233.11171092496" y="874.0" />
+      <point x="21.840000000000146" y="213.5" />
+    </edge>
+    <edge source="interfaces.ISistema" target="interfaces.IUser">
+      <point x="0.0" y="-246.5" />
+      <point x="2669.4242405378905" y="3485.0" />
+      <point x="2816.8410859249598" y="3485.0" />
+      <point x="2816.8410859249598" y="1908.0" />
+      <point x="5690.7430810835185" y="1908.0" />
+      <point x="-88.03125" y="125.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="controller.Input">
+      <point x="96.0" y="-115.0" />
+      <point x="710.9250000000006" y="4669.0" />
+      <point x="2245.0581546129315" y="4669.0" />
+      <point x="-64.39999999999964" y="59.5" />
+    </edge>
+    <edge source="interfaces.IUser" target="interfaces.IEncomenda">
+      <point x="78.25" y="-125.5" />
+      <point x="5857.0243310835185" y="1447.0" />
+      <point x="5784.2743310835185" y="1447.0" />
+      <point x="5784.2743310835185" y="854.0" />
+      <point x="5254.95171092496" y="854.0" />
+      <point x="43.679999999999836" y="213.5" />
+    </edge>
+    <edge source="controller.Teste" target="controller.ControllerVoluntarios">
+      <point x="-77.5625" y="-93.0" />
+      <point x="2559.3571930744693" y="5277.0" />
+      <point x="686.9250000000006" y="5277.0" />
+      <point x="72.0" y="115.0" />
+    </edge>
+    <edge source="controller.Main" target="controller.Parse">
+      <point x="21.57142857142867" y="-26.5" />
+      <point x="7353.783259654947" y="5885.0" />
+      <point x="7301.303810961271" y="5885.0" />
+      <point x="72.75" y="103.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.ILoja">
+      <point x="19.40000000000009" y="-103.5" />
+      <point x="7247.953810961271" y="5207.0" />
+      <point x="7480.661831083518" y="5207.0" />
+      <point x="7480.661831083518" y="2425.0" />
+      <point x="5738.5243310835185" y="2425.0" />
+      <point x="126.75" y="213.5" />
+    </edge>
+    <edge source="view.InterfaceUtilizador" target="interfaces.IEmpresa">
+      <point x="-61.0" y="-114.5" />
+      <point x="4953.996801470588" y="2515.0" />
+      <point x="5011.996801470588" y="2515.0" />
+      <point x="5011.996801470588" y="1828.0" />
+      <point x="3060.992647058824" y="1828.0" />
+      <point x="129.17647058823513" y="103.5" />
+    </edge>
+    <edge source="interfaces.IEncomenda" target="interfaces.IUser">
+      <point x="32.75999999999976" y="213.5" />
+      <point x="5244.03171092496" y="864.0" />
+      <point x="5773.2743310835185" y="864.0" />
+      <point x="5773.2743310835185" y="1447.0" />
+      <point x="5700.5243310835185" y="1447.0" />
+      <point x="-78.25" y="-125.5" />
+    </edge>
+    <edge source="interfaces.ISistema" target="model.Sistema">
+      <point x="39.33333333333303" y="-246.5" />
+      <point x="2708.7575738712235" y="3505.0" />
+      <point x="3258.6493310835194" y="3505.0" />
+      <point x="-132.75" y="390.0" />
+    </edge>
+    <edge source="model.Encomenda" target="interfaces.IProduto">
+      <point x="109.19999999999982" y="-313.0" />
+      <point x="6419.161831083518" y="2595.0" />
+      <point x="6396.270617260063" y="2595.0" />
+      <point x="6396.270617260063" y="267.0" />
+      <point x="6204.627344896252" y="267.0" />
+      <point x="44.181818181818244" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.RandomGenerator">
+      <point x="109.68421052631584" y="-126.0" />
+      <point x="4420.583541609834" y="4739.0" />
+      <point x="4531.46608592496" y="4739.0" />
+      <point x="4531.46608592496" y="3525.0" />
+      <point x="5353.2743310835185" y="3525.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="model.Entregas" target="interfaces.ILoja">
+      <point x="-136.9375" y="-357.0" />
+      <point x="5355.01799053789" y="3655.0" />
+      <point x="6456.9618310835185" y="3655.0" />
+      <point x="6456.9618310835185" y="2565.0" />
+      <point x="5699.5243310835185" y="2565.0" />
+      <point x="87.75" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.ISistema">
+      <point x="134.39999999999964" y="-115.0" />
+      <point x="749.3250000000003" y="4709.0" />
+      <point x="2533.2703943840447" y="4709.0" />
+      <point x="-136.15384615384573" y="246.5" />
+    </edge>
+    <edge source="controller.Teste" target="controller.Input">
+      <point x="-22.8125" y="-93.0" />
+      <point x="2614.1071930744693" y="5217.0" />
+      <point x="2341.658154612931" y="5217.0" />
+      <point x="32.19999999999982" y="59.5" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="model.NaoExisteEncomendaException">
+      <point x="15.555555555555657" y="-71.0" />
+      <point x="1199.4027777777783" y="4659.0" />
+      <point x="1209.1250000000005" y="4659.0" />
+      <point x="17.5" y="14.5" />
+    </edge>
+    <edge source="model.Loja" target="interfaces.IProduto">
+      <point x="54.59999999999991" y="-313.0" />
+      <point x="7047.561831083518" y="2595.0" />
+      <point x="7062.770617260063" y="2595.0" />
+      <point x="7062.770617260063" y="257.0" />
+      <point x="6226.718253987161" y="257.0" />
+      <point x="66.27272727272725" y="103.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.Voluntario">
+      <point x="-97.0" y="-103.5" />
+      <point x="7131.553810961271" y="5147.0" />
+      <point x="6294.633026714434" y="5147.0" />
+      <point x="42.75" y="48.5" />
+    </edge>
+    <edge source="model.Sistema" target="interfaces.IEmpresa">
+      <point x="-44.25" y="-390.0" />
+      <point x="3347.1493310835194" y="2525.0" />
+      <point x="3328.8410859249598" y="2525.0" />
+      <point x="3328.8410859249598" y="1848.0" />
+      <point x="3017.933823529412" y="1848.0" />
+      <point x="86.11764705882342" y="103.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.Encomenda">
+      <point x="-38.80000000000018" y="-103.5" />
+      <point x="7189.753810961271" y="5177.0" />
+      <point x="7382.9618310835185" y="5177.0" />
+      <point x="7382.9618310835185" y="3475.0" />
+      <point x="6378.2118310835185" y="3475.0" />
+      <point x="68.25" y="313.0" />
+    </edge>
+    <edge source="interfaces.IEncomenda" target="interfaces.ILoja">
+      <point x="10.920000000000073" y="213.5" />
+      <point x="5222.19171092496" y="874.0" />
+      <point x="5201.956801470588" y="874.0" />
+      <point x="5201.956801470588" y="1868.0" />
+      <point x="5520.7743310835185" y="1868.0" />
+      <point x="-91.0" y="-213.5" />
+    </edge>
+    <edge source="interfaces.ISistema" target="interfaces.IEncomenda">
+      <point x="-118.0" y="-246.5" />
+      <point x="2551.4242405378905" y="3455.0" />
+      <point x="2600.1250000000005" y="3455.0" />
+      <point x="2600.1250000000005" y="824.0" />
+      <point x="5167.59171092496" y="824.0" />
+      <point x="-43.679999999999836" y="213.5" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.IVoluntario">
+      <point x="-50.1875" y="-93.0" />
+      <point x="2586.7321930744693" y="5247.0" />
+      <point x="1307.1250000000005" y="5247.0" />
+      <point x="1307.1250000000005" y="3425.0" />
+      <point x="1323.6250000000005" y="3425.0" />
+      <point x="1323.6250000000005" y="2585.0" />
+      <point x="1964.9250000000006" y="2585.0" />
+      <point x="-34.19999999999982" y="37.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.IUser">
+      <point x="77.59999999999991" y="-103.5" />
+      <point x="7306.15381096127" y="5237.0" />
+      <point x="7513.661831083518" y="5237.0" />
+      <point x="7513.661831083518" y="1738.0" />
+      <point x="5925.4930810835185" y="1738.0" />
+      <point x="146.71875" y="125.5" />
+    </edge>
+    <edge source="model.Entregas" target="interfaces.IEncomenda">
+      <point x="58.6875" y="-357.0" />
+      <point x="5550.64299053789" y="3715.0" />
+      <point x="6834.9618310835185" y="3715.0" />
+      <point x="6834.9618310835185" y="804.0" />
+      <point x="5309.5517109249595" y="804.0" />
+      <point x="98.27999999999975" y="213.5" />
+    </edge>
+    <edge source="model.ComparatorQuantidadeKms" target="interfaces.IEmpresa">
+      <point x="4.547473508864641E-13" y="-26.5" />
+      <point x="3067.3410859249607" y="1868.0" />
+      <point x="2974.8750000000005" y="1868.0" />
+      <point x="43.05882352941171" y="103.5" />
+    </edge>
+    <edge source="view.InterfaceVoluntario" target="interfaces.IEncomenda">
+      <point x="-101.66666666666697" y="-92.5" />
+      <point x="347.4583333333335" y="2595.0" />
+      <point x="438.12500000000045" y="2595.0" />
+      <point x="438.12500000000045" y="764.0" />
+      <point x="5102.07171092496" y="764.0" />
+      <point x="-109.19999999999982" y="213.5" />
+    </edge>
+    <edge source="model.Empresa" target="interfaces.ISistema">
+      <point x="-160.125" y="-159.0" />
+      <point x="5803.258026714434" y="4599.0" />
+      <point x="2832.8088559225057" y="4599.0" />
+      <point x="163.38461538461524" y="246.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.NaoExisteLojaException">
+      <point x="-27.421052631579187" y="-126.0" />
+      <point x="4283.478278451939" y="4609.0" />
+      <point x="4245.96608592496" y="4609.0" />
+      <point x="45.0" y="14.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.Sistema">
+      <point x="-58.19999999999982" y="-103.5" />
+      <point x="7170.353810961271" y="5167.0" />
+      <point x="7371.9618310835185" y="5167.0" />
+      <point x="7371.9618310835185" y="3485.0" />
+      <point x="3524.1493310835194" y="3485.0" />
+      <point x="132.75" y="390.0" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.IVoluntario">
+      <point x="19.199999999999818" y="-115.0" />
+      <point x="634.1250000000005" y="3425.0" />
+      <point x="667.1250000000005" y="3425.0" />
+      <point x="667.1250000000005" y="2555.0" />
+      <point x="1930.7250000000004" y="2555.0" />
+      <point x="-68.40000000000009" y="37.5" />
+    </edge>
+    <edge source="controller.Teste" target="model.User">
+      <point x="50.1875" y="-93.0" />
+      <point x="2687.1071930744693" y="5217.0" />
+      <point x="4879.883026714434" y="5217.0" />
+      <point x="4879.883026714434" y="3685.0" />
+      <point x="6489.9618310835185" y="3685.0" />
+      <point x="6489.9618310835185" y="2595.0" />
+      <point x="6563.6284977501855" y="2595.0" />
+      <point x="-104.33333333333348" y="181.0" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="model.EmpresaIndisponivelException">
+      <point x="-14.764705882353155" y="-115.0" />
+      <point x="1967.693448730578" y="4589.0" />
+      <point x="1838.6250000000005" y="4589.0" />
+      <point x="54.0" y="14.5" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.ILogin">
+      <point x="104.9375" y="-93.0" />
+      <point x="2741.8571930744693" y="5277.0" />
+      <point x="7643.4618310835185" y="5277.0" />
+      <point x="-51.799999999999955" y="136.5" />
+    </edge>
+    <edge source="view.InterfaceEmpresa" target="interfaces.IEncomenda">
+      <point x="-101.66666666666652" y="-81.5" />
+      <point x="1401.458333333334" y="2535.0" />
+      <point x="1492.1250000000005" y="2535.0" />
+      <point x="1492.1250000000005" y="814.0" />
+      <point x="5156.67171092496" y="814.0" />
+      <point x="-54.59999999999991" y="213.5" />
+    </edge>
+    <edge source="model.Sistema" target="interfaces.ILoja">
+      <point x="162.25" y="-390.0" />
+      <point x="3553.6493310835194" y="2585.0" />
+      <point x="5563.0243310835185" y="2585.0" />
+      <point x="-48.75" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="controller.Input">
+      <point x="-246.78947368421086" y="-126.0" />
+      <point x="4064.109857399308" y="4689.0" />
+      <point x="2373.858154612931" y="4689.0" />
+      <point x="64.39999999999964" y="59.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.ILoja">
+      <point x="73.82352941176487" y="-115.0" />
+      <point x="2056.281684024696" y="4659.0" />
+      <point x="2218.458154612931" y="4659.0" />
+      <point x="2218.458154612931" y="3495.0" />
+      <point x="3034.2743310835194" y="3495.0" />
+      <point x="3034.2743310835194" y="2565.0" />
+      <point x="5524.0243310835185" y="2565.0" />
+      <point x="-87.75" y="213.5" />
+    </edge>
+    <edge source="controller.Teste" target="model.Empresa">
+      <point x="77.5625" y="-93.0" />
+      <point x="2714.4821930744693" y="5247.0" />
+      <point x="5871.883026714434" y="5247.0" />
+      <point x="-91.5" y="159.0" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="controller.Input">
+      <point x="88.58823529411802" y="-115.0" />
+      <point x="2071.046389907049" y="4689.0" />
+      <point x="2309.458154612931" y="4689.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="interfaces.IEmpresa">
+      <point x="-137.10526315789502" y="-126.0" />
+      <point x="4173.794067925624" y="4649.0" />
+      <point x="3864.4660859249598" y="4649.0" />
+      <point x="3864.4660859249598" y="1838.0" />
+      <point x="3039.4632352941185" y="1838.0" />
+      <point x="107.64705882352973" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="interfaces.ISistema">
+      <point x="62.222222222222626" y="-71.0" />
+      <point x="1246.0694444444453" y="4729.0" />
+      <point x="2587.731932845583" y="4729.0" />
+      <point x="-81.69230769230762" y="246.5" />
+    </edge>
+    <edge source="view.InterfaceGeral" target="interfaces.IUser">
+      <point x="47.125" y="-125.5" />
+      <point x="2426.2500000000005" y="1898.0" />
+      <point x="5671.1805810835185" y="1898.0" />
+      <point x="-107.59375" y="125.5" />
+    </edge>
+    <edge source="model.Voluntario" target="interfaces.IEntregas">
+      <point x="34.19999999999982" y="-48.5" />
+      <point x="6286.083026714434" y="4779.0" />
+      <point x="7312.9618310835185" y="4779.0" />
+      <point x="7312.9618310835185" y="1407.0" />
+      <point x="5505.894301470588" y="1407.0" />
+      <point x="136.9375" y="246.5" />
+    </edge>
+    <edge source="controller.Teste" target="model.Produto">
+      <point x="59.3125" y="-93.0" />
+      <point x="2696.2321930744693" y="5227.0" />
+      <point x="5011.883026714434" y="5227.0" />
+      <point x="0.0" y="181.0" />
+    </edge>
+    <edge source="model.User" target="interfaces.IUser">
+      <point x="-39.125" y="-181.0" />
+      <point x="6628.8368310835185" y="1768.0" />
+      <point x="5886.3680810835185" y="1768.0" />
+      <point x="107.59375" y="125.5" />
+    </edge>
+    <edge source="model.Loja" target="model.RandomGenerator">
+      <point x="-109.19999999999999" y="-313.0" />
+      <point x="6883.761831083519" y="2535.0" />
+      <point x="5421.2743310835185" y="2535.0" />
+      <point x="68.0" y="48.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.IEmpresa">
+      <point x="58.19999999999982" y="-103.5" />
+      <point x="7286.753810961271" y="5227.0" />
+      <point x="7502.661831083518" y="5227.0" />
+      <point x="7502.661831083518" y="1748.0" />
+      <point x="3104.0514705882356" y="1748.0" />
+      <point x="172.23529411764684" y="103.5" />
+    </edge>
+    <edge source="model.Entregas" target="model.User">
+      <point x="19.5625" y="-357.0" />
+      <point x="5511.51799053789" y="3705.0" />
+      <point x="6667.9618310835185" y="3705.0" />
+      <point x="0.0" y="181.0" />
+    </edge>
+    <edge source="model.Empresa" target="interfaces.IEntregas">
+      <point x="22.875" y="-159.0" />
+      <point x="5986.258026714434" y="4559.0" />
+      <point x="5176.883026714434" y="4559.0" />
+      <point x="5176.883026714434" y="3625.0" />
+      <point x="6151.9618310835185" y="3625.0" />
+      <point x="6151.9618310835185" y="1437.0" />
+      <point x="5388.519301470588" y="1437.0" />
+      <point x="19.5625" y="246.5" />
+    </edge>
+    <edge source="controller.Teste" target="model.Voluntario">
+      <point x="86.6875" y="-93.0" />
+      <point x="2723.6071930744693" y="5257.0" />
+      <point x="6209.133026714434" y="5257.0" />
+      <point x="-42.75" y="48.5" />
+    </edge>
+    <edge source="controller.Teste" target="controller.ControllerLoja">
+      <point x="-59.3125" y="-93.0" />
+      <point x="2577.6071930744693" y="5257.0" />
+      <point x="1218.8472222222226" y="5257.0" />
+      <point x="35.0" y="71.0" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.ILoja">
+      <point x="38.399999999999636" y="-115.0" />
+      <point x="653.3250000000003" y="4789.0" />
+      <point x="645.1250000000005" y="4789.0" />
+      <point x="645.1250000000005" y="3435.0" />
+      <point x="2578.1250000000005" y="3435.0" />
+      <point x="2578.1250000000005" y="2555.0" />
+      <point x="5504.5243310835185" y="2555.0" />
+      <point x="-107.25" y="213.5" />
+    </edge>
+    <edge source="controller.Main" target="interfaces.ILogin">
+      <point x="64.71428571428578" y="-26.5" />
+      <point x="7396.926116797804" y="5925.0" />
+      <point x="7667.553810961271" y="5925.0" />
+      <point x="7667.553810961271" y="5307.0" />
+      <point x="7798.861831083519" y="5307.0" />
+      <point x="103.59999999999991" y="136.5" />
+    </edge>
+    <edge source="model.Sistema" target="interfaces.IUser">
+      <point x="44.25" y="-390.0" />
+      <point x="3435.6493310835194" y="2495.0" />
+      <point x="3361.8410859249598" y="2495.0" />
+      <point x="3361.8410859249598" y="1918.0" />
+      <point x="5710.3055810835185" y="1918.0" />
+      <point x="-68.46875" y="125.5" />
+    </edge>
+    <edge source="view.InterfaceVoluntario" target="interfaces.IVoluntario">
+      <point x="101.66666666666697" y="-92.5" />
+      <point x="550.7916666666674" y="2545.0" />
+      <point x="1919.3250000000003" y="2545.0" />
+      <point x="-79.80000000000018" y="37.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.IProduto">
+      <point x="116.40000000000009" y="-103.5" />
+      <point x="7344.953810961271" y="5257.0" />
+      <point x="7535.661831083518" y="5257.0" />
+      <point x="7535.661831083518" y="237.0" />
+      <point x="6270.900072168979" y="237.0" />
+      <point x="110.4545454545455" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="interfaces.IProduto">
+      <point x="164.52631578947376" y="-126.0" />
+      <point x="4475.425646872993" y="4759.0" />
+      <point x="4805.60671092496" y="4759.0" />
+      <point x="4805.60671092496" y="3555.0" />
+      <point x="5945.7743310835185" y="3555.0" />
+      <point x="5945.7743310835185" y="267.0" />
+      <point x="6138.354617623525" y="267.0" />
+      <point x="-22.09090909090901" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.IEmpresa">
+      <point x="0.0" y="-115.0" />
+      <point x="1982.4581546129311" y="4579.0" />
+      <point x="1903.1250000000005" y="4579.0" />
+      <point x="1903.1250000000005" y="1838.0" />
+      <point x="2888.757352941177" y="1838.0" />
+      <point x="-43.05882352941171" y="103.5" />
+    </edge>
+    <edge source="model.Entregas" target="model.Loja">
+      <point x="136.9375" y="-357.0" />
+      <point x="5628.89299053789" y="3735.0" />
+      <point x="6901.9618310835185" y="3735.0" />
+      <point x="-91.0" y="313.0" />
+    </edge>
+    <edge source="view.InterfaceGeral" target="interfaces.IEmpresa">
+      <point x="-47.125" y="-125.5" />
+      <point x="2332.0000000000005" y="2515.0" />
+      <point x="2095.1250000000005" y="2515.0" />
+      <point x="2095.1250000000005" y="1848.0" />
+      <point x="2910.2867647058824" y="1848.0" />
+      <point x="-21.52941176470631" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="interfaces.ILoja">
+      <point x="137.10526315789457" y="-126.0" />
+      <point x="4448.0045942414135" y="4749.0" />
+      <point x="4671.09108592496" y="4749.0" />
+      <point x="4671.09108592496" y="3545.0" />
+      <point x="5617.2743310835185" y="3545.0" />
+      <point x="5617.2743310835185" y="2595.0" />
+      <point x="5621.5243310835185" y="2595.0" />
+      <point x="9.75" y="213.5" />
+    </edge>
+    <edge source="view.InterfaceLoja" target="interfaces.IEmpresa">
+      <point x="0.0" y="-81.5" />
+      <point x="866.1250000000005" y="1808.0" />
+      <point x="2824.169117647059" y="1808.0" />
+      <point x="-107.64705882352973" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="view.InterfaceUtilizador">
+      <point x="0.0" y="-126.0" />
+      <point x="4310.899331083519" y="4789.0" />
+      <point x="4301.46608592496" y="4789.0" />
+      <point x="4301.46608592496" y="3505.0" />
+      <point x="5014.996801470588" y="3505.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="controller.Teste" target="view.InterfaceGeral">
+      <point x="-13.6875" y="-93.0" />
+      <point x="2623.2321930744693" y="5207.0" />
+      <point x="2400.458154612931" y="5207.0" />
+      <point x="2400.458154612931" y="3425.0" />
+      <point x="2504.7916666666674" y="3425.0" />
+      <point x="125.66666666666697" y="125.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="model.NaoExisteEncomendaException">
+      <point x="-103.35294117647027" y="-115.0" />
+      <point x="1879.1052134364609" y="4649.0" />
+      <point x="1279.1250000000005" y="4649.0" />
+      <point x="87.5" y="14.5" />
+    </edge>
+    <edge source="controller.Teste" target="model.Loja">
+      <point x="68.4375" y="-93.0" />
+      <point x="2705.3571930744693" y="5237.0" />
+      <point x="5769.883026714434" y="5237.0" />
+      <point x="5769.883026714434" y="3745.0" />
+      <point x="6992.9618310835185" y="3745.0" />
+      <point x="0.0" y="313.0" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.IVoluntario">
+      <point x="14.764705882353155" y="-115.0" />
+      <point x="1997.2228604952843" y="4619.0" />
+      <point x="2041.4250000000006" y="4619.0" />
+      <point x="2041.4250000000006" y="2595.0" />
+      <point x="1987.7250000000004" y="2595.0" />
+      <point x="-11.400000000000091" y="37.5" />
+    </edge>
+    <edge source="view.InterfaceGeral" target="interfaces.ILoja">
+      <point x="141.375" y="-125.5" />
+      <point x="2520.5000000000005" y="2545.0" />
+      <point x="5485.0243310835185" y="2545.0" />
+      <point x="-126.75" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="interfaces.ISistema">
+      <point x="-191.9473684210525" y="-126.0" />
+      <point x="4118.951962662466" y="4669.0" />
+      <point x="2805.578086691736" y="4669.0" />
+      <point x="136.15384615384573" y="246.5" />
+    </edge>
+    <edge source="model.Empresa" target="interfaces.IUser">
+      <point x="-22.875" y="-159.0" />
+      <point x="5940.508026714434" y="4569.0" />
+      <point x="5165.883026714434" y="4569.0" />
+      <point x="5165.883026714434" y="3615.0" />
+      <point x="6140.9618310835185" y="3615.0" />
+      <point x="6140.9618310835185" y="1808.0" />
+      <point x="5808.1180810835185" y="1808.0" />
+      <point x="29.34375" y="125.5" />
+    </edge>
+    <edge source="view.InterfaceUtilizador" target="interfaces.IProduto">
+      <point x="0.0" y="-114.5" />
+      <point x="5014.996801470588" y="2525.0" />
+      <point x="5022.996801470588" y="2525.0" />
+      <point x="5022.996801470588" y="237.0" />
+      <point x="6072.081890350797" y="237.0" />
+      <point x="-88.36363636363626" y="103.5" />
+    </edge>
+    <edge source="model.Sistema" target="interfaces.IVoluntario">
+      <point x="-132.75" y="-390.0" />
+      <point x="3258.6493310835194" y="2475.0" />
+      <point x="2044.7250000000004" y="2475.0" />
+      <point x="45.59999999999991" y="37.5" />
+    </edge>
+    <edge source="controller.ControllerUser" target="model.ComandoDesconhecidoException">
+      <point x="-82.26315789473665" y="-126.0" />
+      <point x="4228.636173188783" y="4629.0" />
+      <point x="4036.9660859249598" y="4629.0" />
+      <point x="54.0" y="14.5" />
+    </edge>
+    <edge source="model.Encomenda" target="interfaces.ILoja">
+      <point x="-109.20000000000005" y="-313.0" />
+      <point x="6200.761831083519" y="2575.0" />
+      <point x="5680.0243310835185" y="2575.0" />
+      <point x="68.25" y="213.5" />
+    </edge>
+    <edge source="model.Loja" target="interfaces.IUser">
+      <point x="0.0" y="-313.0" />
+      <point x="6992.9618310835185" y="2595.0" />
+      <point x="6994.770617260063" y="2595.0" />
+      <point x="6994.770617260063" y="1758.0" />
+      <point x="5905.9305810835185" y="1758.0" />
+      <point x="127.15625" y="125.5" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.IProduto">
+      <point x="-104.9375" y="-93.0" />
+      <point x="2531.9821930744693" y="5307.0" />
+      <point x="0.0" y="5307.0" />
+      <point x="0.0" y="227.0" />
+      <point x="6049.990981259888" y="227.0" />
+      <point x="-110.4545454545455" y="103.5" />
+    </edge>
+    <edge source="model.Sistema" target="model.ComparatorQuantidadeEncomendas">
+      <point x="73.75" y="-390.0" />
+      <point x="3465.1493310835194" y="2515.0" />
+      <point x="3589.3410859249598" y="2515.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="controller.Main" target="model.Login">
+      <point x="43.14285714285711" y="-26.5" />
+      <point x="7375.354688226375" y="5915.0" />
+      <point x="7525.553810961271" y="5915.0" />
+      <point x="0.0" y="269.0" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="interfaces.IEncomenda">
+      <point x="-62.222222222222626" y="-71.0" />
+      <point x="1121.625" y="4639.0" />
+      <point x="656.1250000000005" y="4639.0" />
+      <point x="656.1250000000005" y="774.0" />
+      <point x="5112.99171092496" y="774.0" />
+      <point x="-98.2800000000002" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="model.NaoExisteEncomendaException">
+      <point x="76.80000000000018" y="-115.0" />
+      <point x="691.7250000000008" y="4659.0" />
+      <point x="1139.1250000000005" y="4659.0" />
+      <point x="-52.5" y="14.5" />
+    </edge>
+    <edge source="controller.Parse" target="interfaces.ISistema">
+      <point x="-135.80000000000018" y="-103.5" />
+      <point x="7092.753810961271" y="5167.0" />
+      <point x="2652.4821930744693" y="5167.0" />
+      <point x="2652.4821930744693" y="4789.0" />
+      <point x="2751.116548230198" y="4789.0" />
+      <point x="81.69230769230762" y="246.5" />
+    </edge>
+    <edge source="controller.Input" target="view.InterfaceGeral">
+      <point x="0.0" y="-59.5" />
+      <point x="2309.458154612931" y="3425.0" />
+      <point x="2379.1250000000005" y="3425.0" />
+      <point x="0.0" y="125.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.IEmpresa">
+      <point x="-19.199999999999818" y="-115.0" />
+      <point x="595.7250000000008" y="4779.0" />
+      <point x="612.1250000000005" y="4779.0" />
+      <point x="612.1250000000005" y="1798.0" />
+      <point x="2802.6397058823536" y="1798.0" />
+      <point x="-129.17647058823513" y="103.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.IEncomenda">
+      <point x="-134.39999999999964" y="-115.0" />
+      <point x="480.525000000001" y="4789.0" />
+      <point x="20.125" y="4789.0" />
+      <point x="20.125" y="744.0" />
+      <point x="5080.23171092496" y="744.0" />
+      <point x="-131.03999999999996" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="controller.Input">
+      <point x="31.111111111111313" y="-71.0" />
+      <point x="1214.958333333334" y="4679.0" />
+      <point x="2277.2581546129313" y="4679.0" />
+      <point x="-32.19999999999982" y="59.5" />
+    </edge>
+    <edge source="model.Produto" target="interfaces.IProduto">
+      <point x="0.0" y="-181.0" />
+      <point x="5011.883026714434" y="3585.0" />
+      <point x="6047.4618310835185" y="3585.0" />
+      <point x="6047.4618310835185" y="277.0" />
+      <point x="6160.445526714434" y="277.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="view.InterfaceEmpresa" target="interfaces.IVoluntario">
+      <point x="101.66666666666652" y="-81.5" />
+      <point x="1604.791666666667" y="2595.0" />
+      <point x="1976.3250000000003" y="2595.0" />
+      <point x="-22.800000000000182" y="37.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.IUser">
+      <point x="29.52941176470631" y="-115.0" />
+      <point x="2011.9875663776374" y="4629.0" />
+      <point x="2106.1250000000005" y="4629.0" />
+      <point x="2106.1250000000005" y="1888.0" />
+      <point x="5651.6180810835185" y="1888.0" />
+      <point x="-127.15625" y="125.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="view.InterfaceGeral">
+      <point x="59.05882352941171" y="-115.0" />
+      <point x="2041.5169781423429" y="4649.0" />
+      <point x="2207.458154612931" y="4649.0" />
+      <point x="2207.458154612931" y="3425.0" />
+      <point x="2253.4583333333335" y="3425.0" />
+      <point x="-125.66666666666697" y="125.5" />
+    </edge>
+    <edge source="interfaces.ILoja" target="interfaces.IProduto">
+      <point x="0.0" y="-213.5" />
+      <point x="5611.7743310835185" y="257.0" />
+      <point x="6116.263708532615" y="257.0" />
+      <point x="-44.181818181818244" y="103.5" />
+    </edge>
+    <edge source="controller.Parse" target="model.Loja">
+      <point x="-19.40000000000009" y="-103.5" />
+      <point x="7209.15381096127" y="5187.0" />
+      <point x="7393.9618310835185" y="5187.0" />
+      <point x="7393.9618310835185" y="3465.0" />
+      <point x="7083.9618310835185" y="3465.0" />
+      <point x="91.0" y="313.0" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.IEncomenda">
+      <point x="-73.82352941176487" y="-115.0" />
+      <point x="1908.6346252011663" y="4629.0" />
+      <point x="1340.1250000000005" y="4629.0" />
+      <point x="1340.1250000000005" y="804.0" />
+      <point x="5145.75171092496" y="804.0" />
+      <point x="-65.51999999999998" y="213.5" />
+    </edge>
+    <edge source="controller.Teste" target="interfaces.IEmpresa">
+      <point x="-95.8125" y="-93.0" />
+      <point x="2541.1071930744693" y="5297.0" />
+      <point x="9.125" y="5297.0" />
+      <point x="9.125" y="1778.0" />
+      <point x="2759.580882352942" y="1778.0" />
+      <point x="-172.23529411764684" y="103.5" />
+    </edge>
+    <edge source="model.Voluntario" target="interfaces.IEncomenda">
+      <point x="68.40000000000009" y="-48.5" />
+      <point x="6320.2830267144345" y="4789.0" />
+      <point x="7323.9618310835185" y="4789.0" />
+      <point x="7323.9618310835185" y="784.0" />
+      <point x="5331.39171092496" y="784.0" />
+      <point x="120.11999999999989" y="213.5" />
+    </edge>
+    <edge source="model.Empresa" target="interfaces.IEmpresa">
+      <point x="-68.625" y="-159.0" />
+      <point x="5894.758026714434" y="4579.0" />
+      <point x="5154.883026714434" y="4579.0" />
+      <point x="5154.883026714434" y="3605.0" />
+      <point x="6129.9618310835185" y="3605.0" />
+      <point x="6129.9618310835185" y="1818.0" />
+      <point x="3082.52205882353" y="1818.0" />
+      <point x="150.70588235294144" y="103.5" />
+    </edge>
+    <edge source="model.Sistema" target="interfaces.ISistema">
+      <point x="44.25" y="390.0" />
+      <point x="3435.6493310835194" y="3525.0" />
+      <point x="2787.4242405378905" y="3525.0" />
+      <point x="118.0" y="-246.5" />
+    </edge>
+    <edge source="controller.Teste" target="controller.ControllerUser">
+      <point x="22.8125" y="-93.0" />
+      <point x="2659.7321930744693" y="5187.0" />
+      <point x="4441.149331083519" y="5187.0" />
+      <point x="130.25" y="126.0" />
+    </edge>
+    <edge source="controller.ControllerLoja" target="interfaces.IVoluntario">
+      <point x="-15.555555555555657" y="-71.0" />
+      <point x="1168.291666666667" y="4609.0" />
+      <point x="1076.1250000000005" y="4609.0" />
+      <point x="1076.1250000000005" y="3425.0" />
+      <point x="1287.4581546129311" y="3425.0" />
+      <point x="1287.4581546129311" y="2575.0" />
+      <point x="1953.5250000000005" y="2575.0" />
+      <point x="-45.59999999999991" y="37.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="interfaces.IUser">
+      <point x="0.0" y="-115.0" />
+      <point x="614.9250000000006" y="4789.0" />
+      <point x="623.1250000000005" y="4789.0" />
+      <point x="623.1250000000005" y="1878.0" />
+      <point x="5632.0555810835185" y="1878.0" />
+      <point x="-146.71875" y="125.5" />
+    </edge>
+    <edge source="model.Sistema" target="model.ComparatorQuantidadeKms">
+      <point x="-103.25" y="-390.0" />
+      <point x="3288.1493310835194" y="2465.0" />
+      <point x="3067.3410859249598" y="2465.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="view.InterfaceLoja" target="interfaces.IEncomenda">
+      <point x="-125.66666666666697" y="-81.5" />
+      <point x="740.4583333333335" y="2535.0" />
+      <point x="840.4181546129312" y="2535.0" />
+      <point x="840.4181546129312" y="784.0" />
+      <point x="5123.91171092496" y="784.0" />
+      <point x="-87.36000000000013" y="213.5" />
+    </edge>
+    <edge source="model.Loja" target="interfaces.ILoja">
+      <point x="-54.60000000000002" y="-313.0" />
+      <point x="6938.361831083519" y="2525.0" />
+      <point x="5719.0243310835185" y="2525.0" />
+      <point x="107.25" y="213.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="model.VoluntarioIndisponivelException">
+      <point x="-76.80000000000018" y="-115.0" />
+      <point x="538.1250000000005" y="4759.0" />
+      <point x="217.125" y="4759.0" />
+      <point x="58.5" y="14.5" />
+    </edge>
+    <edge source="model.Encomenda" target="interfaces.IUser">
+      <point x="-54.59999999999991" y="-313.0" />
+      <point x="6255.361831083519" y="2595.0" />
+      <point x="6300.770617260063" y="2595.0" />
+      <point x="6300.770617260063" y="1798.0" />
+      <point x="5827.6805810835185" y="1798.0" />
+      <point x="48.90625" y="125.5" />
+    </edge>
+    <edge source="controller.ControllerEmpresas" target="interfaces.IEntregas">
+      <point x="-44.294117647058556" y="-115.0" />
+      <point x="1938.1640369658726" y="4609.0" />
+      <point x="1666.1250000000005" y="4609.0" />
+      <point x="1666.1250000000005" y="1427.0" />
+      <point x="5271.144301470588" y="1427.0" />
+      <point x="-97.8125" y="246.5" />
+    </edge>
+    <edge source="controller.ControllerVoluntarios" target="view.InterfaceVoluntario">
+      <point x="-38.399999999999636" y="-115.0" />
+      <point x="576.525000000001" y="4739.0" />
+      <point x="449.12500000000045" y="4739.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="interfaces.IEncomenda" target="interfaces.IProduto">
+      <point x="0.0" y="-213.5" />
+      <point x="5211.27171092496" y="247.0" />
+      <point x="6094.172799441707" y="247.0" />
+      <point x="-66.27272727272725" y="103.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.09322033898305085" x="3912.5" y="2999.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

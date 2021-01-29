@@ -1,0 +1,9 @@
+districtServer:
+  id: 11
+  name: Portalegre
+  size: 70
+  pushPort: 30000
+  pullPort: 10011
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

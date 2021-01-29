@@ -1,0 +1,12 @@
+Produto:p1,Hamburguer,100,1
+Produto:p2,Xanax,1,10
+Produto:p3,Desodorizante,15,3.99
+Produto:p4,Casaco,100,84.99
+Produto:p5,Cadeira Alpha Gamer,1500,103.4
+Produto:p6,Tapete,1000,50
+Produto:p7,Monitor,1500,299.99
+Produto:p8,Colunas,350,80
+Produto:p9,Guitara,100,100
+Produto:p10,Radio,100,13
+Produto:p11,Pacote de Lenços,10,0.1
+Produto:p12,Computador,2500,1500

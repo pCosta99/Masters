@@ -1,0 +1,5 @@
+Loja:l29,analise@gmail.com,amanha
+Loja:l58,feira@gmail.com,profit
+Loja:l8,logica@gmail.com,approved
+Loja:l83,java@gmail.com,java
+Loja:l13,haskell@gmail.com,haskell

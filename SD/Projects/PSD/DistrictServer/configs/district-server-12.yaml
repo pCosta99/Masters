@@ -1,0 +1,9 @@
+districtServer:
+  id: 12
+  name: Porto
+  size: 93
+  pushPort: 30000
+  pullPort: 10012
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

@@ -1,0 +1,199 @@
+open util/ordering[Clock]
+open util/ordering[Process]
+
+sig Process {
+	var clock : one Clock, // Internal clock of each process
+	var reqs : Process -> Clock, // All requests ever received
+	var acks : set Process // (* acks stores the processes that have ack'ed p's request *)
+}
+
+sig Clock {} // Signature of a ordable clock
+
+var abstract sig Message {
+}
+
+var sig RelMessage extends Message {}
+var sig AckMessage extends Message {}
+var sig ReqMessage extends Message {
+	var ts : one Clock // Timestamp
+}
+
+var sig MessageQ {
+	var queue : seq Message
+}
+
+one sig Network {
+	var box : Process -> Process -> MessageQ
+}
+
+one sig Crit {
+	var onCrit : lone Process
+}
+
+fact init {
+	reqs = Process->Process->first
+	Process.clock = first
+	no Process.acks 
+	no Crit.onCrit
+	no Message
+	// Every pair of processes has a empty and not shared queue
+	all disj p, q : Process | one getBox[p,q] and getBox[p,q].queue.isEmpty
+	all q : MessageQ | one Network.box.q
+	all p : Process | no getBox[p,p]
+}
+
+fun getBox[p : Process, q : Process] : MessageQ {
+	q.(p.(Network.box))
+}
+
+/** Broadcast a message: send it to all processes except the sender. **/
+pred Broadcast[p : Process, m : Message]{
+	/** Change what must be changed **/
+	all q : Process - p | getBox[p,q].queue' = getBox[p,q].queue.add[m]
+	all q : Process - p | getBox[q,p].queue' = getBox[q,p].queue
+	/** Assert the rest doesn't change **/
+	all disj x,y : Process - p | getBox[x,y].queue' = getBox[x,y].queue
+}
+
+/** Process p receives an acknowledgement from q. **/
+pred ReceiveAck[p, q : Process]{
+	let bm = getBox[p,q], bmq = bm.queue | {
+		not bmq.isEmpty and bmq.first in AckMessage
+		acks' = acks + (q->p)
+		queue' = queue - (bm->bmq) + (bm->bmq.rest) 
+		Message' = Message - bmq.first
+		/** Unchanged **/
+		unClocks and unCrit and unReqs and unMQueue and unNetwork and unTS
+	}
+}
+
+/** Process p receives a request from q and acknowledges it. **/
+pred ReceiveRequest[p, q : Process]{
+	let bm1 = getBox[q,p], bmq1 = bm1.queue, bm2 = getBox[p,q], bmq2 = bm2.queue, c = bmq1.first.ts |  {
+		not bmq1.isEmpty and bmq1.first in ReqMessage
+		reqs' = reqs - (p->q->p.(q.reqs)) + (p->q->c) 
+		clock' = clock - (p->p.clock) + (p->larger[c,p.clock].next)
+		one m : AckMessage' | {
+			m not in Message
+			Message' = Message + m
+			bmq1' = bmq1.rest
+			bmq2' = bmq2.add[m]
+		}
+		/** Unchanged **/
+		let b = Network.box - (p->q->bm2) - (q->p->bm1)  | b.queue' = b.queue // assert the rest of box doesn't change
+		unAcks and unCrit and unMQueue and unNetwork and unTS
+	}
+}
+
+pred is_first [c : Clock] {
+	no c.prev
+}
+
+/** Process p requests access to critical section. **/
+pred Request[p : Process]{
+	is_first[p.(p.reqs)]
+	reqs' = reqs - (p->p->p.(p.reqs)) + (p->p->p.clock) 
+	one m : ReqMessage' | {
+		m not in ReqMessage 
+		Message' = Message + m
+		ts' = ts + (m->p.clock)
+		Broadcast[p, m]
+	}
+	acks' = acks - (p->p.acks) + (p->p)
+	/** Unchanged **/
+	unClocks and unCrit and unNetwork and unMQueue
+}
+
+pred beats[p,q : Process]{
+	q.(p.reqs) = first or
+	smaller[p.(p.reqs), q.(p.reqs)] = p.(p.reqs) or
+	(lt[p,q] and p.(p.reqs) = q.(p.reqs))
+}
+
+/** Process p enters the critical section. **/
+pred Enter[p : Process]{
+	no Crit.onCrit and Crit.onCrit' = p
+	p.acks = Process 
+	all q : Process - p | beats[p,q]
+	/** Unchanged **/
+	unClocks and unReqs and unAcks and unNetwork and unMQueue and unTS and unQueue and unMessage
+}
+
+/** Process p exits the critical section and notifies other processes. **/
+pred Exit[p : Process]{
+	p in Crit.onCrit and no Crit.onCrit'
+	one m : RelMessage' | {
+		m not in RelMessage 
+		Message' = Message + m
+		Broadcast[p, m]
+	}
+	reqs' = reqs - (p->p->p.(p.reqs)) + (p->p->first)
+	acks' = acks - (p->Process)
+	/** Unchanged **/
+	unClocks and unNetwork and unMQueue and unTS
+}
+
+/** Process p receives a release notification from q. **/
+pred ReceiveRelease[p,q : Process]{
+	let bm = getBox[q,p], bmq = bm.queue |  {
+		not bmq.isEmpty and bmq.first in RelMessage
+		reqs' = reqs - (p->q->p.(q.reqs)) + (p->q->first)
+		queue' = queue - (bm->bmq) + (bm->bmq.rest)
+		Message' = Message - bmq.first
+		/** Unchanged **/
+		unAcks and unClocks and unCrit and unNetwork and unMQueue and unTS
+	}
+}
+
+/********************************* UNCHANGED *******************************/
+pred nop {
+	unClocks and unReqs and unAcks and unTS and unNetwork and unQueue and unMQueue and unCrit and unMessage
+}
+
+pred unAcks{acks' = acks}
+pred unReqs{reqs' = reqs}
+pred unClocks{clock' = clock}
+pred unCrit{onCrit' = onCrit}
+pred unNetwork{box' = box}
+pred unQueue{queue' = queue}
+pred unMQueue{MessageQ' = MessageQ}
+pred unTS{ts' = ts}
+pred unMessage{Message' = Message}
+
+/********************************* PROGRESS *******************************/
+fact Progress {
+	always (
+		(some x : Process | Request[x] or Enter[x] or Exit[x]) or
+		(some disj p, q : Process | ReceiveRequest[p,q] or ReceiveAck[p,q] or ReceiveRelease[p,q])
+		or nop
+	)
+}
+
+/******************************* THEME RELATED ******************************/
+fun forgottenRequests : set Message {
+	{ m : ReqMessage | no queue.m }
+}
+
+assert SafetyCrit{
+	always lone Crit.onCrit 
+}
+
+assert SafetyQueues{
+	always (all q : MessageQ | #q.queue <= 3)
+}
+
+assert Liveness{
+	all p : Process | eventually p in Crit.onCrit
+}
+
+check SafetyCrit
+check SafetyQueues
+check Liveness
+
+run triple_process_one_on_crit {
+	eventually some Crit.onCrit
+} for exactly 3 Process, 5 Clock, 5 Message, 12 MessageQ, 20 steps
+
+run double_process_on_crit {
+	all p : Process | eventually p in Crit.onCrit
+} for exactly 2 Process, 5 Clock, 5 Message, 12 MessageQ, 20 steps

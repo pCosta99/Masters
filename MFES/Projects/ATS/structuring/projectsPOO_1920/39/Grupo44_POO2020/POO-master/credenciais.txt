@@ -1,0 +1,10 @@
+Utilizador:u48,hello@gmail.com,world
+Utilizador:u97,segmentation@gmail.com,fault
+Utilizador:u82,syntax@gmail.com,error
+Utilizador:u7,logical@gmail.com,failure
+Utilizador:u80,global@gmail.com,variable
+Utilizador:u33,typedef@gmail.com,struct
+Utilizador:u78,pedro@gmail.com,marcelo
+Utilizador:u40,beatriz@gmail.com,vaquinhas
+Utilizador:u68,remote@gmail.com,play
+Utilizador:u81,final@gmail.com,barrier

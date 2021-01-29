@@ -1,0 +1,9 @@
+districtServer:
+  id: 15
+  name: Viana do Castelo
+  size: 32
+  pushPort: 30000
+  pullPort: 10015
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

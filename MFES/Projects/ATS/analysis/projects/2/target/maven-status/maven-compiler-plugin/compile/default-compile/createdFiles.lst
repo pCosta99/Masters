@@ -1,0 +1,17 @@
+LinhaEncomenda.class
+Perfil.class
+NaoSeEncontraRaioException.class
+Voluntario.class
+ComparatorUser.class
+UserNaoExisteException.class
+EncomendaNaoExisteException.class
+Utilizador.class
+Empresa.class
+DataBase.class
+Main.class
+Transporte.class
+Encomenda.class
+EncomendaJaExisteException.class
+Loja.class
+Parser.class
+Ponto2D.class

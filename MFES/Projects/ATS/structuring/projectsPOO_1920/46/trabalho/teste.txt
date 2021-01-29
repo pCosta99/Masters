@@ -1,0 +1,56 @@
+Dados para teste
+
+Utilizadores:
+Amanda Nunes
+9 compras
+	email: 123
+	pw: 123
+
+	pw: 123456{
+		user1@gmail.com
+		user2@gmail.com
+		user3@gmail.com
+		user4@gmail.com
+		user5@gmail.com
+	}
+
+
+Transportadoras:
+
+	email: 123
+	pw: 123
+
+devem estar muito longe
+	nao tem range para a loja1 com encomendas do user  "Amanda Nunes"
+	nao tem range para a loja2 com encomendas do user  "Amanda Nunes"
+
+	pw: 123456{
+		trans1@gmail.com
+		trans2@gmail.com
+		trans3@gmail.com
+		trans4@gmail.com
+		trans5@gmail.com
+	}
+
+
+Voluntario:
+	email: 123
+	pw: 123
+
+	pw: 123456{
+		vol1@gmail.com
+		vol2@gmail.com
+		vol3@gmail.com
+		vol4@gmail.com
+		vol5@gmail.com
+	}
+
+
+Loja:
+	pw: 123456{
+		loja1@gmail.com
+		loja2@gmail.com
+		loja3@gmail.com
+		loja4@gmail.com
+		loja5@gmail.com
+	}

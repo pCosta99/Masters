@@ -1,0 +1,9 @@
+districtServer:
+  id: 8
+  name: Guarda
+  size: 90
+  pushPort: 30000
+  pullPort: 10008
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

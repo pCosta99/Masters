@@ -1,0 +1,246 @@
+
+Class Linha_Encomenda -> Apenas contem getters, setters, clone, equals e toString
+
+Vatiaveis -> codProduto, desc, qnt, valor
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+Class Encomenda -> Apenas contem getters, setters, clone, equals e toString
+
+Variaveis -> codEncomenda, codUtilizador, codLoja, peso, le(lista de produtos)
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+Cass Transporte_Encomenda extends Encomenda -> Apenas contem getters, 
+setters, clone, equals e toString
+
+Variaveis -> inicioTransporte, fimTransporte, custoTransporte
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+abstract Class Traz_Aqui_Abstract -> nao tem nada para alem de getters, 
+setters, clone, equals e toString
+Variaveis -> codigo, nome, gpsX, gpsY
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+abstract Class Transporte extends Traz_Aqui_Abstract
+
+Variaveis -> super(codigo, nome, gpsX, gpsY),raio, disponivel, classificacao e histEntregas
+
+Metodos
+ -> public void disponivel(boolean d) -> Sinaliza que está disponivel ou nao 
+para recolher encomendas.
+
+ -> public boolean podeIrBuscar(double xL, double yL, double xU, double yU)
+Diz se pode ir buscar uma encomenda ou seja esta disponivel e tanto a loja como
+o utilizador nao ficam mais longe que o raio de ação.
+
+ -> public double distLoja(double xL, double yL) -> Devolve a distancia do 
+transportadora à loja da encomenda.
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+Class Voluntario extends Transporte
+
+Variaveis -> super(codigo, nome, gpsX, gpsY, raio, disponivel, classificacao)
+
+Metodos
+ -> public void vaiBuscarEncomenda(Transporte_Encomenda te) -> Vai buscar 
+a encomenda.
+
+ -> public void entregaEncomenda(Transporte_Encomenda te, char b) -> Entrega
+a encomenda e regista o tempo da entrega
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+class VoluntarioMedicamentos extends Voluntario
+
+Variaveis -> disponivelParaMedicamentos
+
+Metodos
+ -> public void aceitaMedicamentos(boolean state) -> Muda o estado de disponibilidade
+para a entrega de medicamentos
+
+ -> public boolean aceitoTransporteMedicamentos() -> Diz se esta disponivel
+para entrega de medicamentos
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+class Empresa_Transportadora extends Transporte
+
+Variaveis -> nif, taxa, kmsFeitos
+
+Metodos
+ -> public double precoTransporte(double xL, double yL, double xU, double yU, double peso)
+Determina o preço do transporte de uma encomenda.
+
+ -> public void vaiBuscarEncomenda(Transporte_Encomenda te) -> Vai buscar 
+a encomenda.
+
+ -> public void entregaEncomenda(Transporte_Encomenda te, double custo, double kmsFeitos, char b)
+Entrega a encomenda regista a data e a hora e o custo associado
+
+ -> public double totalFaturado(LocalDateTime inicio, LocalDateTime fim)
+Calcula o valor faturado durante este periodo de tempo
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+class ETransportadoraMedicamentos extends Empresa_Transportadora
+
+Variaveis -> disponivelParaMedicamentos
+
+Metodos
+ -> public void aceitaMedicamentos(boolean state) -> Muda o estado de disponibilidade
+para a entrega de medicamentos
+
+ -> public boolean aceitoTransporteMedicamentos() -> Diz se esta disponivel
+para entrega de medicamentos
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+class Loja extends Traz_Aqui_Abstract
+
+Variaveis ->  fila de espera(fe)
+
+Metodos
+ -> public boolean sizalizaEncomenda() -> Retorna true se existe uma encomenda
+a ser entregue.
+
+ -> public void addPeso(Encomenda e, double peso) -> Adiciona o peso a uma 
+encomenda.
+
+ -> public int filaEspera() -> Retorna o numero de encomendas em espera.
+
+ -> public void addEncomenda(Encomenda e) -> Adiciona uma encomenda a fila
+espera.
+
+ -> public void encomendaLevantada(Encomenda e) -> Apos ser levantada pelo 
+transportador remove a encomenda da fila de espera.
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+Class Utilizador extends Traz_Aqui_Abstract
+
+Variaveis -> apenas as do super
+
+Metodos
+ -> public Encomenda solicitarEncomenda(List<Linha_Encomenda> le, String codLoja)
+Solicita uma encomenda por parte do utilizador.
+
+ -> public boolean aceitaServiçoTransporte(double preco) -> Recebe o preço do
+transporte e pergunta ao utilizador se aceita
+
+ -> public void informacaoTransporte(List<Transporte_Encomenda> tes, LocalDateTime inicio, LocalDateTime fim)
+Acede aos transportes realizados num determinado periodo de tempo
+
+ -> public double classificarServico() -> Classifica o serviço.
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+class Login ->Apenas contem getters, setters, clone, equals e toString
+
+Variaveis -> codigo, nome, password
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+
+class TrazAqui
+
+Variaveis -> Map<String, Utilizador> utilizadores, Map<String, Voluntario> voluntarios, 
+Map<String, Empresa_Transportadora> empresas, Map<String, Loja> lojas,
+Map<String, Encomenda> encomendas, Set<String> enc_aceites, Map<String, Login> logins;
+
+_______________METODOS RELATIVOS AO UTILIZADOR______________________________
+ -> public void addUtilizador() -> Adiciona um utilizador (com IOs)
+
+ -> public void addUtilizador(Utilizador u) -> Adiciona um utilizador 
+ 
+ -> public void removeUtilizador(String codUtilizador) -> Remove um utilizador
+ 
+ -> public String produtosEncomenda(Utilizador u) -> Solicita uma encomenda e
+pergunta ao utilizador os produtos e a loja da encomenda (com IOs)
+
+ -> public boolean utilizadorAceita(Encomenda encomenda) -> Pergunta ao utilizador
+se aceita o serviço de transporte.
+
+ -> public void registosTransporte(Utilizador u) -> Pergunta ao utilizador de
+que tranportadora ou voluntario quer ver os registos (com IOs)
+
+_______________METODOS RELATIVOS AO VOLUNTARIO_______________________________
+ -> public void addVoluntario() -> Adiciona um voluntario (com IOs)
+
+ -> public void addVoluntario(Voluntario v) -> Adiciona um voluntario 
+
+ -> public void removeVoluntario(String codVoluntario) -> Remove um voluntario
+
+ -> public Set<Voluntario> voluntariosMaisUtilizam() -> Retorna os 10 voluntarios
+que mais utilizam o sistema
+
+ -> public Voluntario qualVoluntario(Encomenda e) -> Retorna o voluntario que 
+deve ir buscar a encomenda
+
+ -> public void pretendeTransportar(Voluntario v, Transporte_Encomenda te) -> 
+Pergunta ao voluntario se quer ir buscar a encomenda (com IOs)
+
+ -> public void disponivelNovamente(Voluntario v, Transporte_Encomenda te) ->
+Pergunta ao voluntario se pretende ficar disponivel novamente (com IOs)
+
+_______________METODOS RELATIVOS AO TRANSPORTADORA_______________________________
+ -> public void addEmpresa_Transportadora() -> Adiciona uma transportadora(com IOs)
+
+ -> public void addEmpresas(Empresa_Transportadora e) -> Adiciona uma transportadora
+
+ -> public void removeEmpresas(String codEmpresa) -> Remove uma transportadora
+
+ -> public Set<Empresa_Transportadora> transportadorasMaisUtilizam() -> Retorna 
+as 10 transportadoras que mais utilizam o sistema
+
+ -> public Empresa_Transportadora qualTransportadora(Encomenda encomenda) -> 
+Retorna a empresa que vai buscar a encomenda
+
+ -> public void disponivelNovamente(Empresa_Transportadora e, Transporte_Encomenda te, double custo, double km)
+Regista a entrega e pergunta se quer ficar disponivel novamente
+
+_______________METODOS RELATIVOS AO LOJA______________________________________
+ -> public void addLoja() -> Adiciona uma loja (com IOs)
+
+ -> public void addLoja(Loja l) -> Adiciona uma loja
+
+ -> public void removeLoja(String codLoja) -> Remove uma loja
+ 
+ -> public void qualPeso(Encomenda encomenda, Loja l) -> Pergunta o peso da 
+encomenda (com IOs)
+
+_______________METODOS RELATIVOS AS ENCOMENDAS______________________________________
+-> public void addEncomenda(Encomenda e) -> Adiciona uma encomenda
+
+_______________METODOS RELATIVOS AS LOGIN_______________________________________
+ -> public void addLogin(String cod, String nome, String pass) -> Adiciona um login
+
+ -> public boolean loginValido(String codigo, String password) -> Valida o login
+ 
+ -> public String login() -> Faz o login no inicio da aplicacao (com IOs)
+
+ -> public void registo() -> Faz o registo na aplicaçao (com IOs)
+
+ -> public Object registoGeral(String cod) -> Funcao gera de registo quando se
+usa um add...
+
+_______________METODOS RELATIVOS A LEITURA E ESCRITA_________________________
+ -> public void lerTA(String[] logs) -> Le os logs e adiciona a TA
+
+ -> public String[] escrever() -> Le de TA e escreve num array de Strings
+
+________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________
+

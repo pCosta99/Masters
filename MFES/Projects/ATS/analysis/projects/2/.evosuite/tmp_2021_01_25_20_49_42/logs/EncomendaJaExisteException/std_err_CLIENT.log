@@ -1,0 +1,18 @@
+[MASTER] 20:55:48.550 [TEST_EXECUTION_THREAD_0] ERROR FunctionalMockStatement - Cannot use Mockito on class java.io.PrintStream due to IAE: 
+Mockito cannot mock this class: class java.io.PrintStream.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 1.8
+JVM vendor name    : Private Build
+JVM vendor version : 25.275-b01
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 1.8.0_275-8u275-b01-0ubuntu1~20.10-b01
+JVM info           : mixed mode
+OS name            : Linux
+OS version         : 5.8.0-7630-generic
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type

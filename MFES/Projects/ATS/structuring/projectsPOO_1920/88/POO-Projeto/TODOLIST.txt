@@ -1,0 +1,6 @@
+registos
+
+implementar a verificaçao de encomendas pelos logs
+tornar mais user friendly
+alterar as propriedades dos produtos (preco)
+

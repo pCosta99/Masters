@@ -1,0 +1,70 @@
+------------------
+     SISTEMA
+------------------
+	
+	_ENCOMENDA:
+		-> data
+		-> destinatário
+		-> vendedor
+		-> peso
+		-> produtos transportados
+		-> médica ou não
+
+	_ENTREGAS:
+		-> coordenadas GPS
+		-> raio de deslocação para loja
+		-> velocidade a que se desloca (para filas de espera)
+		-> registo de encomendas transportadas, para que utilizador e de que loja
+		-> data do transporte
+		-> classificação do serviço de entrega
+		-> aceita encomendas médicas ou não
+			.public boolean aceitoTransporteMedicamentos()
+			.public void aceitaMedicamentos(boolean state)
+		
+		VOLUNTÁRIOS:
+			->/. livre para entrega ou não
+			.escolher fazer entrega
+			.transportar e registar tempo de entrega
+
+		EMPRESAS TRANSPORTADORAS:
+			-> custo de serviço de transporte (em função de: peso da encomenda, distância à loja e ao utilizador e taxa por km)
+			-> aceita N encomendas (faz rota) ou só uma
+			.livre para entrega ou não	
+			.determinar preço de transporte (em função de: distância e tempo de espera na loja)
+			.transportar e registar tempo de entrega
+
+	_LOJAS:
+		-> FILA DE ESPERA: tempo de atendimento habitual 
+		.existe encomenda para ser entregue + informação sobre encomenda
+		.quantidade de pessoas em fila de espera
+
+	_UTILIZADORES
+		.pedir encomenda
+		.solicitar entrega de encomenda
+		.aceitar serviço de entrega por empresa (voluntários aceites automaticamente)
+		.info sobre entregas efetuadas num periodo de tempo por voluntário ou transportador
+		.classificar serviço de entrega
+
+
+
+-> Guarda pedidos de encomenda a levantar de determinada loja 
+-> Voluntários e empresas escolhem que serviços de entrega querem
+-> Sistema valida
+	EXCEÇÃO: no caso de empresa, utilizador tem de aceitar por causa do custo associado
+-> Tempo estimado que demora a encomenda 
+	FILA DE ESPERA: tempo percorrido desde origem do entregador até loja
+
+
+
+-> Adicionar utilizadores, voluntários, empresas transportadoras e lojas
+	.email e password
+-> Seleção das encomendas e cálculo do preço em caso de empresa
+-> Guarda registo de TODAS as operações efetuadas
+
+-> Indicar total faturado por uma empresa transportadora num período de tempo
+-> Listagem dos 10 utilizadores com mais encomendas transportadas
+-> Listagem das 10 empresas transportadoras com mais kms percorridos
+
+-> Grava estado da aplicação em ficheiro para poder ser retomado
+
+

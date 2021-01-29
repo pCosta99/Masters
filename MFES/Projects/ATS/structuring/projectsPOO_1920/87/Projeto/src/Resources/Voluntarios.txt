@@ -1,0 +1,5 @@
+Voluntario:v20,JoÃ£o Pedro Gomes Coelho,-88.56778,-1.4521866,1.0
+Voluntario:v73,Rui Pedro Gomes Coelho,-45.424522,-79.517136,15.0
+Voluntario:v69,Pedro Miguel da Silva Paiva AntÃ³nio,-3.4494247,78.96666,164.0
+Voluntario:v59,JoÃ£o Carlos Delgado Monteiro,87.60193,-67.35995,56.0
+Voluntario:v33,SimÃ£o Pedro Santa Cruz Oliveira,11.959328,95.35214,81.0

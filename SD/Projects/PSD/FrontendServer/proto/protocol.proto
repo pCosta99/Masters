@@ -1,0 +1,138 @@
+syntax = "proto2";
+
+message User {
+    required string username = 1;
+    required string password = 2;
+    optional int32 districtId = 3;
+    optional string location = 4;
+  }
+
+// --------------------------------------------------- PRE-AUTH --------------------------------------------------- //
+
+message Name_Size {
+    optional string name = 1;
+    optional int32 size = 2;
+}
+
+message EntryMessage {
+    map<int32, Name_Size> districts = 1;
+}
+
+// ----------------------------------------------------- AUTH ----------------------------------------------------- //
+
+enum SignupErrors {
+    USER_EXISTS = 0;
+}
+
+enum LoginErrors {
+    INVALID_USERNAME = 0;
+    USER_ALREADY_LOGGED = 1;
+    INVALID_PASSWORD = 2;
+}
+
+enum AuthType {
+    LOGIN = 0;
+    SIGNUP = 1;
+}
+
+message AuthMessage {
+    optional User user = 1;
+    optional AuthType type = 2;
+}
+
+message SignupReply {
+    optional bool success = 1;
+    optional SignupErrors error = 2;
+}
+
+message LoginReply {
+    optional bool success = 1;
+    optional LoginErrors error = 2;
+    optional bool sick = 3;
+    optional int32 district = 4;
+    optional Subbed subbed = 5;
+}
+
+message Subbed { 
+    map<string, LocationTopic> subs = 1; 
+}
+
+message LocationTopic {
+    map<string, TopicList> locmap = 1; 
+}
+
+message TopicList {
+    repeated string topics = 1; 
+}
+
+// ----------------------------------------------------- AUTH ----------------------------------------------------- //
+
+// -------------------------------------------------- OPERATIONS -------------------------------------------------- //
+
+enum OperationType {
+    LOCATION = 0;
+    FLIP_SICK = 1;
+    SICK = 2;
+    NOTIFICATION = 3;
+    LOGOUT = 4;
+}
+
+message Operation {
+    required OperationType type = 1;
+    optional string username = 2;
+    optional LocationOperation lop = 3;
+    optional NotificationOperation nop = 4;
+}
+
+message LocationOperation {
+    required string location = 1;
+    required LocationOperationType type = 2;
+}
+  
+enum LocationOperationType {
+    UPDATE = 0;
+    GET = 1;
+}
+
+enum NotificationOperationType {
+    SUB = 0;
+    UNSUB = 1;
+}
+  
+message NotificationOperation {
+    optional string district = 1;
+    optional string location = 3;
+    required string topic = 2;
+    required NotificationOperationType type = 4;
+}
+
+//---------------------------------------------- REPLIES ---
+
+enum OperationReplyType {
+    GET_LOCATION_REPLY = 0;
+    INFECTED_CONTACTS = 1;
+    ERROR = 2;
+}
+
+message OperationReply {
+    required OperationReplyType type = 1;
+    optional string username = 2;
+    optional LocationOperationGetReply logr = 3;
+    optional InfectedContacts contacts = 4; 
+    optional OperationErrors errors = 5;
+}
+
+message LocationOperationGetReply {
+    required int32 number = 1;
+}
+
+message InfectedContacts {
+    repeated string usernames = 1;
+}
+
+enum OperationErrors {
+    ERROR_DECODING = 0;
+    USERNAME_REQUIRED = 1;
+}
+
+// -------------------------------------------------- OPERATIONS -------------------------------------------------- //

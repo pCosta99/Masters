@@ -1,0 +1,44 @@
+Cliente:c1234,Capitolino da Cornelia Bonifácio,-12.2131,1232.432,capitolinomail@mail.com,nsei,Rua de barros
+Cliente:c1644,Eduardo Teixeira,-12.2441,1442.432,edumail@mail.com,pLover,Rua do fontão
+Cliente:c2344,André Nunes,-13.2131,1234.432,andremail@mail.com,xerife,Rua de barros
+Cliente:c7897,Vasco Mota,-12.6131,1432.432,vascomail@mail.com,fds123,Rua do pilar
+Cliente:c3425,Angelina Correia,-12.2131,152.432,angelinamail@mail.com,nsei,Rua de barros
+Cliente:c4365,Jose Povo,-12.2131,123.432,josemail@mail.com,nsei,Rua de barros
+Cliente:c4636,Cristiano Ronaldo,-12.2131,126.432,cristianinhomail@mail.com,georgina,Juve Calle
+Cliente:c6846,Eder salvador da nacao,-12.2131,133.432,edermail@mail.com,franca,Sem abrigo
+Loja:l1234,loja fixe,-12.342,124.3422,true,4,2.0
+Loja:l1235,loja do cl,-12.342,125.3422,false,4,2.0
+Loja:l1236,loja dos 300,-12.342,126.3422,false,5,2.0
+Loja:l1237,loja cara,-12.342,127.3422,true,2,2.0
+Loja:l1238,loja barata,-12.342,128.3422,false,2,2.0
+Loja:l1239,loja loja,-12.342,129.3422,true,2,2.0
+Loja:l1230,loja feia,-12.342,123.3422,true,5,2.0
+Voluntario:1234,Jose Andrade,-12.2144,122.432,josev@mail.com,nseo,3,true,true,Rua dos marretas,60.2
+Voluntario:1345,Clotilde da Silva,-15.2131,122.432,clo@mail.com,nseo,3,true,false,Rua das pegas,55.4
+Voluntario:1677,Nuno Abreu,-12.2131,132.432,nuno@mail.com,nseo,3,false,true,Rua dos marretas,60.2
+Voluntario:1365,Geraldina Rodrigues,-11.2131,122.432,geraldina@mail.com,nseo,3,true,false,Rua dos caroxos,55.4
+Voluntario:2654,Mario Centeno,-12.2131,132.432,mario@mail.com,nseo,3,true,true,Rua dos marretas,60.2
+Voluntario:4733,Maria de Nazare,-12.2131,140.432,maria@mail.com,nseo,3,false,true,Rua de vilar,55.4
+Voluntario:3477,Jesus JJ,-12.2131,139.432,jesus@mail.com,nseo,3,true,true,Rua dos marretas,55.4
+Transportadora:Tragotudo,6747,-12.2131,1232.432,1.4,300
+Transportadora:entregas ld,2345,-12.2131,1232.432,1.3,400
+Transportadora:empresa fixe,2134,-12.2131,1232.432,1.5,3000
+Transportadora:empresa entrega,3456,-12.2131,1232.432,1.4,100
+Transportadora:empresa cool,3476,-12.2131,1232.432,1.6,2200
+Transportadora:empresa fraca,3457,-12.2131,1232.432,1.2,666
+Transportadora:grabAndGo,7895,-12.2131,1232.432,1.2,500
+Transportadora:transportaCenas,7689,-12.2131,1232.432,1.2,100
+Transportadora:transportaD,6845,-12.2131,1232.432,1.2,100
+Transportadora:transportaRei,1690,-16.2131,12.432,1.2,131
+ProdutoNormal:p1234,l1234,batatas,2.3,0.4,3
+ProdutoNormal:p1235,l1234,gomas,2.3,0.4,3
+ProdutoMedico:p1236,l1234,medicamento,2.3,0.4,3
+ProdutoMedico:p1239,l1234,seringa,2.3,0.4,3
+EncomendaRealizada:v3477,2018-12-27,c1644,true,-11.2131,132.432,12,1,p1234;p1236;p1239
+EncomendaRealizada:v4733,2018-10-27,c1234,true,-11.2131,142.432,12,1,p1234;p1236;p1239
+EncomendaRealizada:e6747,2018-12-17,c1234,true,-11.2131,112.432,12,1.2,p1234;p1236;p1239
+EncomendaPending:v3477,2018-12-07,c1234,true,-12.2131,112.432,12,1,p1234;p1236;p1239
+EncomendaPending:v3477,2018-03-07,c1234,true,-14.2131,122.432,12,1,p1234;p1236;p1239
+EncomendaPending:v3477,2018-11-27,c1234,true,-15.2131,122.432,12,1,p1234;p1236;p1239
+EncomendaPending:v3477,2018-11-13,c1234,true,-16.2131,122.432,12,1,p1234;p1236;p1239
+

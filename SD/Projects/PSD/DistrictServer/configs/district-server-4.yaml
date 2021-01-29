@@ -1,0 +1,9 @@
+districtServer:
+  id: 4
+  name: Castelo Branco
+  size: 76
+  pushPort: 30000
+  pullPort: 10004
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

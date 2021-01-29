@@ -1,0 +1,17 @@
+Transporte/Empresa.class
+Perfis/Perfil.class
+Perfis/ComparatorUser.class
+Transporte/Transporte.class
+Exceptions/EncomendaNaoExisteException.class
+RAPL_Main.class
+Perfis/Ponto2D.class
+Utils/DataBase.class
+Main.class
+Encomenda/Encomenda.class
+Encomenda/LinhaEncomenda.class
+Perfis/Loja.class
+Exceptions/NaoSeEncontraRaioException.class
+Exceptions/EncomendaJaExisteException.class
+Transporte/Voluntario.class
+Perfis/Utilizador.class
+Utils/Parser.class

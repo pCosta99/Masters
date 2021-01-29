@@ -1,0 +1,9 @@
+districtServer:
+  id: 16
+  name: Vila Real
+  size: 28
+  pushPort: 30000
+  pullPort: 10016
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

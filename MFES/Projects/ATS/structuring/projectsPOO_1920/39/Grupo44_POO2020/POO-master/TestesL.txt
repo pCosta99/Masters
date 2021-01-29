@@ -1,0 +1,5 @@
+Loja:l29,TV e TelecomunicaÃ§Ãµes,39.627502,33.60112
+Loja:l58,Primark,78.73474,66.239685
+Loja:l8,Punt Roma,57.339508,-86.066315
+Loja:l83,ColchaoNet.com,95.71132,-57.792557
+Loja:l13,LA Kids & Junior,-27.339592,-54.781532

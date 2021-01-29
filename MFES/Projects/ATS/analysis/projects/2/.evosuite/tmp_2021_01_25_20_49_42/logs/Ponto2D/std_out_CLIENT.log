@@ -1,0 +1,76 @@
+* Starting client
+* Connecting to master process on port 16935
+* Analyzing classpath: 
+  - /home/pbr/work_ats/analysis/projects/2/target/classes
+  - /home/pbr/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /home/pbr/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class Ponto2D
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 20:50:13.856 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /home/pbr/work_ats/analysis/projects/2/.evosuite/evosuite-seeds/Ponto2D.seed
+* Loaded 0 tests from /home/pbr/work_ats/analysis/projects/2/.evosuite/evosuite-seeds/Ponto2D.seed
+* Total number of test goals: 
+  - Line 44
+  - Branch 27
+  - Exception 0
+  - MutationFactory 79
+  - Output 31
+  - Method 15
+  - MethodNoException 15
+  - CBranchFitnessFactory 27
+* Using seed 1611607796584
+* Starting evolution
+[MASTER] 20:50:14.852 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 6 seconds more than allowed.
+* Search finished after 65s and 32 generations, 20288 statements, best individual has fitness: 50.1
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 80%
+* Total number of goals: 44
+* Number of covered goals: 35
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 27
+* Number of covered goals: 23
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 77%
+* Total number of goals: 79
+* Number of covered goals: 61
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 61%
+* Total number of goals: 31
+* Number of covered goals: 19
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 15
+* Number of covered goals: 15
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 93%
+* Total number of goals: 15
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 85%
+* Total number of goals: 27
+* Number of covered goals: 23
+* Generated 26 tests with total length 67
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 78%
+* Compiling and checking tests
+* Writing JUnit test case 'Ponto2D_ESTest' to /home/pbr/work_ats/analysis/projects/2/.evosuite/tmp_2021_01_25_20_49_42/tests
+* Done!
+

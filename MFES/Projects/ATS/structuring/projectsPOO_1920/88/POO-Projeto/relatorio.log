@@ -1,0 +1,152 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.4.28)  11 JUN 2020 22:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**relatorio.latex
+(./relatorio.latex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: relatorio.latex
+(./relatorio.latex
+
+! LaTeX Error: Two \documentclass or \documentstyle commands.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \documentclass{
+                   article}
+? 
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count175
+\lst@gtempboxa=\box45
+\lst@token=\toks17
+\lst@length=\count176
+\lst@currlwidth=\dimen135
+\lst@column=\count177
+\lst@pos=\count178
+\lst@lostspace=\dimen136
+\lst@width=\dimen137
+\lst@newlines=\count179
+\lst@lineno=\count180
+\lst@maxwidth=\dimen138
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count181
+\lst@skipnumbers=\count182
+\lst@framebox=\box46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
+\l__pdf_internal_box=\box47
+\g__pdf_backend_object_int=\count183
+\l__pdf_backend_content_box=\box48
+\l__pdf_backend_model_box=\box49
+\g__pdf_backend_annotation_int=\count184
+\g__pdf_backend_link_int=\count185
+\g__pdf_backend_link_sf_int=\count186
+)
+(./relatorio.aux)
+\openout1 = `relatorio.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+\c@lstlisting=\count187
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+ (./relatorio.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `relatorio.toc'.
+
+ [1
+
+] [2]
+Overfull \hbox (8.10933pt too wide) in paragraph at lines 64--65
+[]\OT1/cmr/m/n/10 set disponi-bil-i-dade 1 \TS1/cmr/m/n/10 ^^Y\OT1/cmr/m/n/10 M
+arca a trans-porta-dora que fez lo-gin como disponivel 
+ []
+
+
+Overfull \hbox (4.66487pt too wide) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/10 set disponi-bil-i-dade 0 \TS1/cmr/m/n/10 ^^Y\OT1/cmr/m/n/10 M
+arca o vol-un-tario que fez lo-gin como nao disponivel 
+ []
+
+[3] [4] (./relatorio.aux) ) )
+(\end occurred when \ifx on line 4 was incomplete) 
+Here is how much of TeX's memory you used:
+ 1834 strings out of 483184
+ 27222 string characters out of 5966318
+ 259947 words of memory out of 5000000
+ 16888 multiletter control sequences out of 15000+600000
+ 536928 words of font info for 39 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,7n,42p,1109b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on relatorio.dvi (4 pages, 10828 bytes).

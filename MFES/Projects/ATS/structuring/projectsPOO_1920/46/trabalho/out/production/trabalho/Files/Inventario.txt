@@ -1,0 +1,20 @@
+l29,TV Samsung,1,10
+l29,PC Asus,2,3
+l29,Frigorifico,1,50
+l29,Xiomi Mi A3,5,30.3
+l58,Camisola,3,0.3
+l58,Camisa,5,0.2
+l58,Calças,3,0.5
+l58,Blusa,5,0.2
+l8,Casaco,2,11
+l8,Pullover,3,0.6
+l8,Calças,1,1
+l8,Camisa,1,0.6
+l83,Colchão Med,2,15
+l83,Colchaão Peq,3,10
+l83,Colchão Gr,10,9
+l83,Almofada,50,1,0.5
+l13,Calções,20,1
+l13,T-shirt,2,0.3
+l13,Sapatilhas,1,1.5
+l13,Camisola,2,0.6

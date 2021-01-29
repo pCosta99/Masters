@@ -1,0 +1,14 @@
+{
+  "frontend": {
+    "frontend_address": "localhost",
+    "frontend_port": "12345",
+    "frontend_publisher": "20000",
+    "publisher_broker_port": "22222"
+  },
+
+  "directory": {
+    "name": "Alarme Covid API",
+    "url": "http://localhost:8080/",
+    "health_url": "http://localhost:8081/"
+  }
+}

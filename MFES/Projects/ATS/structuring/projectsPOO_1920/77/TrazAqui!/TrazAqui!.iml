@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Entregadores" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Lojas" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Utilizadores" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Vieww" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Modell/Entregadores" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Modell" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Modell/Utilizadores" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Modell/Lojas" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Auxiliares" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Model/EncomendasAceites" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Exceptionsss" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

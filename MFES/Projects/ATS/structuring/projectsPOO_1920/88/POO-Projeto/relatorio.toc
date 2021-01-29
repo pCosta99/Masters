@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introdução}{2}%
+\contentsline {section}{\numberline {2}Arquitetura do projeto}{2}%
+\contentsline {subsection}{\numberline {2.1}Controller}{2}%
+\contentsline {subsection}{\numberline {2.2}Model}{2}%
+\contentsline {subsection}{\numberline {2.3}View}{2}%
+\contentsline {section}{\numberline {3}Controladores}{2}%
+\contentsline {subsection}{\numberline {3.1}Controlador principal}{2}%
+\contentsline {subsection}{\numberline {3.2}UtilizadorLogin}{3}%
+\contentsline {subsection}{\numberline {3.3}TransportadoraLogin}{3}%
+\contentsline {subsection}{\numberline {3.4}VoluntarioLogin}{3}%
+\contentsline {subsection}{\numberline {3.5}LojaLogin}{4}%
+\contentsline {section}{\numberline {4}Reflexões e Dificuldades}{4}%

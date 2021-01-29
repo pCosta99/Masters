@@ -1,0 +1,9 @@
+districtServer:
+  id: 1
+  name: Beja
+  size: 98
+  pushPort: 30000
+  pullPort: 10001
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

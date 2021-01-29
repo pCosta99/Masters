@@ -1,0 +1,5 @@
+Transportadora:t26,uber@gmail.com,eats
+Transportadora:t24,yellow@gmail.com,globo
+Transportadora:t51,taxis@gmail.com,roubo
+Transportadora:t31,gabriela@gmail.com,quim
+Transportadora:t9,rita@gmail.com,luis

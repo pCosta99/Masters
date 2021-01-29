@@ -1,0 +1,9 @@
+districtServer:
+  id: 3
+  name: Braganca
+  size: 50
+  pushPort: 30000
+  pullPort: 10003
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

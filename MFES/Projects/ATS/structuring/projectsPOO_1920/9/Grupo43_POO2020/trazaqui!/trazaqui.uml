@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>trazaqui</OriginalElement>
+  <nodes>
+    <node x="3734.6460651340058" y="5913.0">trazaqui.Parsing</node>
+    <node x="1113.5" y="632.0">trazaqui.Classificacao</node>
+    <node x="424.9685079054357" y="0.0">trazaqui.LinhaEncomenda</node>
+    <node x="2883.416666666667" y="1621.0">trazaqui.LogUtilizador</node>
+    <node x="1487.6401345866568" y="2488.0">trazaqui.BaseDados</node>
+    <node x="4726.327634586657" y="599.0">trazaqui.Loja</node>
+    <node x="5237.333323039442" y="599.0">trazaqui.CatalogoProdutos</node>
+    <node x="3824.1460651340058" y="6804.0">trazaqui.Main</node>
+    <node x="1452.5210651340062" y="1610.0">trazaqui.LogTransportadora</node>
+    <node x="5386.827634586656" y="0.0">trazaqui.Produto</node>
+    <node x="3514.333323039441" y="1204.0">trazaqui.Armazena</node>
+    <node x="609.5" y="512.0">trazaqui.Encomenda</node>
+    <node x="57.5" y="1588.0">trazaqui.Historico</node>
+    <node x="3461.1351745721026" y="599.0">trazaqui.Utilizador</node>
+    <node x="4121.418792406733" y="588.0">trazaqui.Voluntario</node>
+    <node x="2964.702634586657" y="566.0">trazaqui.Transportadora</node>
+    <node x="3422.801841238769" y="0.0">trazaqui.Localizacao</node>
+    <node x="2102.5210651340058" y="1599.0">trazaqui.LogVoluntario</node>
+    <node x="1827.5210651340055" y="5462.0">trazaqui.Menu</node>
+    <node x="4758.333323039441" y="1610.0">trazaqui.LogLoja</node>
+    <node x="1090.156239706108" y="120.0">trazaqui.Exceptions</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="trazaqui.BaseDados" target="trazaqui.Produto">
+      <point x="788.6666666666665" y="-1312.0" />
+      <point x="3095.306801253323" y="2468.0" />
+      <point x="5577.833323039442" y="2468.0" />
+      <point x="5577.833323039442" y="322.0" />
+      <point x="5543.883190142213" y="322.0" />
+      <point x="28.555555555555657" y="146.0" />
+    </edge>
+    <edge source="trazaqui.LogUtilizador" target="trazaqui.Localizacao">
+      <point x="-114.0" y="-135.0" />
+      <point x="2940.416666666667" y="1114.0" />
+      <point x="2888.3648151340058" y="1114.0" />
+      <point x="2888.3648151340058" y="452.0" />
+      <point x="3494.301841238769" y="452.0" />
+      <point x="-49.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.LogVoluntario" target="trazaqui.Classificacao">
+      <point x="-114.59999999999991" y="-157.0" />
+      <point x="2274.4210651340063" y="1104.0" />
+      <point x="1295.5" y="1104.0" />
+      <point x="84.0" y="91.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.LinhaEncomenda">
+      <point x="-424.6666666666665" y="-1312.0" />
+      <point x="1881.9734679199903" y="2398.0" />
+      <point x="1059.0" y="2398.0" />
+      <point x="1059.0" y="452.0" />
+      <point x="710.9060079054357" y="452.0" />
+      <point x="133.4375" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.CatalogoProdutos">
+      <point x="409.431818181818" y="-552.0" />
+      <point x="4524.265141221259" y="1114.0" />
+      <point x="5249.708323039442" y="1114.0" />
+      <point x="-136.125" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.BaseDados">
+      <point x="17.538461538461434" y="-641.0" />
+      <point x="1997.059526672467" y="5232.0" />
+      <point x="2511.390134586657" y="5232.0" />
+      <point x="204.75" y="1312.0" />
+    </edge>
+    <edge source="trazaqui.CatalogoProdutos" target="trazaqui.Exceptions">
+      <point x="-99.0" y="-124.0" />
+      <point x="5286.833323039442" y="362.0" />
+      <point x="1251.4895730394412" y="362.0" />
+      <point x="73.33333333333326" y="26.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Encomenda">
+      <point x="-464.02272727272793" y="-552.0" />
+      <point x="3650.810595766713" y="1034.0" />
+      <point x="1018.0454545454545" y="1034.0" />
+      <point x="194.5454545454544" y="211.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.LogTransportadora">
+      <point x="-17.538461538461434" y="-641.0" />
+      <point x="1961.982603595544" y="5332.0" />
+      <point x="1463.015134586657" y="5332.0" />
+      <point x="1463.015134586657" y="2468.0" />
+      <point x="1531.2710651340062" y="2468.0" />
+      <point x="-236.25" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Encomenda">
+      <point x="-122.76923076923072" y="-641.0" />
+      <point x="1856.7518343647748" y="5422.0" />
+      <point x="47.0" y="5422.0" />
+      <point x="47.0" y="1164.0" />
+      <point x="628.9545454545455" y="1164.0" />
+      <point x="-194.5454545454545" y="211.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.CatalogoProdutos">
+      <point x="94.0" y="-190.0" />
+      <point x="3993.1460651340058" y="5392.0" />
+      <point x="5440.609855119452" y="5392.0" />
+      <point x="5440.609855119452" y="1164.0" />
+      <point x="5497.208323039442" y="1164.0" />
+      <point x="111.375" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Historico" target="trazaqui.LinhaEncomenda">
+      <point x="-177.0" y="-168.0" />
+      <point x="146.0" y="1154.0" />
+      <point x="111.30777178611788" y="1154.0" />
+      <point x="111.30777178611788" y="492.0" />
+      <point x="520.2810079054357" y="492.0" />
+      <point x="-57.1875" y="146.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.Classificacao">
+      <point x="-303.33333333333303" y="-1312.0" />
+      <point x="2003.3068012533238" y="2378.0" />
+      <point x="1190.7651345866568" y="2378.0" />
+      <point x="1190.7651345866568" y="1164.0" />
+      <point x="1183.5" y="1164.0" />
+      <point x="-28.0" y="91.0" />
+    </edge>
+    <edge source="trazaqui.Main" target="trazaqui.Armazena">
+      <point x="62.5" y="-27.0" />
+      <point x="3961.6460651340058" y="6784.0" />
+      <point x="4279.114583333334" y="6784.0" />
+      <point x="4279.114583333334" y="2388.0" />
+      <point x="4615.249989706107" y="2388.0" />
+      <point x="500.41666666666606" y="552.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Loja">
+      <point x="111.07692307692287" y="-641.0" />
+      <point x="2090.5979882109286" y="5332.0" />
+      <point x="5182.833323039442" y="5332.0" />
+      <point x="5182.833323039442" y="1094.0" />
+      <point x="4876.890134586657" y="1094.0" />
+      <point x="41.0625" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Utilizador">
+      <point x="-31.33333333333303" y="-190.0" />
+      <point x="3867.8127318006727" y="5132.0" />
+      <point x="3503.833323039441" y="5132.0" />
+      <point x="3503.833323039441" y="1134.0" />
+      <point x="3600.6351745721026" y="1134.0" />
+      <point x="15.5" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Localizacao">
+      <point x="125.33333333333303" y="-190.0" />
+      <point x="4024.479398467339" y="5412.0" />
+      <point x="5544.833323039442" y="5412.0" />
+      <point x="5544.833323039442" y="352.0" />
+      <point x="3659.301841238769" y="352.0" />
+      <point x="115.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Encomenda">
+      <point x="-141.0" y="-190.0" />
+      <point x="3758.1460651340058" y="5202.0" />
+      <point x="727.4138154636835" y="5202.0" />
+      <point x="727.4138154636835" y="1174.0" />
+      <point x="745.681818181818" y="1174.0" />
+      <point x="-77.81818181818198" y="211.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Armazena">
+      <point x="0.0" y="-190.0" />
+      <point x="3899.1460651340058" y="5282.0" />
+      <point x="4175.114583333334" y="5282.0" />
+      <point x="4175.114583333334" y="2388.0" />
+      <point x="4214.916656372774" y="2388.0" />
+      <point x="100.08333333333303" y="552.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Historico">
+      <point x="-111.07692307692287" y="-641.0" />
+      <point x="1868.4441420570827" y="5412.0" />
+      <point x="192.30439846733907" y="5412.0" />
+      <point x="192.30439846733907" y="2468.0" />
+      <point x="110.59999999999991" y="2468.0" />
+      <point x="-212.4000000000001" y="168.0" />
+    </edge>
+    <edge source="trazaqui.Transportadora" target="trazaqui.Localizacao">
+      <point x="0.0" y="-157.0" />
+      <point x="3165.202634586657" y="472.0" />
+      <point x="3516.301841238769" y="472.0" />
+      <point x="-27.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.LogLoja">
+      <point x="485.3333333333335" y="-1312.0" />
+      <point x="2791.97346791999" y="2408.0" />
+      <point x="4913.583323039441" y="2408.0" />
+      <point x="-51.75" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.LinhaEncomenda">
+      <point x="-109.66666666666697" y="-190.0" />
+      <point x="3789.479398467339" y="5182.0" />
+      <point x="1048.0" y="5182.0" />
+      <point x="1048.0" y="462.0" />
+      <point x="672.7810079054357" y="462.0" />
+      <point x="95.3125" y="146.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.Historico">
+      <point x="-667.3333333333335" y="-1312.0" />
+      <point x="1639.3068012533233" y="2438.0" />
+      <point x="535.4000000000001" y="2438.0" />
+      <point x="212.39999999999998" y="168.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Voluntario">
+      <point x="87.69230769230762" y="-641.0" />
+      <point x="2067.2133728263134" y="5292.0" />
+      <point x="4725.833323039441" y="5292.0" />
+      <point x="4725.833323039441" y="1054.0" />
+      <point x="4324.231292406733" y="1054.0" />
+      <point x="55.3125" y="135.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.BaseDados">
+      <point x="-94.0" y="-190.0" />
+      <point x="3805.1460651340058" y="5172.0" />
+      <point x="2920.890134586657" y="5172.0" />
+      <point x="614.25" y="1312.0" />
+    </edge>
+    <edge source="trazaqui.Historico" target="trazaqui.Encomenda">
+      <point x="0.0" y="-168.0" />
+      <point x="323.0" y="1174.0" />
+      <point x="667.8636363636365" y="1174.0" />
+      <point x="-155.63636363636363" y="211.0" />
+    </edge>
+    <edge source="trazaqui.Main" target="trazaqui.Parsing">
+      <point x="-12.5" y="-27.0" />
+      <point x="3886.6460651340058" y="6764.0" />
+      <point x="3816.8960651340058" y="6764.0" />
+      <point x="-82.25" y="190.0" />
+    </edge>
+    <edge source="trazaqui.Loja" target="trazaqui.Localizacao">
+      <point x="-73.0" y="-124.0" />
+      <point x="4762.827634586657" y="442.0" />
+      <point x="3604.301841238769" y="442.0" />
+      <point x="60.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Voluntario">
+      <point x="81.88636363636397" y="-552.0" />
+      <point x="4196.719686675805" y="1174.0" />
+      <point x="4250.481292406733" y="1174.0" />
+      <point x="-18.4375" y="135.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Produto">
+      <point x="156.66666666666697" y="-190.0" />
+      <point x="4055.8127318006727" y="5442.0" />
+      <point x="5610.833323039442" y="5442.0" />
+      <point x="5610.833323039442" y="492.0" />
+      <point x="5629.549856808879" y="492.0" />
+      <point x="114.22222222222263" y="146.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.LogTransportadora">
+      <point x="-181.99999999999955" y="-1312.0" />
+      <point x="2124.640134586657" y="2358.0" />
+      <point x="1846.2710651340062" y="2358.0" />
+      <point x="78.75" y="146.0" />
+    </edge>
+    <edge source="trazaqui.LogTransportadora" target="trazaqui.Localizacao">
+      <point x="0.0" y="-146.0" />
+      <point x="1767.5210651340062" y="412.0" />
+      <point x="3450.301841238769" y="412.0" />
+      <point x="-93.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Loja">
+      <point x="62.66666666666697" y="-190.0" />
+      <point x="3961.8127318006727" y="5352.0" />
+      <point x="5215.833323039442" y="5352.0" />
+      <point x="5215.833323039442" y="1074.0" />
+      <point x="4931.640134586657" y="1074.0" />
+      <point x="95.8125" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Voluntario" target="trazaqui.Localizacao">
+      <point x="-98.33333333333348" y="-135.0" />
+      <point x="4170.5854590734" y="472.0" />
+      <point x="3571.301841238769" y="472.0" />
+      <point x="27.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Encomenda" target="trazaqui.LinhaEncomenda">
+      <point x="107.0" y="-211.0" />
+      <point x="930.5" y="472.0" />
+      <point x="634.6560079054357" y="472.0" />
+      <point x="57.1875" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Exceptions">
+      <point x="-409.43181818181847" y="-552.0" />
+      <point x="3705.401504857623" y="1024.0" />
+      <point x="1320.0" y="1024.0" />
+      <point x="1320.0" y="382.0" />
+      <point x="1192.8229063727747" y="382.0" />
+      <point x="14.666666666666742" y="26.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Utilizador">
+      <point x="52.61538461538453" y="-641.0" />
+      <point x="2032.13644974939" y="5262.0" />
+      <point x="3398.516105119452" y="5262.0" />
+      <point x="3398.516105119452" y="1114.0" />
+      <point x="3538.6351745721026" y="1114.0" />
+      <point x="-46.5" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Utilizador">
+      <point x="-81.88636363636397" y="-552.0" />
+      <point x="4032.946959403077" y="964.0" />
+      <point x="3662.6351745721026" y="964.0" />
+      <point x="77.5" y="124.0" />
+    </edge>
+    <edge source="trazaqui.LogLoja" target="trazaqui.Localizacao">
+      <point x="-34.5" y="-146.0" />
+      <point x="4930.833323039441" y="1104.0" />
+      <point x="4955.827634586657" y="1104.0" />
+      <point x="4955.827634586657" y="412.0" />
+      <point x="3637.301841238769" y="412.0" />
+      <point x="93.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Produto">
+      <point x="146.1538461538462" y="-641.0" />
+      <point x="2125.6749112878515" y="5422.0" />
+      <point x="5588.833323039442" y="5422.0" />
+      <point x="5588.833323039442" y="312.0" />
+      <point x="5572.438745697767" y="312.0" />
+      <point x="57.11111111111131" y="146.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.Localizacao">
+      <point x="182.0" y="-1312.0" />
+      <point x="2488.640134586657" y="2358.0" />
+      <point x="2808.3960651340058" y="2358.0" />
+      <point x="2808.3960651340058" y="442.0" />
+      <point x="3483.301841238769" y="442.0" />
+      <point x="-60.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Loja">
+      <point x="245.659090909091" y="-552.0" />
+      <point x="4360.492413948532" y="1074.0" />
+      <point x="4740.015134586657" y="1074.0" />
+      <point x="-95.8125" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Main" target="trazaqui.Menu">
+      <point x="-37.5" y="-27.0" />
+      <point x="3861.6460651340058" y="6774.0" />
+      <point x="2055.5210651340058" y="6774.0" />
+      <point x="76.0" y="641.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.LogVoluntario">
+      <point x="60.66666666666697" y="-1312.0" />
+      <point x="2367.306801253324" y="2338.0" />
+      <point x="2580.0210651340058" y="2338.0" />
+      <point x="191.0" y="157.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Transportadora">
+      <point x="40.923076923076906" y="-641.0" />
+      <point x="2020.4441420570824" y="5252.0" />
+      <point x="3235.916666666667" y="5252.0" />
+      <point x="3235.916666666667" y="1084.0" />
+      <point x="3090.015134586657" y="1084.0" />
+      <point x="-75.1875" y="157.0" />
+    </edge>
+    <edge source="trazaqui.LogVoluntario" target="trazaqui.Voluntario">
+      <point x="229.19999999999982" y="-157.0" />
+      <point x="2618.2210651340056" y="1154.0" />
+      <point x="4176.731292406733" y="1154.0" />
+      <point x="-92.1875" y="135.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Transportadora">
+      <point x="-300.25000000000045" y="-552.0" />
+      <point x="3814.583323039441" y="1004.0" />
+      <point x="3240.390134586657" y="1004.0" />
+      <point x="75.1875" y="157.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.LogUtilizador">
+      <point x="364.0" y="-1312.0" />
+      <point x="2670.640134586657" y="2388.0" />
+      <point x="3097.166666666667" y="2388.0" />
+      <point x="42.75" y="135.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.LogLoja">
+      <point x="99.38461538461547" y="-641.0" />
+      <point x="2078.905680518621" y="5322.0" />
+      <point x="5016.922355119452" y="5322.0" />
+      <point x="5016.922355119452" y="2428.0" />
+      <point x="5120.583323039442" y="2428.0" />
+      <point x="155.25000000000023" y="146.0" />
+    </edge>
+    <edge source="trazaqui.LogLoja" target="trazaqui.Loja">
+      <point x="-172.5" y="-146.0" />
+      <point x="4792.833323039441" y="1104.0" />
+      <point x="4822.140134586657" y="1104.0" />
+      <point x="-13.6875" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Utilizador" target="trazaqui.Localizacao">
+      <point x="0.0" y="-124.0" />
+      <point x="3585.1351745721026" y="492.0" />
+      <point x="3549.301841238769" y="492.0" />
+      <point x="5.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.CatalogoProdutos">
+      <point x="606.6666666666665" y="-1312.0" />
+      <point x="2913.306801253323" y="2438.0" />
+      <point x="5204.833323039442" y="2438.0" />
+      <point x="5204.833323039442" y="1174.0" />
+      <point x="5398.208323039442" y="1174.0" />
+      <point x="12.375" y="124.0" />
+    </edge>
+    <edge source="trazaqui.CatalogoProdutos" target="trazaqui.Produto">
+      <point x="0.0" y="-124.0" />
+      <point x="5385.833323039442" y="492.0" />
+      <point x="5429.66096791999" y="492.0" />
+      <point x="-85.66666666666697" y="146.0" />
+    </edge>
+    <edge source="trazaqui.LogTransportadora" target="trazaqui.Classificacao">
+      <point x="-252.0" y="-146.0" />
+      <point x="1515.5210651340062" y="1184.0" />
+      <point x="1211.5" y="1184.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+    <edge source="trazaqui.LogLoja" target="trazaqui.CatalogoProdutos">
+      <point x="34.5" y="-146.0" />
+      <point x="4999.833323039441" y="1144.0" />
+      <point x="5323.958323039442" y="1144.0" />
+      <point x="-61.875" y="124.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Transportadora">
+      <point x="-78.33333333333303" y="-190.0" />
+      <point x="3820.8127318006727" y="5162.0" />
+      <point x="3246.916666666667" y="5162.0" />
+      <point x="3246.916666666667" y="1074.0" />
+      <point x="3140.140134586657" y="1074.0" />
+      <point x="-25.0625" y="157.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.Encomenda">
+      <point x="-606.6666666666667" y="-1312.0" />
+      <point x="1699.97346791999" y="2428.0" />
+      <point x="810.3986808770269" y="2428.0" />
+      <point x="810.3986808770269" y="1184.0" />
+      <point x="823.5" y="1184.0" />
+      <point x="0.0" y="211.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.CatalogoProdutos">
+      <point x="134.46153846153857" y="-641.0" />
+      <point x="2113.982603595544" y="5382.0" />
+      <point x="5429.609855119452" y="5382.0" />
+      <point x="5429.609855119452" y="1154.0" />
+      <point x="5472.458323039442" y="1154.0" />
+      <point x="86.625" y="124.0" />
+    </edge>
+    <edge source="trazaqui.LogVoluntario" target="trazaqui.Localizacao">
+      <point x="0.0" y="-157.0" />
+      <point x="2389.0210651340058" y="422.0" />
+      <point x="3461.301841238769" y="422.0" />
+      <point x="-82.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.LogUtilizador">
+      <point x="29.230769230769283" y="-641.0" />
+      <point x="2008.7518343647748" y="5242.0" />
+      <point x="3136.140134586657" y="5242.0" />
+      <point x="3136.140134586657" y="2388.0" />
+      <point x="3182.666666666667" y="2388.0" />
+      <point x="128.25" y="135.0" />
+    </edge>
+    <edge source="trazaqui.BaseDados" target="trazaqui.Exceptions">
+      <point x="-363.9999999999998" y="-1312.0" />
+      <point x="1942.640134586657" y="2388.0" />
+      <point x="1092.0" y="2388.0" />
+      <point x="1092.0" y="382.0" />
+      <point x="1163.4895730394412" y="382.0" />
+      <point x="-14.666666666666742" y="26.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Classificacao">
+      <point x="-40.923076923076906" y="-641.0" />
+      <point x="1938.5979882109286" y="5352.0" />
+      <point x="1179.7651345866568" y="5352.0" />
+      <point x="1179.7651345866568" y="1174.0" />
+      <point x="1155.5" y="1174.0" />
+      <point x="-56.0" y="91.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Armazena">
+      <point x="76.0" y="-641.0" />
+      <point x="2055.5210651340058" y="5282.0" />
+      <point x="3826.926841238769" y="5282.0" />
+      <point x="3826.926841238769" y="2378.0" />
+      <point x="3814.583323039441" y="2378.0" />
+      <point x="-300.25" y="552.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.LinhaEncomenda">
+      <point x="-134.46153846153834" y="-641.0" />
+      <point x="1845.0595266724672" y="5432.0" />
+      <point x="36.0" y="5432.0" />
+      <point x="36.0" y="482.0" />
+      <point x="482.1560079054357" y="482.0" />
+      <point x="-95.3125" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Parsing" target="trazaqui.Voluntario">
+      <point x="15.66666666666697" y="-190.0" />
+      <point x="3914.8127318006727" y="5302.0" />
+      <point x="4736.833323039441" y="5302.0" />
+      <point x="4736.833323039441" y="1044.0" />
+      <point x="4361.106292406733" y="1044.0" />
+      <point x="92.1875" y="135.0" />
+    </edge>
+    <edge source="trazaqui.Armazena" target="trazaqui.Produto">
+      <point x="573.204545454546" y="-552.0" />
+      <point x="4688.037868493987" y="1184.0" />
+      <point x="5555.833323039442" y="1184.0" />
+      <point x="5555.833323039442" y="342.0" />
+      <point x="5486.772079031101" y="342.0" />
+      <point x="-28.555555555555657" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Localizacao">
+      <point x="-29.230769230769283" y="-641.0" />
+      <point x="1950.2902959032363" y="5342.0" />
+      <point x="1331.0" y="5342.0" />
+      <point x="1331.0" y="402.0" />
+      <point x="3439.301841238769" y="402.0" />
+      <point x="-104.5" y="146.0" />
+    </edge>
+    <edge source="trazaqui.Menu" target="trazaqui.Exceptions">
+      <point x="-76.0" y="-641.0" />
+      <point x="1903.5210651340055" y="5382.0" />
+      <point x="1081.0" y="5382.0" />
+      <point x="1081.0" y="372.0" />
+      <point x="1134.156239706108" y="372.0" />
+      <point x="-44.0" y="26.0" />
+    </edge>
+    <edge source="trazaqui.LogTransportadora" target="trazaqui.Transportadora">
+      <point x="126.0" y="-146.0" />
+      <point x="1893.5210651340062" y="1124.0" />
+      <point x="2989.765134586657" y="1124.0" />
+      <point x="-175.4375" y="157.0" />
+    </edge>
+    <edge source="trazaqui.LogUtilizador" target="trazaqui.Utilizador">
+      <point x="114.0" y="-135.0" />
+      <point x="3168.416666666667" y="1104.0" />
+      <point x="3507.6351745721026" y="1104.0" />
+      <point x="-77.5" y="124.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="776.9999999999998" y="740.9999999999999" />
+  <SelectedNodes>
+    <node>trazaqui.Parsing</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

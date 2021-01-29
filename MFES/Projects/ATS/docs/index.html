@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/black2.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/gruvbox-dark.css" id="highlight-theme">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!------------------------------------------------------------------------>
+                <section>
+                    <h1> Análise e Teste de Software </h1>
+                </section>
+                <!------------------------------------------------------------------------>
+                <section>
+                    <h2> Estruturação dos projetos </h2>
+                    <section>
+                        De maneira a podermos importar todos os projetos para o sonarqube, foi necessário reestruturamos os mesmos, ficando assim sempre prefixados de <b>/src/main/java</b>.
+                    </section>
+                    <section>
+                        Esta reestruturação foi necessária para podermos automatizar o processo de envio dos projetos para o sonarqube através da ferramenta <b>maven</b>.
+                    </section>
+                    <section>
+                        Primeiramente, começamos por criar um programa que nos desse os comandos <i>bash</i> necessários para esta reestruturação.
+                        O programa consiste em procurar todos os ficheiros com a extensão <b>java</b> e ler as respetivas <i>packages</i> a que estes pertencem.
+                    </section>
+                    <section>
+                        Após isso, são criados todos os comandos necessários para copiar os ficheiros de cada projeto para uma diretoria estuturada de acordo com um projeto maven.
+                        O código do programa pode ser consultado <a href="https://github.com/pedrordgs/work_ats/blob/master/ats.hs">aqui</a>.
+                    </section>
+                    <section>
+                        Tendo agora os comandos para copiar os ficheiros, precisamos agora de uma <b>pom.xml</b>. Para isso, recorremos a um simples script de <b>bash</b>.
+                    </section>
+                    <section>
+                        <pre class="bash" data-id="code-animation">
+                            <code style="font-size: 15px" data-trim data-line-numbers="1|6-8|9|11|1-13">
+echo projects_maven/* | xargs -n 1 cp pom.xml
+
+# get the main class
+for p in projects_maven/*; do
+  cd $p
+  MainClass=$(grep -RH "void main[^a-zA-Z]" *
+      \| awk -F ":" {'print $1'}
+      \| sed 's/src\/main\/java\///;s/\.java//;s/\//./g')
+  Project=$(echo $p | awk -F / '{print $2}')
+  # Replace mainclass with each projects main class
+  sed -i "s/TrazAqui/$Project/;s/&lt;mainClass&gt;/&lt;mainClass&gt;$MainClass/" pom.xml 2&gt; /dev/null
+  cd ../..
+done
+
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <pre class="bash" data-id="code-animation">
+                        <code style="font-size: 15px" data-trim data-line-numbers="3-4|1-8">
+cd projects_maven
+echo ""
+echo "It was impossible to determine the main class of the following projects:"
+DELETE=$(grep -RH "<mainClass></mainClass>" * | awk -F / '{print $1}')
+echo $DELETE
+echo ""
+echo "$(echo $DELETE | wc -w) projects were deleted"
+rm -rf $DELETE
+                        </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <img
+                            style='vertical-align:middle;margin:5%;'
+                            src="images/tree_antes.png"
+                            width="300"
+                            heigth="100">
+                        <img
+                            style='vertical-align:middle;margin:5%'
+                            src="images/tree_depois.png"
+                            width="300"
+                            heigth="100">
+                    </section>
+                </section>
+                <!------------------------------------------------------------------------>
+                <section>
+                    <h2>Qualidade do Código Fonte</h2>
+                    <section>
+                        De modo a testarmos a qualidade do código dos projetos, recorremos ao uso da ferramenta <b>Sonarqube</b>.
+                    </section>
+                    <section>
+                        <pre class="bash" data-id="code-animation">
+                        <code style="font-size: 15px" data-trim data-line-numbers="3-7|9|9-13|1-13">
+echo "Running sonarqube on background"
+
+for p in projects_maven/*; do
+  cd $p
+  mvn clean verify sonar:sonar
+  cd ../..
+done
+
+echo "It was impossible to generate a .jar file for the following projects:"
+
+cd projects_maven
+comm -3 &lt;(find . -iname '*.jar' | awk -F / '{print $2}' | sort) &gt;(ls | sort)
+    \| awk '{print $1}'
+                        </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        Agora com os projetos no sonarqube, precisamos de obter o resultado das análises. De modo a automatizar o processo e não recolher os dados de cada projeto individualmente, criamos um ficheiro em <a href="https://github.com/pedrordgs/work_ats/blob/master/extract_sonarqube.py"><b>python</b></a>, que nos exporta as métricas para um ficheiro <b>csv</b>.
+                    </section>
+                    <section>
+                        Que métricas consideramos importantes?
+                        <ul>
+                            <li class="fragment" data-fragment-index="1">Bugs</li>
+                            <li class="fragment" data-fragment-index="2">Code Smells</li>
+                            <li class="fragment" data-fragment-index="3">Technical Debt</li>
+                            <li class="fragment" data-fragment-index="4">Duplicated Blocks</li>
+                            <li class="fragment" data-fragment-index="5">Percentage of duplicated lines of code</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <!------------------------------------------------------------------------>
+                <section>
+                    <h2>Refactoring</h2>
+                    <section>
+                        ola
+                    </section>
+                    <section>
+                        Slide 3
+                    </section>
+                </section>
+
+                <!------------------------------------------------------------------------>
+                <section>
+                    <h2>Testes</h2>
+                    <section>
+                        ola
+                    </section>
+                    <section>
+                        Slide 3
+                    </section>
+                </section>
+                <!------------------------------------------------------------------------>
+                <section>
+                    <h2>Análise de Desempenho</h2>
+                    <section>
+                        ola
+                    </section>
+                    <section>
+                        Slide 3
+                    </section>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Autores
+                        * José Pedro Silva
+                        * Pedro Costa
+                        * Pedro Rodrigues
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>

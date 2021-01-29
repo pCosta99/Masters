@@ -1,0 +1,9 @@
+districtServer:
+  id: 0
+  name: Aveiro
+  size: 25
+  pushPort: 30000
+  pullPort: 10000
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

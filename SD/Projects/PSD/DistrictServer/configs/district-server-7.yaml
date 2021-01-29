@@ -1,0 +1,9 @@
+districtServer:
+  id: 7
+  name: Faro
+  size: 69
+  pushPort: 30000
+  pullPort: 10007
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

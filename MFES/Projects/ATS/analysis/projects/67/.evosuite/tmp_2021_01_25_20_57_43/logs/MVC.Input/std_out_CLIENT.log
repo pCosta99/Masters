@@ -1,0 +1,76 @@
+* Starting client
+* Connecting to master process on port 14607
+* Analyzing classpath: 
+  - /home/pbr/work_ats/analysis/projects/67/target/classes
+  - /home/pbr/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /home/pbr/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class MVC.Input
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 21:00:02.652 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /home/pbr/work_ats/analysis/projects/67/.evosuite/evosuite-seeds/MVC.Input.seed
+* Loaded 0 tests from /home/pbr/work_ats/analysis/projects/67/.evosuite/evosuite-seeds/MVC.Input.seed
+* Total number of test goals: 
+  - Line 73
+  - Branch 13
+  - Exception 0
+  - MutationFactory 68
+  - Output 17
+  - Method 7
+  - MethodNoException 7
+  - CBranchFitnessFactory 13
+* Using seed 1611608392630
+* Starting evolution
+[MASTER] 21:00:02.978 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 1 seconds more than allowed.
+* Search finished after 53s and 92 generations, 4727 statements, best individual has fitness: 21.5
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 92%
+* Total number of goals: 73
+* Number of covered goals: 67
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 92%
+* Total number of goals: 13
+* Number of covered goals: 12
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 68
+* Number of covered goals: 60
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 41%
+* Total number of goals: 17
+* Number of covered goals: 7
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 86%
+* Total number of goals: 7
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 92%
+* Total number of goals: 13
+* Number of covered goals: 12
+* Generated 14 tests with total length 26
+* Resulting test suite's coverage: 86% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 49%
+* Compiling and checking tests
+* Writing JUnit test case 'Input_ESTest' to /home/pbr/work_ats/analysis/projects/67/.evosuite/tmp_2021_01_25_20_57_43/tests
+* Done!
+

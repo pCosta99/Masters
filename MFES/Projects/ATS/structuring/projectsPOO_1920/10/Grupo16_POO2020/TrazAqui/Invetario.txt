@@ -1,0 +1,1 @@
+p1,Coca-Cola,1,0.99,p2,Fanta,1,0.99,p3,Big Mac,1,3.40,p4,Lipton Ice Tea,1,2.11,p5,McChicken,1,3.33,p6,Maçã,1,0.32,p7,Pera,1,0.24,p8,Pedras de limão,1,0.99,p9,Sagres,1,0.87,p10,Santal Laranja,1,0.75

@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>AppUser</OriginalElement>
+  <nodes>
+    <node x="4524.775822055949" y="0.0">java.lang.Throwable</node>
+    <node x="2870.938783685779" y="9773.0">TrazAquiApp</node>
+    <node x="1208.1423076923074" y="6818.0">Bicicleta</node>
+    <node x="6801.529632173382" y="1622.5">TransportesIndisponíveis</node>
+    <node x="5833.935187728937" y="2462.5">Nodo</node>
+    <node x="1814.433974358974" y="8346.0">ViewUtilizador</node>
+    <node x="4366.331123347648" y="6854.0">AppUser</node>
+    <node x="6976.30740995116" y="1093.5">java.lang.Throwable.SentinelHolder</node>
+    <node x="5340.585187728937" y="3187.0">java.lang.FunctionalInterface</node>
+    <node x="1927.0684807861076" y="5800.0">Transporte</node>
+    <node x="563.8249999999998" y="8430.0">Input</node>
+    <node x="4186.085187728937" y="3633.0">Transporta</node>
+    <node x="1812.5088934941687" y="1477.5">TempoCustoEncomenda</node>
+    <node x="3802.6220522146787" y="1093.5">java.lang.Throwable.PrintStreamOrWriter</node>
+    <node x="32.5" y="8370.0">ViewVoluntarioTransportadora</node>
+    <node x="3578.8530448717947" y="5236.0">Sistema</node>
+    <node x="6470.529632173382" y="4773.0">TransportadorasIndisponíveis</node>
+    <node x="1798.2673076923074" y="8880.0">ControllerUtilizador</node>
+    <node x="683.850857779883" y="997.0">LinhaEncomenda</node>
+    <node x="2275.5088934941687" y="1597.5">java.lang.Throwable.WrappedPrintWriter</node>
+    <node x="3019.1844887322636" y="4640.0">Voluntario</node>
+    <node x="703.9508577798829" y="1405.0">Encomenda</node>
+    <node x="2736.3140165003933" y="3005.0">Utilizador</node>
+    <node x="2481.6943910256405" y="8929.0">ViewGeral</node>
+    <node x="5823.418521062271" y="3101.5">Rota</node>
+    <node x="2346.5533670191126" y="9414.0">Controller</node>
+    <node x="3336.7202665003933" y="8453.5">EncomendasAceites</node>
+    <node x="77.75" y="8927.5">ControllerVoluntario</node>
+    <node x="1991.728069400065" y="3897.5">AtrasaEncomenda</node>
+    <node x="4733.650822055949" y="1597.5">java.lang.Throwable.WrappedPrintStream</node>
+    <node x="6577.30740995116" y="1057.5">java.lang.Exception</node>
+    <node x="1905.433974358974" y="7315.0">Transportadora</node>
+    <node x="1990.0280694000649" y="2498.5">EncomendaEntregue</node>
+    <node x="452.375" y="8927.5">ControllerTransportadora</node>
+    <node x="6095.029632173382" y="1622.5">LojaSemInformacaoFila</node>
+    <node x="4347.335187728937" y="4785.0">ComparatorTransporta</node>
+    <node x="1877.4684807861076" y="6890.5">Carrinha</node>
+    <node x="2761.7515165003933" y="1118.0">java.lang.Comparable</node>
+    <node x="5080.345266500393" y="1513.5">Coordenadas</node>
+    <node x="5108.585187728937" y="3754.5">java.util.Comparator</node>
+    <node x="6174.529632173382" y="4773.0">VoluntariosIndisponíveis</node>
+    <node x="4590.585187728937" y="2330.0">Loja</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ControllerTransportadora" target="Input">
+      <point x="-29.0" y="-149.5" />
+      <point x="597.375" y="8780.0" />
+      <point x="660.3249999999998" y="8780.0" />
+      <point x="0.0" y="88.0" />
+    </edge>
+    <edge source="EncomendasAceites" target="TransportesIndisponíveis">
+      <point x="326.375" y="-64.5" />
+      <point x="4036.0952665003933" y="8326.0" />
+      <point x="6940.529632173382" y="8326.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="Utilizador" target="java.lang.Comparable">
+      <point x="41.6875" y="-209.0" />
+      <point x="3111.5015165003933" y="1375.0" />
+      <point x="2865.5015165003933" y="1375.0" />
+      <point x="20.75" y="28.0" />
+    </edge>
+    <edge source="Bicicleta" target="Coordenadas">
+      <point x="212.57142857142844" y="-173.5" />
+      <point x="1668.7137362637359" y="6788.0" />
+      <point x="5098.085187728937" y="6788.0" />
+      <point x="5098.085187728937" y="2300.0" />
+      <point x="5394.039710944838" y="2300.0" />
+      <point x="68.19444444444434" y="149.0" />
+    </edge>
+    <edge source="ControllerUtilizador" target="Input">
+      <point x="-151.25" y="-197.0" />
+      <point x="1812.0173076923074" y="8770.0" />
+      <point x="737.5249999999996" y="8770.0" />
+      <point x="77.19999999999982" y="88.0" />
+    </edge>
+    <edge source="Utilizador" target="EncomendaEntregue">
+      <point x="-125.0625" y="-209.0" />
+      <point x="2944.7515165003933" y="2945.0" />
+      <point x="2314.1280694000648" y="2945.0" />
+      <point x="92.59999999999991" y="89.0" />
+    </edge>
+    <edge source="ViewUtilizador" target="Voluntario">
+      <point x="105.80000000000018" y="-172.0" />
+      <point x="2184.733974358974" y="8276.0" />
+      <point x="3166.2469887322636" y="8276.0" />
+      <point x="3166.2469887322636" y="5146.0" />
+      <point x="3052.9969887322636" y="5146.0" />
+      <point x="-236.6875" y="173.0" />
+    </edge>
+    <edge source="TrazAquiApp" target="Sistema">
+      <point x="25.428571428571445" y="-28.0" />
+      <point x="2985.3673551143506" y="9733.0" />
+      <point x="4233.246710442583" y="9733.0" />
+      <point x="4233.246710442583" y="6768.0" />
+      <point x="3926.73766025641" y="6768.0" />
+      <point x="46.384615384615245" y="701.0" />
+    </edge>
+    <edge source="TrazAquiApp" target="AppUser">
+      <point x="76.28571428571428" y="-28.0" />
+      <point x="3036.2244979714933" y="9753.0" />
+      <point x="4541.205043775916" y="9753.0" />
+      <point x="4541.205043775916" y="7255.0" />
+      <point x="4593.831123347648" y="7255.0" />
+      <point x="91.0" y="137.5" />
+    </edge>
+    <edge source="Transporta" target="java.lang.Comparable">
+      <point x="57.0" y="-353.5" />
+      <point x="4499.585187728937" y="3613.0" />
+      <point x="4537.7657432844935" y="3613.0" />
+      <point x="4537.7657432844935" y="1365.0" />
+      <point x="2907.0015165003933" y="1365.0" />
+      <point x="62.25" y="28.0" />
+    </edge>
+    <edge source="TransportesIndisponíveis" target="java.lang.Exception">
+      <point x="-69.5" y="-40.0" />
+      <point x="6871.029632173382" y="1385.0" />
+      <point x="6893.140743284493" y="1385.0" />
+      <point x="126.33333333333303" y="88.5" />
+    </edge>
+    <edge source="Sistema" target="Transporta">
+      <point x="57.98076923076951" y="-701.0" />
+      <point x="3938.3338141025642" y="5106.0" />
+      <point x="4059.8434294871795" y="5106.0" />
+      <point x="4059.8434294871795" y="4570.0" />
+      <point x="4328.585187728937" y="4570.0" />
+      <point x="-114.0" y="353.5" />
+    </edge>
+    <edge source="Sistema" target="TempoCustoEncomenda">
+      <point x="34.78846153846143" y="-701.0" />
+      <point x="3915.1415064102557" y="5096.0" />
+      <point x="4048.8434294871795" y="5096.0" />
+      <point x="4048.8434294871795" y="4540.0" />
+      <point x="4128.325572344322" y="4540.0" />
+      <point x="4128.325572344322" y="1990.0" />
+      <point x="2169.5088934941687" y="1990.0" />
+      <point x="136.0" y="185.0" />
+    </edge>
+    <edge source="java.lang.Throwable.PrintStreamOrWriter" target="java.lang.Throwable">
+      <point x="0.0" y="-52.5" />
+      <point x="3906.1220522146787" y="977.0" />
+      <point x="4756.075822055949" y="977.0" />
+      <point x="-154.2" y="473.5" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintWriter" target="java.lang.Throwable">
+      <point x="-70.25" y="-65.0" />
+      <point x="2345.7588934941687" y="1315.0" />
+      <point x="1864.3925421414192" y="1315.0" />
+      <point x="1864.3925421414192" y="967.0" />
+      <point x="4601.875822055948" y="967.0" />
+      <point x="-308.39999999999986" y="473.5" />
+    </edge>
+    <edge source="Controller" target="Input">
+      <point x="-88.42105263157919" y="-149.5" />
+      <point x="2468.1323143875334" y="9344.0" />
+      <point x="921.900986066732" y="9344.0" />
+      <point x="921.900986066732" y="8780.0" />
+      <point x="698.9250000000002" y="8780.0" />
+      <point x="38.600000000000364" y="88.0" />
+    </edge>
+    <edge source="Transporta" target="Utilizador">
+      <point x="-171.0" y="-353.5" />
+      <point x="4271.585187728937" y="3453.0" />
+      <point x="3379.492587928965" y="3453.0" />
+      <point x="309.67857142857156" y="209.0" />
+    </edge>
+    <edge source="TrazAquiApp" target="Input">
+      <point x="-76.28571428571428" y="-28.0" />
+      <point x="2883.653069400065" y="9753.0" />
+      <point x="0.0" y="9753.0" />
+      <point x="0.0" y="8760.0" />
+      <point x="583.125" y="8760.0" />
+      <point x="-77.19999999999982" y="88.0" />
+    </edge>
+    <edge source="VoluntariosIndisponíveis" target="java.lang.Exception">
+      <point x="69.0" y="-40.0" />
+      <point x="6381.529632173382" y="1355.0" />
+      <point x="6724.696298840048" y="1355.0" />
+      <point x="-42.11111111111131" y="88.5" />
+    </edge>
+    <edge source="Transporte" target="Encomenda">
+      <point x="-124.0" y="-137.0" />
+      <point x="2051.0684807861076" y="5216.0" />
+      <point x="1093.1423076923074" y="5216.0" />
+      <point x="1093.1423076923074" y="2190.0" />
+      <point x="994.2777808568057" y="2190.0" />
+      <point x="46.82692307692287" y="257.5" />
+    </edge>
+    <edge source="Sistema" target="Encomenda">
+      <point x="-220.32692307692287" y="-701.0" />
+      <point x="3660.026121794872" y="5096.0" />
+      <point x="1115.1423076923074" y="5096.0" />
+      <point x="1115.1423076923074" y="2170.0" />
+      <point x="1031.7393193183448" y="2170.0" />
+      <point x="84.28846153846189" y="257.5" />
+    </edge>
+    <edge source="Voluntario" target="Utilizador">
+      <point x="-41.615384615384755" y="-173.0" />
+      <point x="3248.069104116879" y="4510.0" />
+      <point x="3601.754487179487" y="4510.0" />
+      <point x="3601.754487179487" y="3613.0" />
+      <point x="3284.2068736432507" y="3613.0" />
+      <point x="214.39285714285734" y="209.0" />
+    </edge>
+    <edge source="EncomendasAceites" target="Transportadora">
+      <point x="-139.875" y="-64.5" />
+      <point x="3569.8452665003933" y="8196.0" />
+      <point x="2529.683974358974" y="8196.0" />
+      <point x="283.75" y="425.5" />
+    </edge>
+    <edge source="EncomendasAceites" target="Encomenda">
+      <point x="-233.125" y="-64.5" />
+      <point x="3476.5952665003933" y="8206.0" />
+      <point x="866.3249999999998" y="8206.0" />
+      <point x="866.3249999999998" y="2925.0" />
+      <point x="948.8249999999998" y="2925.0" />
+      <point x="948.8249999999998" y="2260.0" />
+      <point x="863.162396241421" y="2260.0" />
+      <point x="-84.28846153846189" y="257.5" />
+    </edge>
+    <edge source="ControllerVoluntario" target="Encomenda">
+      <point x="-125.0" y="-149.5" />
+      <point x="102.75" y="8750.0" />
+      <point x="22.0" y="8750.0" />
+      <point x="22.0" y="8316.0" />
+      <point x="420.63355008757526" y="8316.0" />
+      <point x="420.63355008757526" y="2985.0" />
+      <point x="553.1816270106524" y="2985.0" />
+      <point x="553.1816270106524" y="2300.0" />
+      <point x="732.0470116260371" y="2300.0" />
+      <point x="-215.40384615384573" y="257.5" />
+    </edge>
+    <edge source="Controller" target="AppUser">
+      <point x="154.73684210526335" y="-149.5" />
+      <point x="2711.290209124376" y="9374.0" />
+      <point x="4502.831123347648" y="9374.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="Transporta" target="Coordenadas">
+      <point x="228.0" y="-353.5" />
+      <point x="4670.585187728937" y="3613.0" />
+      <point x="5043.085187728937" y="3613.0" />
+      <point x="5043.085187728937" y="2250.0" />
+      <point x="5257.650822055949" y="2250.0" />
+      <point x="-68.19444444444434" y="149.0" />
+    </edge>
+    <edge source="Utilizador" target="Loja">
+      <point x="208.4375" y="-209.0" />
+      <point x="3278.2515165003933" y="2975.0" />
+      <point x="4608.835187728937" y="2975.0" />
+      <point x="-164.25" y="257.5" />
+    </edge>
+    <edge source="ViewGeral" target="Transportadora">
+      <point x="-83.5" y="-148.0" />
+      <point x="2565.1943910256405" y="8810.0" />
+      <point x="2501.058974358974" y="8810.0" />
+      <point x="2501.058974358974" y="8266.0" />
+      <point x="2416.183974358974" y="8266.0" />
+      <point x="170.25" y="425.5" />
+    </edge>
+    <edge source="Controller" target="ControllerVoluntario">
+      <point x="-154.73684210526335" y="-149.5" />
+      <point x="2401.816524913849" y="9374.0" />
+      <point x="302.75" y="9374.0" />
+      <point x="75.0" y="149.5" />
+    </edge>
+    <edge source="Sistema" target="Transportadora">
+      <point x="-231.9230769230769" y="701.0" />
+      <point x="3648.4299679487176" y="6738.0" />
+      <point x="3282.2202665003933" y="6738.0" />
+      <point x="3282.2202665003933" y="7235.0" />
+      <point x="2401.996474358974" y="7235.0" />
+      <point x="156.0625" y="-425.5" />
+    </edge>
+    <edge source="ControllerUtilizador" target="ViewUtilizador">
+      <point x="41.25" y="-197.0" />
+      <point x="2004.5173076923074" y="8800.0" />
+      <point x="2078.933974358974" y="8800.0" />
+      <point x="0.0" y="172.0" />
+    </edge>
+    <edge source="Sistema" target="Loja">
+      <point x="150.75" y="-701.0" />
+      <point x="4031.1030448717947" y="5146.0" />
+      <point x="4988.085187728937" y="5146.0" />
+      <point x="4988.085187728937" y="2975.0" />
+      <point x="4791.335187728937" y="2975.0" />
+      <point x="18.25" y="257.5" />
+    </edge>
+    <edge source="Transportadora" target="AppUser">
+      <point x="212.8125" y="-425.5" />
+      <point x="2458.746474358974" y="7255.0" />
+      <point x="4411.831123347648" y="7255.0" />
+      <point x="-91.0" y="137.5" />
+    </edge>
+    <edge source="Transportadora" target="Encomenda">
+      <point x="-326.3125" y="-425.5" />
+      <point x="1919.621474358974" y="7295.0" />
+      <point x="877.3249999999998" y="7295.0" />
+      <point x="877.3249999999998" y="2935.0" />
+      <point x="959.8249999999998" y="2935.0" />
+      <point x="959.8249999999998" y="2250.0" />
+      <point x="881.8931654721905" y="2250.0" />
+      <point x="-65.55769230769238" y="257.5" />
+    </edge>
+    <edge source="Voluntario" target="Coordenadas">
+      <point x="208.07692307692287" y="-173.0" />
+      <point x="3497.7614118091865" y="4590.0" />
+      <point x="5054.085187728937" y="4590.0" />
+      <point x="5054.085187728937" y="2260.0" />
+      <point x="5284.928599833727" y="2260.0" />
+      <point x="-40.916666666666515" y="149.0" />
+    </edge>
+    <edge source="ViewUtilizador" target="Loja">
+      <point x="211.60000000000036" y="-172.0" />
+      <point x="2290.5339743589743" y="8286.0" />
+      <point x="5021.085187728937" y="8286.0" />
+      <point x="5021.085187728937" y="2945.0" />
+      <point x="4900.835187728937" y="2945.0" />
+      <point x="127.75" y="257.5" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintStream" target="java.lang.Throwable.PrintStreamOrWriter">
+      <point x="-72.75" y="-65.0" />
+      <point x="4806.400822055949" y="1355.0" />
+      <point x="3957.8720522146787" y="1355.0" />
+      <point x="51.75" y="52.5" />
+    </edge>
+    <edge source="Rota" target="Nodo">
+      <point x="-83.60000000000002" y="-112.5" />
+      <point x="5948.8185210622705" y="2985.0" />
+      <point x="5981.935187728937" y="2985.0" />
+      <point x="0.0" y="125.0" />
+    </edge>
+    <edge source="ComparatorTransporta" target="java.util.Comparator">
+      <point x="75.0" y="-28.0" />
+      <point x="4572.335187728937" y="4600.0" />
+      <point x="5440.585187728937" y="4600.0" />
+      <point x="0.0" y="232.0" />
+    </edge>
+    <edge source="ControllerTransportadora" target="Transportadora">
+      <point x="145.0" y="-149.5" />
+      <point x="771.375" y="8810.0" />
+      <point x="1803.933974358974" y="8810.0" />
+      <point x="1803.933974358974" y="8256.0" />
+      <point x="2075.683974358974" y="8256.0" />
+      <point x="-170.25" y="425.5" />
+    </edge>
+    <edge source="Transportadora" target="TempoCustoEncomenda">
+      <point x="99.3125" y="-425.5" />
+      <point x="2345.246474358974" y="7215.0" />
+      <point x="2433.5684807861076" y="7215.0" />
+      <point x="2433.5684807861076" y="4520.0" />
+      <point x="3664.73663003663" y="4520.0" />
+      <point x="3664.73663003663" y="2030.0" />
+      <point x="2033.5088934941687" y="2030.0" />
+      <point x="0.0" y="185.0" />
+    </edge>
+    <edge source="ControllerTransportadora" target="Encomenda">
+      <point x="29.0" y="-149.5" />
+      <point x="655.375" y="8790.0" />
+      <point x="767.3249999999998" y="8790.0" />
+      <point x="767.3249999999998" y="8326.0" />
+      <point x="805.8249999999998" y="8326.0" />
+      <point x="805.8249999999998" y="2875.0" />
+      <point x="888.3249999999998" y="2875.0" />
+      <point x="888.3249999999998" y="2310.0" />
+      <point x="769.5085500875753" y="2310.0" />
+      <point x="-177.94230769230762" y="257.5" />
+    </edge>
+    <edge source="Controller" target="Transportadora">
+      <point x="0.0" y="-149.5" />
+      <point x="2556.5533670191126" y="9304.0" />
+      <point x="2353.933974358974" y="9304.0" />
+      <point x="2353.933974358974" y="8266.0" />
+      <point x="2302.683974358974" y="8266.0" />
+      <point x="56.75" y="425.5" />
+    </edge>
+    <edge source="Controller" target="Voluntario">
+      <point x="88.42105263157919" y="-149.5" />
+      <point x="2644.9744196506917" y="9344.0" />
+      <point x="3227.892822065597" y="9344.0" />
+      <point x="3227.892822065597" y="5136.0" />
+      <point x="3255.8719887322636" y="5136.0" />
+      <point x="-33.8125" y="173.0" />
+    </edge>
+    <edge source="Utilizador" target="Sistema">
+      <point x="23.82142857142844" y="209.0" />
+      <point x="3093.635445071822" y="3583.0" />
+      <point x="2975.6844887322636" y="3583.0" />
+      <point x="2975.6844887322636" y="5066.0" />
+      <point x="3729.6030448717947" y="5066.0" />
+      <point x="-150.75" y="-701.0" />
+    </edge>
+    <edge source="TransportadorasIndisponíveis" target="java.lang.Exception">
+      <point x="77.5" y="-40.0" />
+      <point x="6703.029632173382" y="1375.0" />
+      <point x="6808.918521062271" y="1375.0" />
+      <point x="42.11111111111131" y="88.5" />
+    </edge>
+    <edge source="ControllerUtilizador" target="Utilizador">
+      <point x="-13.75" y="-197.0" />
+      <point x="1949.5173076923074" y="8720.0" />
+      <point x="1781.933974358974" y="8720.0" />
+      <point x="1781.933974358974" y="4490.0" />
+      <point x="2457.063783685779" y="4490.0" />
+      <point x="2457.063783685779" y="3533.0" />
+      <point x="2855.421159357536" y="3533.0" />
+      <point x="-214.39285714285734" y="209.0" />
+    </edge>
+    <edge source="Controller" target="Sistema">
+      <point x="110.52631578947376" y="-149.5" />
+      <point x="2667.0796828085863" y="9354.0" />
+      <point x="3326.2202665003933" y="9354.0" />
+      <point x="3326.2202665003933" y="6778.0" />
+      <point x="3833.9684294871795" y="6778.0" />
+      <point x="-46.384615384615245" y="701.0" />
+    </edge>
+    <edge source="Carrinha" target="Transporte">
+      <point x="0.0" y="-101.0" />
+      <point x="2125.4684807861076" y="6778.0" />
+      <point x="2133.7351474527745" y="6778.0" />
+      <point x="-41.33333333333303" y="137.0" />
+    </edge>
+    <edge source="ControllerUtilizador" target="Sistema">
+      <point x="123.75" y="-197.0" />
+      <point x="2087.0173076923074" y="8850.0" />
+      <point x="3315.2202665003933" y="8850.0" />
+      <point x="3315.2202665003933" y="6768.0" />
+      <point x="3787.5838141025633" y="6768.0" />
+      <point x="-92.76923076923094" y="701.0" />
+    </edge>
+    <edge source="AppUser" target="Sistema">
+      <point x="-91.0" y="-137.5" />
+      <point x="4411.831123347648" y="6708.0" />
+      <point x="4019.5068910256405" y="6708.0" />
+      <point x="139.1538461538462" y="701.0" />
+    </edge>
+    <edge source="Utilizador" target="Transportadora">
+      <point x="-166.75" y="209.0" />
+      <point x="2903.0640165003933" y="3543.0" />
+      <point x="2468.063783685779" y="3543.0" />
+      <point x="2468.063783685779" y="4500.0" />
+      <point x="1855.9684807861076" y="4500.0" />
+      <point x="1855.9684807861076" y="7205.0" />
+      <point x="2174.996474358974" y="7205.0" />
+      <point x="-70.9375" y="-425.5" />
+    </edge>
+    <edge source="TrazAquiApp" target="ViewGeral">
+      <point x="0.0" y="-28.0" />
+      <point x="2959.938783685779" y="9334.0" />
+      <point x="2773.9443910256405" y="9334.0" />
+      <point x="125.25" y="148.0" />
+    </edge>
+    <edge source="Carrinha" target="Coordenadas">
+      <point x="198.39999999999964" y="-101.0" />
+      <point x="2323.8684807861073" y="6798.0" />
+      <point x="5783.085187728937" y="6798.0" />
+      <point x="5783.085187728937" y="2300.0" />
+      <point x="5421.317488722616" y="2300.0" />
+      <point x="95.47222222222217" y="149.0" />
+    </edge>
+    <edge source="Transportadora" target="EncomendaEntregue">
+      <point x="-269.5625" y="-425.5" />
+      <point x="1976.371474358974" y="7275.0" />
+      <point x="1153.6423076923074" y="7275.0" />
+      <point x="1153.6423076923074" y="4410.0" />
+      <point x="1395.9508577798829" y="4410.0" />
+      <point x="1395.9508577798829" y="3613.0" />
+      <point x="1406.9508577798829" y="3613.0" />
+      <point x="1406.9508577798829" y="2975.0" />
+      <point x="2036.328069400065" y="2975.0" />
+      <point x="-185.19999999999982" y="89.0" />
+    </edge>
+    <edge source="EncomendasAceites" target="TransportadorasIndisponíveis">
+      <point x="139.875" y="-64.5" />
+      <point x="3849.5952665003933" y="8306.0" />
+      <point x="6697.529632173382" y="8306.0" />
+      <point x="6697.529632173382" y="5216.0" />
+      <point x="6664.279632173382" y="5216.0" />
+      <point x="38.75" y="40.0" />
+    </edge>
+    <edge source="Controller" target="ControllerTransportadora">
+      <point x="-132.63157894736833" y="-149.5" />
+      <point x="2423.9217880717442" y="9364.0" />
+      <point x="539.375" y="9364.0" />
+      <point x="-87.0" y="149.5" />
+    </edge>
+    <edge source="ControllerUtilizador" target="LinhaEncomenda">
+      <point x="-123.75" y="-197.0" />
+      <point x="1839.5173076923074" y="8760.0" />
+      <point x="778.3249999999998" y="8760.0" />
+      <point x="778.3249999999998" y="8296.0" />
+      <point x="376.63355008757526" y="8296.0" />
+      <point x="376.63355008757526" y="1345.0" />
+      <point x="702.9508577798829" y="1345.0" />
+      <point x="-171.9000000000001" y="149.0" />
+    </edge>
+    <edge source="Bicicleta" target="Transporte">
+      <point x="141.71428571428532" y="-173.5" />
+      <point x="1597.8565934065928" y="6778.0" />
+      <point x="2051.0684807861076" y="6778.0" />
+      <point x="-124.0" y="137.0" />
+    </edge>
+    <edge source="Transportadora" target="AtrasaEncomenda">
+      <point x="-212.8125" y="-425.5" />
+      <point x="2033.121474358974" y="7255.0" />
+      <point x="1197.6423076923074" y="7255.0" />
+      <point x="1197.6423076923074" y="4440.0" />
+      <point x="2100.4780694000647" y="4440.0" />
+      <point x="-36.25" y="89.0" />
+    </edge>
+    <edge source="ViewGeral" target="Utilizador">
+      <point x="83.5" y="-148.0" />
+      <point x="2732.1943910256405" y="8810.0" />
+      <point x="2755.7247307861076" y="8810.0" />
+      <point x="2755.7247307861076" y="3563.0" />
+      <point x="2998.3497307861076" y="3563.0" />
+      <point x="-71.46428571428578" y="209.0" />
+    </edge>
+    <edge source="ComparatorTransporta" target="Transporta">
+      <point x="-75.0" y="-28.0" />
+      <point x="4422.335187728937" y="4570.0" />
+      <point x="4442.585187728937" y="4570.0" />
+      <point x="0.0" y="353.5" />
+    </edge>
+    <edge source="Rota" target="Coordenadas">
+      <point x="83.59999999999991" y="-112.5" />
+      <point x="6116.018521062271" y="2985.0" />
+      <point x="6140.435187728937" y="2985.0" />
+      <point x="6140.435187728937" y="2260.0" />
+      <point x="5530.428599833727" y="2260.0" />
+      <point x="204.58333333333348" y="149.0" />
+    </edge>
+    <edge source="Transportadora" target="Utilizador">
+      <point x="-42.5625" y="-425.5" />
+      <point x="2203.371474358974" y="7195.0" />
+      <point x="1866.9684807861076" y="7195.0" />
+      <point x="1866.9684807861076" y="4510.0" />
+      <point x="2479.063783685779" y="4510.0" />
+      <point x="2479.063783685779" y="3553.0" />
+      <point x="2950.70687364325" y="3553.0" />
+      <point x="-119.10714285714312" y="209.0" />
+    </edge>
+    <edge source="ViewUtilizador" target="LinhaEncomenda">
+      <point x="-211.60000000000036" y="-172.0" />
+      <point x="1867.3339743589736" y="8236.0" />
+      <point x="387.63355008757526" y="8236.0" />
+      <point x="387.63355008757526" y="1355.0" />
+      <point x="741.1508577798832" y="1355.0" />
+      <point x="-133.69999999999982" y="149.0" />
+    </edge>
+    <edge source="TempoCustoEncomenda" target="java.lang.Comparable">
+      <point x="0.0" y="-185.0" />
+      <point x="2033.5088934941687" y="1375.0" />
+      <point x="2824.0015165003933" y="1375.0" />
+      <point x="-20.75" y="28.0" />
+    </edge>
+    <edge source="Loja" target="LojaSemInformacaoFila">
+      <point x="156.42857142857156" y="-257.5" />
+      <point x="4929.513759157509" y="2310.0" />
+      <point x="6161.279632173382" y="2310.0" />
+      <point x="-66.25" y="40.0" />
+    </edge>
+    <edge source="Loja" target="Coordenadas">
+      <point x="0.0" y="-257.5" />
+      <point x="4773.085187728937" y="2200.0" />
+      <point x="5121.261933167059" y="2200.0" />
+      <point x="-204.58333333333348" y="149.0" />
+    </edge>
+    <edge source="Transporta" target="TempoCustoEncomenda">
+      <point x="0.0" y="-353.5" />
+      <point x="4442.585187728937" y="3613.0" />
+      <point x="4475.1407432844935" y="3613.0" />
+      <point x="4475.1407432844935" y="1970.0" />
+      <point x="2237.5088934941687" y="1970.0" />
+      <point x="204.0" y="185.0" />
+    </edge>
+    <edge source="Controller" target="Utilizador">
+      <point x="-66.31578947368416" y="-149.5" />
+      <point x="2490.2375775454284" y="9334.0" />
+      <point x="1736.6423076923074" y="9334.0" />
+      <point x="1736.6423076923074" y="4470.0" />
+      <point x="2365.188783685779" y="4470.0" />
+      <point x="2365.188783685779" y="3513.0" />
+      <point x="2760.135445071822" y="3513.0" />
+      <point x="-309.67857142857156" y="209.0" />
+    </edge>
+    <edge source="Carrinha" target="Encomenda">
+      <point x="-198.39999999999964" y="-101.0" />
+      <point x="1927.068480786108" y="6758.0" />
+      <point x="921.3249999999998" y="6758.0" />
+      <point x="921.3249999999998" y="2975.0" />
+      <point x="1003.8249999999998" y="2975.0" />
+      <point x="1003.8249999999998" y="2210.0" />
+      <point x="956.8162423952676" y="2210.0" />
+      <point x="9.365384615384755" y="257.5" />
+    </edge>
+    <edge source="Sistema" target="Coordenadas">
+      <point x="173.94230769230762" y="-701.0" />
+      <point x="4054.2953525641024" y="5166.0" />
+      <point x="5076.085187728937" y="5166.0" />
+      <point x="5076.085187728937" y="2280.0" />
+      <point x="5339.484155389282" y="2280.0" />
+      <point x="13.638888888888687" y="149.0" />
+    </edge>
+    <edge source="Utilizador" target="LinhaEncomenda">
+      <point x="-208.4375" y="-209.0" />
+      <point x="2861.3765165003933" y="2955.0" />
+      <point x="1412.4508577798829" y="2955.0" />
+      <point x="1412.4508577798829" y="1355.0" />
+      <point x="932.1508577798832" y="1355.0" />
+      <point x="57.30000000000018" y="149.0" />
+    </edge>
+    <edge source="Voluntario" target="Loja">
+      <point x="166.4615384615381" y="-173.0" />
+      <point x="3456.1460271938017" y="4580.0" />
+      <point x="4732.835187728937" y="4580.0" />
+      <point x="4732.835187728937" y="2975.0" />
+      <point x="4681.835187728937" y="2975.0" />
+      <point x="-91.25" y="257.5" />
+    </edge>
+    <edge source="ControllerUtilizador" target="Loja">
+      <point x="151.25" y="-197.0" />
+      <point x="2114.5173076923074" y="8860.0" />
+      <point x="5032.085187728937" y="8860.0" />
+      <point x="5032.085187728937" y="2935.0" />
+      <point x="4937.335187728937" y="2935.0" />
+      <point x="164.25" y="257.5" />
+    </edge>
+    <edge source="Bicicleta" target="Encomenda">
+      <point x="-141.71428571428532" y="-173.5" />
+      <point x="1314.4280219780221" y="6788.0" />
+      <point x="910.3249999999998" y="6788.0" />
+      <point x="910.3249999999998" y="2965.0" />
+      <point x="992.8249999999998" y="2965.0" />
+      <point x="992.8249999999998" y="2220.0" />
+      <point x="938.0854731644981" y="2220.0" />
+      <point x="-9.365384615384755" y="257.5" />
+    </edge>
+    <edge source="Encomenda" target="LinhaEncomenda">
+      <point x="0.0" y="-257.5" />
+      <point x="947.4508577798829" y="1385.0" />
+      <point x="893.9508577798829" y="1385.0" />
+      <point x="19.09999999999991" y="149.0" />
+    </edge>
+    <edge source="Sistema" target="AppUser">
+      <point x="278.3076923076924" y="701.0" />
+      <point x="4158.660737179487" y="6678.0" />
+      <point x="4502.831123347648" y="6678.0" />
+      <point x="0.0" y="-137.5" />
+    </edge>
+    <edge source="Nodo" target="Coordenadas">
+      <point x="74.0" y="-125.0" />
+      <point x="6055.935187728937" y="2270.0" />
+      <point x="5503.150822055949" y="2270.0" />
+      <point x="177.30555555555566" y="149.0" />
+    </edge>
+    <edge source="java.util.Comparator" target="java.lang.FunctionalInterface">
+      <point x="0.0" y="-232.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ViewUtilizador" target="Encomenda">
+      <point x="-105.80000000000018" y="-172.0" />
+      <point x="1973.1339743589738" y="8226.0" />
+      <point x="844.3249999999998" y="8226.0" />
+      <point x="844.3249999999998" y="2905.0" />
+      <point x="926.8249999999998" y="2905.0" />
+      <point x="926.8249999999998" y="2280.0" />
+      <point x="825.7008577798829" y="2280.0" />
+      <point x="-121.75" y="257.5" />
+    </edge>
+    <edge source="Voluntario" target="TempoCustoEncomenda">
+      <point x="0.0" y="-173.0" />
+      <point x="3289.6844887322636" y="4530.0" />
+      <point x="3793.1212470557425" y="4530.0" />
+      <point x="3793.1212470557425" y="2020.0" />
+      <point x="2067.5088934941687" y="2020.0" />
+      <point x="34.0" y="185.0" />
+    </edge>
+    <edge source="EncomendaEntregue" target="TempoCustoEncomenda">
+      <point x="173.62499999999955" y="-89.0" />
+      <point x="2395.1530694000644" y="2080.0" />
+      <point x="1897.5088934941687" y="2080.0" />
+      <point x="-136.0" y="185.0" />
+    </edge>
+    <edge source="Voluntario" target="Transporta">
+      <point x="83.23076923076951" y="-173.0" />
+      <point x="3372.915257963033" y="4550.0" />
+      <point x="4214.585187728937" y="4550.0" />
+      <point x="-228.0" y="353.5" />
+    </edge>
+    <edge source="Controller" target="Transporta">
+      <point x="176.84210526315746" y="-149.5" />
+      <point x="2733.39547228227" y="9384.0" />
+      <point x="4713.335187728937" y="9384.0" />
+      <point x="4713.335187728937" y="4540.0" />
+      <point x="4670.585187728937" y="4540.0" />
+      <point x="228.0" y="353.5" />
+    </edge>
+    <edge source="Transportadora" target="Bicicleta">
+      <point x="-156.0625" y="-425.5" />
+      <point x="2089.871474358974" y="7235.0" />
+      <point x="1580.1423076923074" y="7235.0" />
+      <point x="124.0" y="173.5" />
+    </edge>
+    <edge source="Bicicleta" target="TempoCustoEncomenda">
+      <point x="0.0" y="-173.5" />
+      <point x="1456.1423076923074" y="4420.0" />
+      <point x="1981.228069400065" y="4420.0" />
+      <point x="1981.228069400065" y="3483.0" />
+      <point x="2487.058409160532" y="3483.0" />
+      <point x="2487.058409160532" y="2070.0" />
+      <point x="1931.5088934941687" y="2070.0" />
+      <point x="-102.0" y="185.0" />
+    </edge>
+    <edge source="Utilizador" target="AppUser">
+      <point x="-23.82142857142844" y="209.0" />
+      <point x="3045.992587928965" y="3573.0" />
+      <point x="2964.6844887322636" y="3573.0" />
+      <point x="2964.6844887322636" y="6718.0" />
+      <point x="4381.497790014315" y="6718.0" />
+      <point x="-121.33333333333326" y="-137.5" />
+    </edge>
+    <edge source="EncomendasAceites" target="Voluntario">
+      <point x="-46.625" y="-64.5" />
+      <point x="3663.0952665003933" y="8186.0" />
+      <point x="3238.892822065597" y="8186.0" />
+      <point x="3238.892822065597" y="5146.0" />
+      <point x="3323.4969887322636" y="5146.0" />
+      <point x="33.8125" y="173.0" />
+    </edge>
+    <edge source="Transporte" target="Coordenadas">
+      <point x="124.0" y="-137.0" />
+      <point x="2299.0684807861076" y="5156.0" />
+      <point x="5065.085187728937" y="5156.0" />
+      <point x="5065.085187728937" y="2270.0" />
+      <point x="5312.206377611505" y="2270.0" />
+      <point x="-13.638888888889142" y="149.0" />
+    </edge>
+    <edge source="Sistema" target="TransportadorasIndisponíveis">
+      <point x="289.9038461538462" y="-701.0" />
+      <point x="4170.2568910256405" y="5216.0" />
+      <point x="6586.779632173382" y="5216.0" />
+      <point x="-38.75" y="40.0" />
+    </edge>
+    <edge source="Transporta" target="Encomenda">
+      <point x="-114.0" y="-353.5" />
+      <point x="4328.585187728937" y="3443.0" />
+      <point x="3415.0324230938004" y="3443.0" />
+      <point x="3415.0324230938004" y="2040.0" />
+      <point x="1181.5854731644981" y="2040.0" />
+      <point x="234.13461538461524" y="257.5" />
+    </edge>
+    <edge source="Sistema" target="Voluntario">
+      <point x="-11.596153846153811" y="-701.0" />
+      <point x="3868.7568910256405" y="5006.0" />
+      <point x="3526.3719887322636" y="5006.0" />
+      <point x="236.6875" y="173.0" />
+    </edge>
+    <edge source="ControllerVoluntario" target="Voluntario">
+      <point x="75.0" y="-149.5" />
+      <point x="302.75" y="8820.0" />
+      <point x="3177.2469887322636" y="8820.0" />
+      <point x="3177.2469887322636" y="5136.0" />
+      <point x="3120.6219887322636" y="5136.0" />
+      <point x="-169.0625" y="173.0" />
+    </edge>
+    <edge source="TrazAquiApp" target="Controller">
+      <point x="-50.85714285714286" y="-28.0" />
+      <point x="2909.0816408286364" y="9743.0" />
+      <point x="2451.5533670191126" y="9743.0" />
+      <point x="-105.0" y="149.5" />
+    </edge>
+    <edge source="Transportadora" target="Carrinha">
+      <point x="-14.1875" y="-425.5" />
+      <point x="2231.746474358974" y="7185.0" />
+      <point x="2001.4684807861076" y="7185.0" />
+      <point x="-124.0" y="101.0" />
+    </edge>
+    <edge source="Controller" target="java.lang.Exception">
+      <point x="198.9473684210525" y="-149.5" />
+      <point x="2755.500735440165" y="9394.0" />
+      <point x="6791.029632173382" y="9394.0" />
+      <point x="6791.029632173382" y="1385.0" />
+      <point x="6851.029632173382" y="1385.0" />
+      <point x="84.22222222222263" y="88.5" />
+    </edge>
+    <edge source="EncomendasAceites" target="VoluntariosIndisponíveis">
+      <point x="46.625" y="-64.5" />
+      <point x="3756.3452665003933" y="8296.0" />
+      <point x="6388.445219268317" y="8296.0" />
+      <point x="6388.445219268317" y="5196.0" />
+      <point x="6404.529632173382" y="5196.0" />
+      <point x="92.0" y="40.0" />
+    </edge>
+    <edge source="Voluntario" target="LojaSemInformacaoFila">
+      <point x="249.69230769230762" y="-173.0" />
+      <point x="3539.3767964245712" y="4610.0" />
+      <point x="6293.779632173382" y="4610.0" />
+      <point x="66.25" y="40.0" />
+    </edge>
+    <edge source="ViewUtilizador" target="Transportadora">
+      <point x="0.0" y="-172.0" />
+      <point x="2078.933974358974" y="8266.0" />
+      <point x="2189.183974358974" y="8266.0" />
+      <point x="-56.75" y="425.5" />
+    </edge>
+    <edge source="Sistema" target="ComparatorTransporta">
+      <point x="81.17307692307713" y="-701.0" />
+      <point x="3961.526121794872" y="5116.0" />
+      <point x="4497.335187728937" y="5116.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintStream" target="java.lang.Throwable">
+      <point x="72.75" y="-65.0" />
+      <point x="4951.900822055949" y="1385.0" />
+      <point x="4910.275822055949" y="1385.0" />
+      <point x="0.0" y="473.5" />
+    </edge>
+    <edge source="EncomendaEntregue" target="Encomenda">
+      <point x="-173.62500000000045" y="-89.0" />
+      <point x="2047.9030694000644" y="2110.0" />
+      <point x="1144.12393470296" y="2110.0" />
+      <point x="196.67307692307713" y="257.5" />
+    </edge>
+    <edge source="Sistema" target="VoluntariosIndisponíveis">
+      <point x="220.32692307692332" y="-701.0" />
+      <point x="4100.679967948718" y="5186.0" />
+      <point x="6220.529632173382" y="5186.0" />
+      <point x="-92.0" y="40.0" />
+    </edge>
+    <edge source="ControllerVoluntario" target="ViewVoluntarioTransportadora">
+      <point x="-25.0" y="-149.5" />
+      <point x="-56.75" y="148.0" />
+    </edge>
+    <edge source="Voluntario" target="EncomendaEntregue">
+      <point x="-83.23076923076951" y="-173.0" />
+      <point x="3206.453719501494" y="4360.0" />
+      <point x="2766.7247307861076" y="4360.0" />
+      <point x="2766.7247307861076" y="3473.0" />
+      <point x="2180.7280694000647" y="3473.0" />
+      <point x="2180.7280694000647" y="2985.0" />
+      <point x="2221.528069400065" y="2985.0" />
+      <point x="0.0" y="89.0" />
+    </edge>
+    <edge source="ViewVoluntarioTransportadora" target="Encomenda">
+      <point x="0.0" y="-148.0" />
+      <point x="259.5" y="8326.0" />
+      <point x="575.0749999999998" y="8326.0" />
+      <point x="575.0749999999998" y="2985.0" />
+      <point x="657.5749999999998" y="2985.0" />
+      <point x="657.5749999999998" y="2310.0" />
+      <point x="750.7777808568057" y="2310.0" />
+      <point x="-196.67307692307713" y="257.5" />
+    </edge>
+    <edge source="ControllerVoluntario" target="Input">
+      <point x="25.0" y="-149.5" />
+      <point x="252.75" y="8770.0" />
+      <point x="621.7249999999995" y="8770.0" />
+      <point x="-38.600000000000364" y="88.0" />
+    </edge>
+    <edge source="Encomenda" target="java.lang.Comparable">
+      <point x="162.33333333333303" y="-257.5" />
+      <point x="1109.784191113216" y="1365.0" />
+      <point x="2782.5015165003933" y="1365.0" />
+      <point x="-62.25" y="28.0" />
+    </edge>
+    <edge source="Transportadora" target="Transporte">
+      <point x="42.5625" y="-425.5" />
+      <point x="2288.496474358974" y="7195.0" />
+      <point x="2401.901814119441" y="7195.0" />
+      <point x="2401.901814119441" y="6778.0" />
+      <point x="2299.0684807861076" y="6778.0" />
+      <point x="124.0" y="137.0" />
+    </edge>
+    <edge source="Transporta" target="AppUser">
+      <point x="57.0" y="353.5" />
+      <point x="4499.585187728937" y="4570.0" />
+      <point x="4657.835187728937" y="4570.0" />
+      <point x="4657.835187728937" y="6768.0" />
+      <point x="4593.831123347648" y="6768.0" />
+      <point x="91.0" y="-137.5" />
+    </edge>
+    <edge source="Utilizador" target="Encomenda">
+      <point x="-291.8125" y="-209.0" />
+      <point x="2778.0015165003933" y="2965.0" />
+      <point x="1401.4508577798829" y="2965.0" />
+      <point x="1401.4508577798829" y="2120.0" />
+      <point x="1125.3931654721905" y="2120.0" />
+      <point x="177.94230769230762" y="257.5" />
+    </edge>
+    <edge source="Utilizador" target="Coordenadas">
+      <point x="125.0625" y="-209.0" />
+      <point x="3194.8765165003933" y="2965.0" />
+      <point x="4464.1407432844935" y="2965.0" />
+      <point x="4464.1407432844935" y="2190.0" />
+      <point x="5093.984155389282" y="2190.0" />
+      <point x="-231.8611111111113" y="149.0" />
+    </edge>
+    <edge source="Transporta" target="Loja">
+      <point x="114.0" y="-353.5" />
+      <point x="4556.585187728937" y="3593.0" />
+      <point x="4627.585187728937" y="3593.0" />
+      <point x="4627.585187728937" y="2975.0" />
+      <point x="4645.335187728937" y="2975.0" />
+      <point x="-127.75" y="257.5" />
+    </edge>
+    <edge source="Transportadora" target="Transporta">
+      <point x="269.5625" y="-425.5" />
+      <point x="2515.496474358974" y="7275.0" />
+      <point x="4702.335187728937" y="7275.0" />
+      <point x="4702.335187728937" y="4550.0" />
+      <point x="4613.585187728937" y="4550.0" />
+      <point x="171.0" y="353.5" />
+    </edge>
+    <edge source="Controller" target="Encomenda">
+      <point x="-198.9473684210525" y="-149.5" />
+      <point x="2357.60599859806" y="9394.0" />
+      <point x="11.0" y="9394.0" />
+      <point x="11.0" y="8306.0" />
+      <point x="398.63355008757526" y="8306.0" />
+      <point x="398.63355008757526" y="2290.0" />
+      <point x="713.3162423952676" y="2290.0" />
+      <point x="-234.13461538461524" y="257.5" />
+    </edge>
+    <edge source="ControllerUtilizador" target="Encomenda">
+      <point x="-68.75" y="-197.0" />
+      <point x="1894.5173076923074" y="8740.0" />
+      <point x="833.3249999999998" y="8740.0" />
+      <point x="833.3249999999998" y="2895.0" />
+      <point x="915.8249999999998" y="2895.0" />
+      <point x="915.8249999999998" y="2290.0" />
+      <point x="806.9700885491134" y="2290.0" />
+      <point x="-140.4807692307695" y="257.5" />
+    </edge>
+    <edge source="java.lang.Exception" target="java.lang.Throwable">
+      <point x="0.0" y="-88.5" />
+      <point x="6766.80740995116" y="977.0" />
+      <point x="5064.475822055949" y="977.0" />
+      <point x="154.20000000000005" y="473.5" />
+    </edge>
+    <edge source="Transportadora" target="Loja">
+      <point x="297.9375" y="-425.5" />
+      <point x="2543.871474358974" y="7285.0" />
+      <point x="5010.085187728937" y="7285.0" />
+      <point x="5010.085187728937" y="2955.0" />
+      <point x="4864.335187728937" y="2955.0" />
+      <point x="91.25" y="257.5" />
+    </edge>
+    <edge source="Loja" target="AppUser">
+      <point x="54.75" y="257.5" />
+      <point x="4827.835187728937" y="2965.0" />
+      <point x="4999.085187728937" y="2965.0" />
+      <point x="4999.085187728937" y="6778.0" />
+      <point x="4624.164456680981" y="6778.0" />
+      <point x="121.33333333333326" y="-137.5" />
+    </edge>
+    <edge source="ControllerTransportadora" target="ViewVoluntarioTransportadora">
+      <point x="-87.0" y="-149.5" />
+      <point x="539.375" y="8740.0" />
+      <point x="429.75" y="8740.0" />
+      <point x="170.25" y="148.0" />
+    </edge>
+    <edge source="Loja" target="LinhaEncomenda">
+      <point x="-52.14285714285734" y="-257.5" />
+      <point x="4720.94233058608" y="1940.0" />
+      <point x="2265.0088934941687" y="1940.0" />
+      <point x="2265.0088934941687" y="1325.0" />
+      <point x="1046.750857779883" y="1325.0" />
+      <point x="171.9000000000001" y="149.0" />
+    </edge>
+    <edge source="Sistema" target="Utilizador">
+      <point x="-104.3653846153843" y="-701.0" />
+      <point x="3775.98766025641" y="5046.0" />
+      <point x="2997.6844887322636" y="5046.0" />
+      <point x="2997.6844887322636" y="3603.0" />
+      <point x="3188.9211593575365" y="3603.0" />
+      <point x="119.10714285714312" y="209.0" />
+    </edge>
+    <edge source="java.lang.Throwable.WrappedPrintWriter" target="java.lang.Throwable.PrintStreamOrWriter">
+      <point x="70.25" y="-65.0" />
+      <point x="2486.2588934941687" y="1385.0" />
+      <point x="3854.3720522146787" y="1385.0" />
+      <point x="-51.75" y="52.5" />
+    </edge>
+    <edge source="Transportadora" target="Coordenadas">
+      <point x="326.3125" y="-425.5" />
+      <point x="2572.246474358974" y="7295.0" />
+      <point x="5794.085187728937" y="7295.0" />
+      <point x="5794.085187728937" y="2290.0" />
+      <point x="5448.595266500393" y="2290.0" />
+      <point x="122.75" y="149.0" />
+    </edge>
+    <edge source="Voluntario" target="Encomenda">
+      <point x="-208.07692307692287" y="-173.0" />
+      <point x="3081.6075656553407" y="4390.0" />
+      <point x="1556.7008577798829" y="4390.0" />
+      <point x="1556.7008577798829" y="3603.0" />
+      <point x="1379.4508577798829" y="3603.0" />
+      <point x="1379.4508577798829" y="2140.0" />
+      <point x="1087.9316270106524" y="2140.0" />
+      <point x="140.4807692307695" y="257.5" />
+    </edge>
+    <edge source="Voluntario" target="AtrasaEncomenda">
+      <point x="-124.84615384615336" y="-173.0" />
+      <point x="3164.8383348861103" y="4370.0" />
+      <point x="2245.4780694000647" y="4370.0" />
+      <point x="108.75" y="89.0" />
+    </edge>
+    <edge source="LojaSemInformacaoFila" target="java.lang.Exception">
+      <point x="-66.25" y="-40.0" />
+      <point x="6161.279632173382" y="1325.0" />
+      <point x="6598.362965506715" y="1325.0" />
+      <point x="-168.44444444444434" y="88.5" />
+    </edge>
+    <edge source="Sistema" target="LinhaEncomenda">
+      <point x="-289.9038461538462" y="-701.0" />
+      <point x="3590.449198717948" y="5126.0" />
+      <point x="409.63355008757526" y="5126.0" />
+      <point x="409.63355008757526" y="1365.0" />
+      <point x="779.350857779883" y="1365.0" />
+      <point x="-95.5" y="149.0" />
+    </edge>
+    <edge source="Controller" target="ViewGeral">
+      <point x="66.31578947368416" y="-149.5" />
+      <point x="2622.8691564927967" y="9334.0" />
+      <point x="2690.4443910256405" y="9334.0" />
+      <point x="41.75" y="148.0" />
+    </edge>
+    <edge source="java.lang.Throwable.SentinelHolder" target="java.lang.Throwable">
+      <point x="0.0" y="-52.5" />
+      <point x="7190.30740995116" y="967.0" />
+      <point x="5218.675822055949" y="967.0" />
+      <point x="308.4000000000001" y="473.5" />
+    </edge>
+    <edge source="Controller" target="ControllerUtilizador">
+      <point x="-22.10526315789457" y="-149.5" />
+      <point x="2534.448103861218" y="9314.0" />
+      <point x="2045.7673076923074" y="9314.0" />
+      <point x="82.5" y="197.0" />
+    </edge>
+    <edge source="Sistema" target="EncomendaEntregue">
+      <point x="-173.94230769230762" y="-701.0" />
+      <point x="3706.410737179487" y="5076.0" />
+      <point x="2550.7247307861076" y="5076.0" />
+      <point x="2550.7247307861076" y="4410.0" />
+      <point x="1970.228069400065" y="4410.0" />
+      <point x="1970.228069400065" y="2985.0" />
+      <point x="2128.928069400065" y="2985.0" />
+      <point x="-92.59999999999991" y="89.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.15069718495132864" x="4402.776710893853" y="2265.490921787709" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

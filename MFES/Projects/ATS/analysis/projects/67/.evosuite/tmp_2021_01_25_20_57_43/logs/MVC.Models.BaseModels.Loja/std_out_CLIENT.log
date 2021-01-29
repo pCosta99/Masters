@@ -1,0 +1,76 @@
+* Starting client
+* Connecting to master process on port 5588
+* Analyzing classpath: 
+  - /home/pbr/work_ats/analysis/projects/67/target/classes
+  - /home/pbr/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /home/pbr/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class MVC.Models.BaseModels.Loja
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 21:05:45.654 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /home/pbr/work_ats/analysis/projects/67/.evosuite/evosuite-seeds/MVC.Models.BaseModels.Loja.seed
+* Loaded 0 tests from /home/pbr/work_ats/analysis/projects/67/.evosuite/evosuite-seeds/MVC.Models.BaseModels.Loja.seed
+* Total number of test goals: 
+  - Line 28
+  - Branch 15
+  - Exception 0
+  - MutationFactory 26
+  - Output 22
+  - Method 11
+  - MethodNoException 11
+  - CBranchFitnessFactory 15
+* Using seed 1611608737907
+* Starting evolution
+[MASTER] 21:05:45.814 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 1 seconds more than allowed.
+* Search finished after 44s and 172 generations, 36573 statements, best individual has fitness: 25.444444444444446
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 93%
+* Total number of goals: 28
+* Number of covered goals: 26
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 15
+* Number of covered goals: 13
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 26
+* Number of covered goals: 23
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 32%
+* Total number of goals: 22
+* Number of covered goals: 7
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 82%
+* Total number of goals: 11
+* Number of covered goals: 9
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 15
+* Number of covered goals: 13
+* Generated 12 tests with total length 31
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 78%
+* Compiling and checking tests
+* Writing JUnit test case 'Loja_ESTest' to /home/pbr/work_ats/analysis/projects/67/.evosuite/tmp_2021_01_25_20_57_43/tests
+* Done!
+

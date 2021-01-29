@@ -1,0 +1,127 @@
+--a0 a0@trazaqui.com 123
+Loja:l71329,ToysRus,73.123456,-69.098765
+Loja:l38629,Continente,95.234567,-47.987654
+Loja:l46278,Fnac,23.230000,-29.920000
+Loja:l10739,McDonalds,40.546370,-80.254980
+Loja:l9634,Bershka,-31.242678,77.574839
+Loja:l1234,Insere Nome,69.712339,-62.123485
+Loja:l8913,Mestre André,71.241052,-1.943621
+Loja:l98641,Come e Cala,23.914621,-12.462512
+Loja:l14481,Dos 300,16.542235,93.456251
+Loja:l3415,Senhores e Senhoras,-21.434525,-98.274238
+Loja:l3425,Bem-Vinde,25.434525,73.274238
+Loja:l1111,Calçado Mal-Cheiroso,64.223422,45.234567
+Loja:l94621,Jardim da Celeste,-56.320462,79.134123
+Loja:l0132,Cataclismo,-12.342412,-51.297913
+Loja:l91823,Loja da Esquina,23.856234,-90.915272
+Loja:l1272,Só Tijolos,-90.875836,13.134112
+Loja:l56281,Polar e Ursos,-9.534672,-73.916321
+Loja:l9912,Tigre Fofinho,90.972663,-1.287362
+Loja:l1248,Solitarios e Companhia,2.533413,83.989728
+Loja:l39752,Fuxia e outras cores,24.123689,-66.098523
+Loja:l93354,Rei dos Hamburgueres,99.456789,-9.345678
+Loja:l4377,Zona do Desporto,72.373104,-53.746261
+Loja:l1342,Projeto Urbano,-9.567456,-1.827575
+Loja:l77,Trotinetes da São,92.212632,13.234155
+Loja:l5575,Frescos do António,54.297385,-97.826357
+Loja:l9912,Casinha da Piza,58.495621,-54.974683
+Loja:l7834,Centro das Refeições,-67.871423,-52.327930
+Transportadora:t56113,Rebocados,13.353452,1.435123,547263511,302.4,0.15
+Transportadora:t79193,Ja Sem Ideias,86.132412,-23.245422,755174733,410.0,0.05
+Transportadora:t35234,Avada Kedrava,52.267512,64.2442342,125246722,561.0,0.03
+Transportadora:t5252,Wizard,42.867123,89.786481,134669852,432.1,0.02
+Transportadora:t9804,Perdidos e Achados,67.8273542,92.872354,983517361,532.0,1.2
+Transportadora:t95484,Exemplares Rodas,-36.123456,-60.768595,511670948,1.0,2.5
+Transportadora:t69989,Antonio Laika,15.293847,63.102839,309806286,999.999999,0.1
+Transportadora:t69540,Triunfal Imperio,52.785940,11.141785,380908287,50.0,0.25
+Transportadora:t61824,Longos Trajetos,61.345219,-32.764902,803856892,71.9,0.15
+Transportadora:t53072,Rodinhas Felizes,-99.034510,30.975310,206669907,555.555555,0.05
+Transportadora:t34521,Queima Pneus,12.982462,93.8923623,978347237,100.0,4.0
+Transportadora:t89220,Amantes de Asfalto,-98.213782,61.24234,237732511,99.2,2.3
+Transportadora:t63910,Entregas Connosco,-65.213498,70.872352,955151152,999.0,0.01
+Transportadora:t54529,Tempo Curto,51.234702,-87.2378461,308298029,12.5,5.0
+Transportadora:t08851,Rápidos e Companhia,12.124123,-12.234121,929330586,35.0,0.5
+Transportadora:t13524,Cargas e Descargas,90.982634,53.2198649,709040858,50.0,1.0
+Transportadora:t07698,Monopólio das Entregas,72.130947,-8.816312,839593735,66.6,6.6
+Transportadora:t56412,Fabolásticos,78.139824,8.123213,970360615,12.3,0.4
+Transportadora:t09896,Segurança Máxima,-24.234123,-54.234121,851005457,13.8,0.5
+Transportadora:t55463,Luz,-52.987263,-9.238764,769707947,14.9,0.3
+Transportadora:t12392,Piscar Dolhos,12.23412,98.765412,351736318,400.0,0.2
+Transportadora:t65813,Evasão,-33.682921,-44.247811,969869880,350.0,2.0
+Transportadora:t98127,Balística,55.398465,-66.98127,985638586,700.0,5.0
+Transportadora:t98623,Sr.Alberto,-77.979125,88.329864,158663558,700.0,1.5
+Transportadora:t82359,Carro dos Palhaços,99.398641,-11.234214,808426132,800.0,90.0
+Utilizador:u7352,Xica Marques,21.962396,-2.827346
+Utilizador:u42525,Maria Josefina,53.287446,-63.91746
+Utilizador:u3241,Ezequiel Branco,5.927611,-7.929126
+Utilizador:u72635,Helder Salgado,1.135234,7.217862
+Utilizador:u42421,Vitor Sem C,23.983261,-98.123232
+Utilizador:u13906,Pedro Chato,51.17784,82.746992
+Utilizador:u47900,Rui Estrangeiro,-1.861621,12.935144
+Utilizador:u49453,Beatriz Matriz,12.021365,5.724166
+Utilizador:u44246,Andre Sobrenome,9.065110,76.929130
+Utilizador:u65050,Jose Cafe,33.27211,29.149990
+Utilizador:u77,Joaquim Almeida,-24.506521,62.070282
+Utilizador:u987,Ruben Alves,-41.456431,-33.779235
+Utilizador:u6732,Barbara Cabrita,78.904957,71.851784
+Utilizador:u3212,Rita Blanco,14.737751,-2.021266
+Utilizador:u6120,Alex Alves Pereira,37.441653,
+Utilizador:u3498,Maria Vieira,20.423380,95.950946
+Utilizador:u83760,Joana Santos,85.254785,-48.363333
+Utilizador:u98311,Diogo Morgado,-17.730829,-18.724971
+Utilizador:u3497,Diana Chaves,-17.676951,-22.020795
+Utilizador:u89236,João Ricardo,-83.551548,-77.869365
+Utilizador:u98236,Joana Seixas,5.139613,-35.838457
+Utilizador:u76523,Custódia Gallego,-6.251171,-1.687021
+Utilizador:u78353,Margarida Carpinteiro,-70.738582,-34.039843
+Utilizador:u69621,Ana Marta Ferreira,-58.563723,-73.645806
+Utilizador:u69692,Carlos Vieira,-64.753121,-41.938628
+Utilizador:u98321,João Catarré,16.863216,-92.077162
+Utilizador:u23478,Sara Matos,44.132185,-60.577744
+Utilizador:u12478,Luciana Abreu,-39.467683,66.431048
+Utilizador:u6934,Maria João Luís,-21.431576,70.393762
+Utilizador:u698,Renato Godinho,4.905955,-85.451994
+Utilizador:u923,Virgílio Castelo,-16.383921,33.875772
+Voluntario:v13608,Dinis Samaritano,-60.780810,-71.110510,5.6
+Voluntario:v99024,Miguel Bruno,-44.705780,18.910140,10.4
+Voluntario:v10075,Carolina Sofia,-78.901112,52.354701,12.3
+Voluntario:v714,Adriano Guilherme,29.526603,-10.701254,100.0
+Voluntario:v48301,Rosa Mota,43.889631,-44.628651,300.0
+Voluntario:v12345,Adriana Calcanhoto,2.983426,-28.847324,1.0
+Voluntario:v09872,Rita Guerra,9.872436,-99.999999,99.9
+Voluntario:v13579,Henrique Iglesias,85.877235,-66.666666,300.0
+Voluntario:v24680,Michael Carreira,11.111111,-22.222222,33.3
+Voluntario:v01928,Pedro Abrunhosa,44.444444,-55.555555,66.6
+Voluntario:v48968,Louise Pimentel Cascais,24.223286,76.656675,556.96
+Voluntario:v21205,Arman Lobo Quintana,43.874581,95.158842,967.43
+Voluntario:v85322,Aarav Fernandes Quinterno,12.448017,24.736972,670.65
+Voluntario:v33232,Miguel Prates Couto,-79.613729,19.272836,946.01
+Voluntario:v25056,Nélson Uchoa Nolasco,-95.053278,92.171835,104.87
+Voluntario:v34502,Fábio Cobra Rebelo,23.045075,17.265820,546.24
+Voluntario:v51767,Alma Conde Parente,-7.032682,-25.427789,782.34
+Voluntario:v18606,Yasmina Carneiro Boaventura,19.714390,-87.146262,543.27
+Voluntario:v73554,Orlando Cordeiro Rabelo,-44.215306,2.522511,733.46
+Voluntario:v72394,Estêvão Ramos Pastana,56.529476,-78.207552,723.41
+Voluntario:v62691,Mustafa Gama Domingues,-89.220893,-8.158805,988.27
+Voluntario:v98435,Bella Noleto Meneses,-61.189557,-6.465147,382.21
+Voluntario:v67037,Armando Azevedo Freiria,85.415621,86.620043,412.00
+Voluntario:v68329,Eunice Pegado Dourado,-91.211728,-6.053474,413.23
+Voluntario:v47951,Viriato Viana Cordeiro,24.598300,85.653626,617.07
+Voluntario:v23301,Rafaella Quinterno Faria,17.854500,10.392859,177.92
+Voluntario:v92205,Avelino Frade Franco,-3.169097,82.385171,337.35
+Voluntario:v34873,Anaelle Perdigão Cadaval,13.487231,39.123865,568.14
+Voluntario:v97725,Joaquim Parente Amoedo,27.740891,79.393476,785.66
+Voluntario:v83234,Anastasia Gadelha Faustino,-21.517269,-15.198988,817.84
+Voluntario:v19484,Adriel Homem Pacheco,-54.727736,-76.938520,784.73
+Voluntario:v66942,Zayn Júdice Santos,48.571477,-94.870818,255.67
+
+Encomenda:e75544,u7352,l71329,--,p1,Carro de brincar,2.0,--,p2,Boneca,1.0,--
+Encomenda:e70107,u42525,l38629,--,p1,Massa,1.0,--,p2,Brufen,1.0,--,p3,Paracetamol,1.0,--
+Encomenda:e16539,u83760,l94621,--,p1,Arroz,1.0,--,p2,Ovo,1.0,--
+Encomenda:e38629,u6934,l1272,500.0,p196,Tijolo,55.0,0.42
+Encomenda:e1748,u7352,l56281,1.0,p574,Blusa,1.0,22.0,p95,Camisa,1.0,39.99
+Encomenda:e953,u13906,l4377,1.0,p2384,Bola de futebol,1.0,4.99
+Encomenda:e8765,u49453,l8913,5.0,p473,Flauta,1.0,6.99,Guitarra elétrica,1.0,299.99
+Encomenda:e943,u98311,l46278,2.0,p23,Romance,1.0,19.49,p65,Headphones,1.0,249.42
+Encomenda:e5634,u23478,l71329,5.0,p75,LEGO,5.0,12.03
+Encomenda:e743,u13906,l9912,4.0,p54,Urso de peluche,1.0,6.33,p332,Calmante,6.0,33.21

@@ -1,0 +1,9 @@
+districtServer:
+  id: 17
+  name: Viseu
+  size: 31
+  pushPort: 30000
+  pullPort: 10017
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

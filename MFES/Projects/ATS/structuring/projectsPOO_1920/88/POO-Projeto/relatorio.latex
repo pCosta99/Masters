@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{textcomp} 
+
+\title{Projecto POO - TrazAqui!}
+\author{Rúben Lucas, João Neves e Guilherme Martins (Grupo 205)}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Introdução}
+    Neste relatório vamos falar de como executar o nosso programa, as estruturas de dados que usamos e o porquê de as usarmos, bem como as dificuldades
+    pelas quais passamos e uma reflexão sobre a execução do projeto.
+
+    \section{Arquitetura do projeto}
+    O projeto é constituido por 3 packages principais, Model, Controller e View. Seguindo o padrao MVC, o Controller comunica com o utilizador,
+    pede informação ao Model e depois de receber a informação pede ao View para mostrar ao Utilizador.
+        \subsection{Controller}
+        O Controlador (package) é composto por todas as classes que gerem o fluxo do programa, há um controlador principal que gere o programa a um nivel
+        alto e depois Logins especificos para cada tipo de usuario (Utilizador, Transportadora, Voluntario e Loja).
+        Tambem existem outras classes auxiliares, como o Messages que guarda as mensagens que são mostradas ao utilizador, a class abstracta login que define os
+        pre-requisitos de uma class login e por ultimo a class Input que simplifica o processo de pedir input ao usuario.
+        \subsection{Model}
+        O Model é composto pelas classes que fazem o "heavy work" relacionado com o projeto, toda a parte lógica está distribuida entre os modulos, sendo o
+        modulo SistemaGestaoVendas o modulo que faz a interação entre as diversas classes.
+        \subsection{View}
+        O package View é apenas composto por uma Interface View e uma class DefaultView, uma classe PagedView era para ser implementada,
+        mas essa opção foi descartada pois não sentimos necessidade de a cirar.
+
+    \section{Controladores}
+        \subsection{Controlador principal}
+        Comandos:
+        \begin{itemize}
+            \item quit \textrightarrow  sai do programa
+            \item print \textrightarrow  da print ao sgv
+            \item login \textrightarrow  permite entrar numa conta
+            \item save \textrightarrow  gravar o estado do programa
+            \item load \textrightarrow  dar load a um programa compativel
+            \item print -ta \textrightarrow  imprime as transportadoras disponiveis
+            \item print -d \textrightarrow  imprime a database dos logins (nao existe num programa real)
+        \end{itemize}
+
+        \subsection{UtilizadorLogin}
+        Comandos:
+        \begin{itemize}
+            \item accept order \textrightarrow permite ao utilizador aceitar ou recusar encomendas
+            \item exit \textrightarrow log off e volta para o controlador principal
+            \item make order \textrightarrow faz uma encomenda
+            \item history \textrightarrow imprime o historico de encomendas
+            \item rate \textrightarrow permite classificar uma transportadora/voluntario
+            \item change password \textrightarrow permite mudar a password
+        \end{itemize}
+
+
+        \subsection{TransportadoraLogin}
+        Comandos:
+        \begin{itemize}
+            \item set disponibilidade 0 \textrightarrow marca a transportadora que fez login como nao disponivel
+            \item set disponibilidade 1 \textrightarrow marca a transportadora que fez login como disponivel
+            \item exit \textrightarrow log off e volta para o controlador principal
+            \item deliver \textrightarrow permite enviar uma encomenda
+            \item change password \textrightarrow permite mudar a password
+        \end{itemize}
+
+        \subsection{VoluntarioLogin}
+        Comandos:
+        \begin{itemize}
+            \item check rating \textrightarrow verifica a classificaçao do voluntario
+            \item set disponibilidade 0 \textrightarrow marca o voluntario que fez login como nao disponivel
+            \item set disponibilidade 1 \textrightarrow marca o voluntario que fez login como disponivel
+            \item exit \textrightarrow log off e volta para o controlador principal
+            \item accept order \textrightarrow Permite aceitar ou recusar um pedido de encomenda
+            \item change password \textrightarrow Permite mudar a password
+        \end{itemize}
+
+        \subsection{LojaLogin}
+        Comandos:
+        \begin{itemize}
+            \item fila de espera \textrightarrow mostra a lista de encomendas à espera
+            \item exit \textrightarrow log off e volta para o controlador principal
+            \item change password \textrightarrow permite mudar a password
+            \item send to \textrightarrow permite enviar uma encomenda
+        \end{itemize}
+    \section{Reflexões e Dificuldades}
+        Existiu alguns problemas, na maioria com o encapsulamento do projeto, pois o que foi descoberto cedo, era que o projeto era muito dinamico, sempre tendo atenção a outros modulos. Por causa disso, o diagrama de classes acabou por ficar demasiado complexo e não mostra o que era esperado,
+        mas, essencialmente, todos os modulos comunicam uns cons os outros, sempre por agregação, de maneira que, quando algo acontecesse ao utilizador, loja , transportadora, ou voluntario, o sistema ser sempre capaz de ver o que se passa, e atualizar em tempo real, sem ter passos a mais.
+        Este meio foi mais por simplicidade e conveniencia visto a natureza do projeto. Mas grande parte do desafio foi a falta de planeamento previo, que como reparamos durante o projeto, nenhuma operação era tão simples como era demonstrado, cada problema que aparecia tinha sempre de ser
+        adicionado algo de novo, e mudar bastante o programa, o que nos levou a entender melhor a dificuldade de programar com objetos em mente, quando estão todos a comunicar uns cons os outros.
+        Mas o programa consegue efetuar os requisitos basicos, apesar das complicações, e com este projeto chegou-se a um melhor entendimento do sistema e ambiente que é trabalhar com uma base de dados dinamica, em que tem de se ter muito cuidado com a comunicação entre todos os objetos.
+        Outro ponto a melhorar é a falta de eficacia e dificuldade de leitura do codigo, que é um ponto forte a melhorar, pois destroi a estrutura de qualquer codigo, que neste projeto causou um impacto grande. 
+
+\end{document}

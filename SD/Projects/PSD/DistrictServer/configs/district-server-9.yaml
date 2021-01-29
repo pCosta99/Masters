@@ -1,0 +1,9 @@
+districtServer:
+  id: 9
+  name: Leiria
+  size: 48
+  pushPort: 30000
+  pullPort: 10009
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

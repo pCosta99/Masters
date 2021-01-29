@@ -1,0 +1,78 @@
+* Starting client
+* Connecting to master process on port 7262
+* Analyzing classpath: 
+  - /home/pbr/work_ats/analysis/projects/2/target/classes
+  - /home/pbr/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /home/pbr/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class DataBase
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 20:51:55.208 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /home/pbr/work_ats/analysis/projects/2/.evosuite/evosuite-seeds/DataBase.seed
+* Loaded 0 tests from /home/pbr/work_ats/analysis/projects/2/.evosuite/evosuite-seeds/DataBase.seed
+* Total number of test goals: 
+  - Line 83
+  - Branch 31
+  - Exception 0
+  - MutationFactory 21
+  - Output 116
+  - Method 26
+  - MethodNoException 26
+  - CBranchFitnessFactory 31
+* Using seed 1611607904016
+* Starting evolution
+[MASTER] 20:51:55.454 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 2 seconds more than allowed.
+* Search finished after 59s and 28 generations, 16059 statements, best individual has fitness: 88.35263157894737
+* Writing sequences to pool
+* Minimizing test suite
+[MASTER] 20:53:03.844 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 83
+* Number of covered goals: 79
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 97%
+* Total number of goals: 31
+* Number of covered goals: 30
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 18
+* Number of covered goals: 18
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 21
+* Number of covered goals: 19
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 29%
+* Total number of goals: 116
+* Number of covered goals: 34
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 26
+* Number of covered goals: 26
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 92%
+* Total number of goals: 26
+* Number of covered goals: 24
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 97%
+* Total number of goals: 31
+* Number of covered goals: 30
+* Generated 44 tests with total length 763
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 20:53:10.623 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.780125% of time used, but only 4/44 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 5%
+* Compiling and checking tests
+* Writing JUnit test case 'DataBase_ESTest' to /home/pbr/work_ats/analysis/projects/2/.evosuite/tmp_2021_01_25_20_49_42/tests
+* Done!
+

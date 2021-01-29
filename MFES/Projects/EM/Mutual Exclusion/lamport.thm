@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="AckMessage"/>
+   <type name="Int"/>
+   <type name="RelMessage"/>
+   <type name="ReqMessage"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="open$3/Ord"/>
+   <type name="ordering/Ord"/>
+   <type name="seq/Int"/>
+</node>
+
+<node hideunconnected="yes" shape="Egg" color="Black">
+   <type name="Clock"/>
+</node>
+
+<node shape="Diamond" color="Gray">
+   <type name="Process"/>
+</node>
+
+<node style="Bold" shape="Dbl Octagon" color="Green">
+   <type name="Network"/>
+</node>
+
+<node style="Solid" shape="Circle" color="Red">
+   <type name="Message"/>
+</node>
+
+<node style="Solid" shape="House" color="Green">
+   <type name="Crit"/>
+</node>
+
+<node style="Solid" shape="Inv House" color="Blue">
+   <type name="MessageQ"/>
+</node>
+
+<node visible="no">
+   <set name="$forgottenRequests" type="Message"/>
+</node>
+
+<edge attribute="no">
+   <relation name="onCrit"> <type name="Crit"/> <type name="Process"/> </relation>
+   <relation name="reqs"> <type name="Process"/> <type name="Process"/> <type name="Clock"/> </relation>
+</edge>
+
+<edge visible="no" attribute="yes">
+   <relation name="acks"> <type name="Process"/> <type name="Process"/> </relation>
+   <relation name="clock"> <type name="Process"/> <type name="Clock"/> </relation>
+   <relation name="ts"> <type name="ReqMessage"/> <type name="Clock"/> </relation>
+</edge>
+
+</view>
+
+</alloy>

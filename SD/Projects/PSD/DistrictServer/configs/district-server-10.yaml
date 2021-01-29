@@ -1,0 +1,9 @@
+districtServer:
+  id: 10
+  name: Lisboa
+  size: 26
+  pushPort: 30000
+  pullPort: 10010
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/flavio/.cache/gnome-builder/install/API/host
+app-id=
+postbuild=
+prebuild=
+default=true

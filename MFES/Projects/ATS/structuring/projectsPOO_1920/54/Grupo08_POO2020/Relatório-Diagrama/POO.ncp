@@ -1,0 +1,1056 @@
+<Project>
+  <Name>POO</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Entidade</Name>
+        <Access>Public</Access>
+        <Location left="1683" top="884" />
+        <Size width="354" height="383" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private String id</Member>
+        <Member type="Field">String password</Member>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private GPS loc</Member>
+        <Member type="Field">private Collection&lt;IEncomenda&gt; encs</Member>
+        <Member type="Field">private Collection&lt;IAviso&gt; notificacoes</Member>
+        <Member type="Constructor">public Entidade()</Member>
+        <Member type="Constructor">public Entidade(String id, String password, String nome, GPS loc, Collection&lt;IEncomenda&gt; encs, Collection&lt;IAviso&gt; nots)</Member>
+        <Member type="Constructor">public Entidade(Utilizador u)</Member>
+        <Member type="Method">public void addNotificacao(IAviso a)</Member>
+        <Member type="Method">public void removeNotificacao(IAviso a)</Member>
+        <Member type="Method">public void adicionaEnc(IEncomenda e)</Member>
+        <Member type="Method">public void removeEnc(IEncomenda e)</Member>
+        <Member type="Method">public IEncomenda getEncomenda(String encId)</Member>
+        <Member type="Method">public Utilizador clone()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public int compareTo(IEntidade u)</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Loja</Name>
+        <Access>Public</Access>
+        <Location left="3213" top="1241" />
+        <Size width="272" height="315" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private boolean dadosFila</Member>
+        <Member type="Field">private int sizeFila</Member>
+        <Member type="Field">private float tempAtendMed</Member>
+        <Member type="Field">Collectiont&lt;IProduto&gt; listProds</Member>
+        <Member type="Constructor">public Loja()</Member>
+        <Member type="Constructor">public Loja(String id, String pw, String nome, GPS loc, Collection&lt;IEncomenda&gt; encs, boolean dadosFila, int tamanhoFila, float atendMed, Collection&lt;IProduto&gt; listProds)</Member>
+        <Member type="Constructor">public Loja(Loja l)</Member>
+        <Member type="Method">public int calculaTempoFila()</Member>
+        <Member type="Method">public boolean encomendaPronta(IEncomenda e)</Member>
+        <Member type="Method">public void addProduto(IProduto p)</Member>
+        <Member type="Method">public void removeProduto(String codigo)</Member>
+        <Member type="Method">public Loja clone()</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Empresa</Name>
+        <Access>Public</Access>
+        <Location left="1996" top="1418" />
+        <Size width="193" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">float taxa</Member>
+        <Member type="Field">String nif</Member>
+        <Member type="Field">double dist</Member>
+        <Member type="Constructor">public Empresa()</Member>
+        <Member type="Constructor">public Empresa(String id, String pw, String nome, GPS loc, Collection&lt;IEncomenda&gt; enc, Collection&lt;Float&gt; vel, float raio, boolean medic, Collection&lt;Integer&gt; cls, Estado e, int cap, float t, String nif, double dist)</Member>
+        <Member type="Constructor">public Empresa(Empresa e)</Member>
+        <Member type="Method">public float calculaCusto(IEncomenda e, float tempEspera)</Member>
+        <Member type="Method">public IEmpresa trataEncomenda(IEncomenda encomenda)</Member>
+        <Member type="Method">public float calculaTotalFaturado()</Member>
+        <Member type="Method">public Empresa clone()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Encomenda</Name>
+        <Access>Public</Access>
+        <Location left="3512" top="884" />
+        <Size width="231" height="502" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">String id</Member>
+        <Member type="Field">String idLoja</Member>
+        <Member type="Field">String idUser</Member>
+        <Member type="Field">String idTransportadora</Member>
+        <Member type="Field">float peso</Member>
+        <Member type="Field">boolean aceite</Member>
+        <Member type="Field">Collection&lt;LinhadeEncomenda&gt; linhasEncomendas</Member>
+        <Member type="Field">LocalDate temRecolha</Member>
+        <Member type="Field">LocalDate tempEntrega</Member>
+        <Member type="Field">float precoEntrega</Member>
+        <Member type="Field">static int lastnumber</Member>
+        <Member type="Constructor">public Encomenda()</Member>
+        <Member type="Constructor">public Encomenda(String id, float peso, String idLoja, String idUt, String idTransportadora, boolean aceite, Collection&lt;LinhadeEncomenda&gt; linhaEnc, LocalDate tempRecolha, LocalDate tempEntrega, float precoEntrega)</Member>
+        <Member type="Constructor">public Encomenda(Encomenda e)</Member>
+        <Member type="Method">public static void incLastNumber()</Member>
+        <Member type="Method">public boolean containsMed()</Member>
+        <Member type="Method">public void insereLinhaEnc(LinhadeEncomenda l)</Member>
+        <Member type="Method">public float calculaPrecoTotal()</Member>
+        <Member type="Method">public int compareTo(IEncomenda e)</Member>
+        <Member type="Method">public boolean empresaNaoTransportouEnc(String idEmp)</Member>
+        <Member type="Method">public boolean empTransportouTempo(String idEmp, int[] tInicial, int[] tFinal)</Member>
+        <Member type="Method">public boolean empTransportouTempo(String idEmp, int[] tempo)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public Encomenda clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LinhadeEncomenda</Name>
+        <Access>Public</Access>
+        <Location left="3488" top="758" />
+        <Size width="304" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Produto produto</Member>
+        <Member type="Field">int quant</Member>
+        <Member type="Constructor">public LinhadeEncomenda()</Member>
+        <Member type="Constructor">public LinhadeEncomenda(Produto prod, int quant)</Member>
+        <Member type="Constructor">public LinhadeEncomenda(LinhadeEncomenda lEnc)</Member>
+        <Member type="Method">public double getPreco()</Member>
+        <Member type="Method">public boolean isMedicinal()</Member>
+        <Member type="Method">public LinhadeEncomenda clone()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public int hashCode()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GPS</Name>
+        <Access>Public</Access>
+        <Location left="1916" top="454" />
+        <Size width="300" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">float latitude</Member>
+        <Member type="Field">float longitude</Member>
+        <Member type="Constructor">public GPS()</Member>
+        <Member type="Constructor">public GPS(float lat, float longitude)</Member>
+        <Member type="Constructor">public GPS(GPS gps)</Member>
+        <Member type="Method">public double calculaDist(GPS gps)</Member>
+        <Member type="Method">public boolean isInsideRaio(float raio, GPS gps)</Member>
+        <Member type="Method">public boolean eValido()</Member>
+        <Member type="Method">public double distancia(GPS gps)</Member>
+        <Member type="Method">public boolean isInsideRaio(float r, GPS g)</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public GPS clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Estado</Name>
+        <Access>Public</Access>
+        <Location left="1516" top="1109" />
+        <Size width="205" height="230" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">String estado</Member>
+        <Member type="Constructor">public Estado()</Member>
+        <Member type="Constructor">public Estado(String estado)</Member>
+        <Member type="Constructor">public Estado(Estado e)</Member>
+        <Member type="Method">public void toOcupado()</Member>
+        <Member type="Method">public void toLivre()</Member>
+        <Member type="Method">public Estado clone()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TrazAqui</Name>
+        <Access>Public</Access>
+        <Location left="2302" top="1336" />
+        <Size width="181" height="1080" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Map&lt;String, IUtilizador&gt; uts</Member>
+        <Member type="Field">Map&lt;String, ILoja&gt; lojas</Member>
+        <Member type="Field">Map&lt;String, IEmpresa&gt; emps</Member>
+        <Member type="Field">Map&lt;String, ITrabalhador&gt; vols</Member>
+        <Member type="Field">Map&lt;String, IEncomenda&gt; encs</Member>
+        <Member type="Constructor">public TrazAqui()</Member>
+        <Member type="Method">public Collection&lt;ILoja&gt; getLojas()</Member>
+        <Member type="Method">public Collection&lt;IEmpresa&gt; getEmpresas()</Member>
+        <Member type="Method">public Collection&lt;IUtilizador&gt; getClientes()</Member>
+        <Member type="Method">public Collection&lt;ITrabalhador&gt; getVoluntarios()</Member>
+        <Member type="Method">public IEncomenda getEncomenda(String id)</Member>
+        <Member type="Method">public Collection&lt;IAviso&gt; getAvisosEmpresa(String idEmpresa)</Member>
+        <Member type="Method">public Collection&lt;IAviso&gt; getAvisosVoluntario(String idVol)</Member>
+        <Member type="Method">public void addCliente(IUtilizador c)</Member>
+        <Member type="Method">public void addLoja(ILoja l)</Member>
+        <Member type="Method">public void addVol(ITrabalhador v)</Member>
+        <Member type="Method">public void addEncomenda(IEncomenda enc)</Member>
+        <Member type="Method">public void addEmpresa(IEmpresa e)</Member>
+        <Member type="Method">public void remCliente(IUtilizador c)</Member>
+        <Member type="Method">public void remLoja(ILoja l)</Member>
+        <Member type="Method">public void remEmpresa(IEmpresa e)</Member>
+        <Member type="Method">public void remVol(ITrabalhador v)</Member>
+        <Member type="Method">public void removeEncomenda(IEncomenda enc)</Member>
+        <Member type="Method">public Collection&lt;ITrabalhador&gt; escolheVoluntario(ILoja l, IUtilizador u)</Member>
+        <Member type="Method">public ILoja getLoja(String idLoja)</Member>
+        <Member type="Method">public ITrabalhador getVoluntario(String idVoluntario)</Member>
+        <Member type="Method">public IEmpresa getEmpresa(String idEmpresa)</Member>
+        <Member type="Method">public IUtilizador getCliente(String idCliente)</Member>
+        <Member type="Method">public Collection&lt;IEmpresa&gt; escolheEmpresa(ILoja l, IEntidade u)</Member>
+        <Member type="Method">public void adicionaEncomenda(IEncomenda e)</Member>
+        <Member type="Method">public Collection&lt;IEncomenda&gt; encPorTransportarEmpresa(String idEmpresa)</Member>
+        <Member type="Method">public Collection&lt;IUtilizador&gt; topNClientesEmpresa(String idEmpresa, int n)</Member>
+        <Member type="Method">public int quantosClientes()</Member>
+        <Member type="Method">public int quantasLojas()</Member>
+        <Member type="Method">public int quantasEmps()</Member>
+        <Member type="Method">public int quantosVols()</Member>
+        <Member type="Method">public void setSizeFilaLoja(ILoja l, int size)</Member>
+        <Member type="Method">public void setDadosLoja(ILoja l, boolean dados)</Member>
+        <Member type="Method">public boolean existeCliente(String id)</Member>
+        <Member type="Method">public boolean existeLoja(String id)</Member>
+        <Member type="Method">public boolean existeVoluntario(String id)</Member>
+        <Member type="Method">public void existeEmpresa(String id)</Member>
+        <Member type="Method">public Collection&lt;IEmpresa&gt; topNEmpresasMaisUsadas(int n)</Member>
+        <Member type="Method">public void topNEmpresasDist(int n)</Member>
+        <Member type="Method">public double getDistEmpresa(String idEmp)</Member>
+        <Member type="Method">public Collection&lt;IUtilizador&gt; topNClientesMaisEncomendaram(int n)</Member>
+        <Member type="Method">public Collection&lt;IVoluntario&gt; volsDisponiveis(GPS gps1, GPS gps2)</Member>
+        <Member type="Method">public void encomendaAceite(String id)</Member>
+        <Member type="Method">public float getFaturacaoPeriodo(String idEmpresa, int[] tInicial, int[] tFinal)</Member>
+        <Member type="Method">public float getFaturacaoPeriodo(String idEmpresa, int[] tempo)</Member>
+        <Member type="Method">public void gravarObj()</Member>
+        <Member type="Method">public TrazAqui lerObj(String filename)</Member>
+        <Member type="Method">public void parse()</Member>
+        <Member type="Method">public IUtilizador parseCliente(String input)</Member>
+        <Member type="Method">public IVoluntario parseVoluntario(String input)</Member>
+        <Member type="Method">public IEmpresa parseEmpresa(String input)</Member>
+        <Member type="Method">public ILoja parseLoja(String input)</Member>
+        <Member type="Method">public IEmpresa parseEncomenda(String input)</Member>
+        <Member type="Method">public Collection&lt;String&gt; lerFicheiro(String logs)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Trabalhador</Name>
+        <Access>Public</Access>
+        <Location left="1451" top="1225" />
+        <Size width="304" height="417" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private Collection&lt;Float&gt; velMed</Member>
+        <Member type="Field">private float raio</Member>
+        <Member type="Field">private boolean medic</Member>
+        <Member type="Field">protected Collection&lt;Integer&gt; classificacao</Member>
+        <Member type="Field">private Estado estado</Member>
+        <Member type="Field">private int cap_max</Member>
+        <Member type="Constructor">public Trabalhador()</Member>
+        <Member type="Constructor">public Trabalhador(String id, String pw, String nome, GPS loc, Collection&lt;IEncomenda&gt; encs, Collection&lt;Float&gt; velMed, float raio, boolean medic, Collection&lt;Integer&gt; cls, Estado e, int cap_max)</Member>
+        <Member type="Constructor">public Trabalhador(Trabalhador t)</Member>
+        <Member type="Method">public boolean aceitaTransporteMedicamentos()</Member>
+        <Member type="Method">public void aceitaMedicamentos(boolean medic)</Member>
+        <Member type="Method">public boolean temCapacidade(int qtdTotal)</Member>
+        <Member type="Method">public void insereClassificacao(int cl)</Member>
+        <Member type="Method">public void insereVel(float v)</Member>
+        <Member type="Method">public float calculaVelMed()</Member>
+        <Member type="Method">public boolean validaEncomenda(IEncomenda encomenda)</Member>
+        <Member type="Method">public boolean canAddEncomenda()</Member>
+        <Member type="Method">public float calculaClassMed()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Utilizador</Name>
+        <Access>Public</Access>
+        <Location left="1140" top="1175" />
+        <Size width="259" height="213" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">String nif</Member>
+        <Member type="Constructor">public Utilizador()</Member>
+        <Member type="Constructor">public Utilizador(String id, String pw, String nome, GPS loc, Collection&lt;IEncomenda&gt; encs, String n)</Member>
+        <Member type="Constructor">public Utilizador(Utilizador c)</Member>
+        <Member type="Method">public boolean clienteComprouEmpresa(String idEmpresa)</Member>
+        <Member type="Method">public Utilizador clone()</Member>
+        <Member type="Method">public boolean equals(Object o)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Produto</Name>
+        <Access>Public</Access>
+        <Location left="3779" top="1411" />
+        <Size width="218" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">String nome</Member>
+        <Member type="Field">String codigo</Member>
+        <Member type="Field">double peso</Member>
+        <Member type="Field">float preco</Member>
+        <Member type="Field">boolean medicinal</Member>
+        <Member type="Constructor">public Produto()</Member>
+        <Member type="Constructor">public Produto(String nome, String codigo, double peso, float preco, boolean med)</Member>
+        <Member type="Constructor">public Produto(Produto p)</Member>
+        <Member type="Method">public boolean equals(Produto p)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public Produto clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Input</Name>
+        <Access>Public</Access>
+        <Location left="1872" top="2276" />
+        <Size width="178" height="162" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">public static String lerString()</Member>
+        <Member type="Method">public static int lerInt()</Member>
+        <Member type="Method">public static double lerDouble()</Member>
+        <Member type="Method">public static float lerFloat()</Member>
+        <Member type="Method">public static boolean lerBoolean()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AvisoEmpresa</Name>
+        <Access>Public</Access>
+        <Location left="1411" top="208" />
+        <Size width="211" height="196" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private boolean aceite</Member>
+        <Member type="Field">private String idEncomenda</Member>
+        <Member type="Field">private String idCliente</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Constructor">public AvisoEmpresa(boolean aceite, String idEnc, String idCliente)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public IAviso clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AvisoEncomendaAceite</Name>
+        <Access>Public</Access>
+        <Location left="1168" top="208" />
+        <Size width="215" height="179" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private String idCliente</Member>
+        <Member type="Field">String idVoluntario</Member>
+        <Member type="Constructor">public AvisoEncomendaAceite(String idC, String idV)</Member>
+        <Member type="Constructor">public AvisoEncomendaAceite(AvisoEncomendaAceite a)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public IAviso clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AvisoEncomendaEntregue</Name>
+        <Access>Public</Access>
+        <Location left="978" top="454" />
+        <Size width="388" height="179" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">String idEncomenda</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Constructor">public AvisoEncomendaEntregue(String idE)</Member>
+        <Member type="Constructor">public AvisoEncomendaEntregue(AvisoEncomendaEntregue a)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public IAviso clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AvisoOrcamentoRecebido</Name>
+        <Access>Public</Access>
+        <Location left="1649" top="208" />
+        <Size width="274" height="196" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">String idEncomenda</Member>
+        <Member type="Field">String idEmpresa</Member>
+        <Member type="Field">float preco</Member>
+        <Member type="Constructor">public AvisoOrcamentoRecebido(String idEnc, String idEmp, float p)</Member>
+        <Member type="Constructor">public AvisoOrcamentoRecebido(AvisoOrcamentoRecebido a)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public IAviso clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AvisoVoluntario</Name>
+        <Access>Public</Access>
+        <Location left="950" top="208" />
+        <Size width="172" height="162" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private String idEncomenda</Member>
+        <Member type="Constructor">public AvisoVoluntario(String idEncomenda)</Member>
+        <Member type="Constructor">public AvisoVoluntario(AvisoVoluntario a)</Member>
+        <Member type="Method">public String toString()</Member>
+        <Member type="Method">public IAviso clone()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Controller</Name>
+        <Access>Public</Access>
+        <Location left="2042" top="2138" />
+        <Size width="335" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private TrazAqui model</Member>
+        <Member type="Field">private boolean gravar</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Constructor">public Controller(int i, boolean gravar)</Member>
+        <Member type="Method">public int quantos(String s)</Member>
+        <Member type="Method">public int eliminaConta(String id)</Member>
+        <Member type="Method">public String adicionaCliente(String id, String pw, String nome, float lat, float lon, String nif)</Member>
+        <Member type="Method">public String adicionaEmpresa(String id, String pw, String nome, float lat, float lon, float raio, boolean medic, int cap, float taxa, String nif)</Member>
+        <Member type="Method">public String adicionaLoja(String id, String pw, String nome, float lat, float lon, boolean dadosFila)</Member>
+        <Member type="Method">public String adicionaVoluntario(String id, String nome, float lat, float lon, float raio, boolean medic, int cap)</Member>
+        <Member type="Method">public void changeMenu(String menu, String id)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ControllerEmpresa</Name>
+        <Access>Public</Access>
+        <Location left="1833" top="1654" />
+        <Size width="249" height="298" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">TrazAqui model</Member>
+        <Member type="Field">IEmpresa empresa</Member>
+        <Member type="Constructor">public ControllerEmpresa(TrazAqui model, String id)</Member>
+        <Member type="Method">public int quantasEmpresas()</Member>
+        <Member type="Method">public void addEmpresa(String nome, String pw, String nif, float lat, float lon, float raio, boolean medic, int cap, String idEmpresa, float taxa)</Member>
+        <Member type="Method">public boolean podeTransportar(IEncomenda enc)</Member>
+        <Member type="Method">public Collection&lt;IEmpresa&gt; escolheEmpresaTransportar(IEncomenda encomenda)</Member>
+        <Member type="Method">public int empresaPodeInformarLoja(String idLoja)</Member>
+        <Member type="Method">public Collection&lt;IUtilizador&gt; topNClientesEmpresa(int n)</Member>
+        <Member type="Method">public float getTotalFaturadoPeriodo(int[] tInicial, int[] tFinal)</Member>
+        <Member type="Method">public float getTotalFaturadoPeriodo(int[] periodo)</Member>
+        <Member type="Method">public Collection&lt;IEncomenda&gt; encsPorTransportarEmpresa()</Member>
+        <Member type="Method">public Collection&lt;IAviso&gt; avisosEmpresa()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ControllerLoja</Name>
+        <Access>Public</Access>
+        <Location left="2876" top="1654" />
+        <Size width="312" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">TrazAqui model</Member>
+        <Member type="Field">ILoja loja</Member>
+        <Member type="Field">boolean gravar</Member>
+        <Member type="Constructor">public ControllerLoja(TrazAqui model, ILoja loja, boolean gravar)</Member>
+        <Member type="Method">public void gravar()</Member>
+        <Member type="Method">public int qtsPessoasAtual(int size)</Member>
+        <Member type="Method">public void adicionaProdutos(String nome, double peso, float preco, boolean med, int i)</Member>
+        <Member type="Method">public void removeProdutoController(String codigo)</Member>
+        <Member type="Method">public Collection&lt;String&gt; historicoEncomendas()</Member>
+        <Member type="Method">public void removeConta()</Member>
+        <Member type="Method">public Collection&lt;IProduto&gt; getProdutos()</Member>
+        <Member type="Method">public String getEncomenda(String idEncomenda)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ControllerUtilizador</Name>
+        <Access>Public</Access>
+        <Location left="1163" top="1654" />
+        <Size width="473" height="468" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">TrazAqui model</Member>
+        <Member type="Field">IUtilizador utilizador</Member>
+        <Member type="Field">boolean gravar</Member>
+        <Member type="Constructor">public ControllerUtilizador(TrazAqui model, String idCliente, boolean gravar)</Member>
+        <Member type="Method">public void gravar()</Member>
+        <Member type="Method">public void changeName(String novoNome)</Member>
+        <Member type="Method">public void changeLocal(float latitude, float longitude)</Member>
+        <Member type="Method">public void changeNif(String nif)</Member>
+        <Member type="Method">public Collection&lt;String&gt; historicoEncomendas()</Member>
+        <Member type="Method">public void classificar(String idEnc, int classificacao)</Member>
+        <Member type="Method">public String getEncomenda(String idEnc)</Member>
+        <Member type="Method">public Collection&lt;String&gt; top10Clientes()</Member>
+        <Member type="Method">public Collection&lt;String[]&gt; getLojas()</Member>
+        <Member type="Method">public Collection&lt;IProduto&gt; getLojaProds(String idLoja)</Member>
+        <Member type="Method">public LinhadeEncomenda criaLinhaEncomenda(IProduto p, int quant)</Member>
+        <Member type="Method">public IEncomenda criaEncomenda(String idLoja, Collection&lt;LinhadeEncomenda&gt; l)</Member>
+        <Member type="Method">public int notifyVoluntario(String lojaid, IEncomenda e)</Member>
+        <Member type="Method">public float calculaTempoEntrega(IEncomenda e, String idLoja)</Member>
+        <Member type="Method">public void adicionaEncomenda(String idLoja, IEncomenda e)</Member>
+        <Member type="Method">public Collection&lt;IAviso&gt; getAvisos()</Member>
+        <Member type="Method">public void removeNotificacao(IAviso a)</Member>
+        <Member type="Method">public void removeConta()</Member>
+        <Member type="Method">public void trataEncomendaEmpresa(IAviso a, boolean aceitou)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ControllerVoluntario</Name>
+        <Access>Public</Access>
+        <Location left="2459" top="1654" />
+        <Size width="237" height="366" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">TrazAqui model</Member>
+        <Member type="Field">IVoluntario v</Member>
+        <Member type="Constructor">public ControllerVoluntario(TrazAqui model, String voluntario)</Member>
+        <Member type="Method">public void changeEstado()</Member>
+        <Member type="Method">public void setSetLocControl(String id)</Member>
+        <Member type="Method">public void insereVelControl(float velo)</Member>
+        <Member type="Method">public double distanciaControl(String idLo, String idVol)</Member>
+        <Member type="Method">public IUtilizador getClienteControl(String idCliente)</Member>
+        <Member type="Method">public boolean estaVaziaControl()</Member>
+        <Member type="Method">public void mudaLoc()</Member>
+        <Member type="Method">public LocalTime registaHoras()</Member>
+        <Member type="Method">public float calculaTempo(LocalTime estouNaLoja, LocalTime estouNoCliente)</Member>
+        <Member type="Method">public float calculaVelo(float tempo, String id)</Member>
+        <Member type="Method">public Collection&lt;String&gt; historicoEncomendas()</Member>
+        <Member type="Method">public boolean trataAviso(AvisoVoluntario a)</Member>
+        <Member type="Method">public Collection&lt;IAviso&gt; getAvisosVols()</Member>
+        <Member type="Method">public String getEncomenda(String idEncomenda)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StartView</Name>
+        <Access>Public</Access>
+        <Location left="2137" top="2396" />
+        <Size width="234" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">Controller controller</Member>
+        <Member type="Method">private void start()</Member>
+        <Member type="Method">private void run()</Member>
+        <Member type="Method">private void criaConta()</Member>
+        <Member type="Method">private String criaUtilizador()</Member>
+        <Member type="Method">private String criaEmpresa()</Member>
+        <Member type="Method">private String criaLoja()</Member>
+        <Member type="Method">private String criaVoluntario()</Member>
+        <Member type="Method">private float getLatitude()</Member>
+        <Member type="Method">private float getLongitude()</Member>
+        <Member type="Method">private void login(String id)</Member>
+        <Member type="Method">public void eliminaConta(String id)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ViewEmpresa</Name>
+        <Access>Public</Access>
+        <Location left="1804" top="1834" />
+        <Size width="313" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private ControllerEmpresa controller</Member>
+        <Member type="Constructor">public ViewEmpresa(ControllerEmpresa controller)</Member>
+        <Member type="Method">public void empresaInformaLoja(String idLoja)</Member>
+        <Member type="Method">public void menuEmpresa()</Member>
+        <Member type="Method">public void alteraDadosEmpresa()</Member>
+        <Member type="Method">public void menuNotificacoes()</Member>
+        <Member type="Method">public void topNClientesEmpresa(int n)</Member>
+        <Member type="Method">public void encsPorTransportarEmpresa()</Member>
+        <Member type="Method">public void faturacaoPeriodica()</Member>
+        <Member type="Method">public void fatIntervalo()</Member>
+        <Member type="Method">public void fatTempo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ViewLoja</Name>
+        <Access>Public</Access>
+        <Location left="2863" top="1834" />
+        <Size width="253" height="213" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private ControllerLoja controller</Member>
+        <Member type="Constructor">public ViewLoja(ControllerLoja controller)</Member>
+        <Member type="Method">public void menuLoja()</Member>
+        <Member type="Method">public void adicionaProdutos()</Member>
+        <Member type="Method">public void removeProdutos()</Member>
+        <Member type="Method">public boolean alteraDadosFila()</Member>
+        <Member type="Method">public float getLatitude()</Member>
+        <Member type="Method">public float getLongitude()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ViewUtilizador</Name>
+        <Access>Public</Access>
+        <Location left="1251" top="1834" />
+        <Size width="307" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">ControllerUtilizador controller</Member>
+        <Member type="Constructor">public ViewUtilizador(ControllerUtilizador c)</Member>
+        <Member type="Method">public void menuUtilizador()</Member>
+        <Member type="Method">public void trataNotificacoes()</Member>
+        <Member type="Method">public void criaEncomenda()</Member>
+        <Member type="Method">public void mostraHistorico()</Member>
+        <Member type="Method">public void mostraTop10()</Member>
+        <Member type="Method">public void definicoes()</Member>
+        <Member type="Method">public void classificar()</Member>
+        <Member type="Method">public void removerConta()</Member>
+        <Member type="Method">public float getLatitude()</Member>
+        <Member type="Method">public float getLongitude()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ViewVoluntario</Name>
+        <Access>Public</Access>
+        <Location left="2430" top="1834" />
+        <Size width="305" height="230" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">private ControllerVoluntario controller</Member>
+        <Member type="Constructor">public ViewVoluntario(ControllerVoluntario c)</Member>
+        <Member type="Method">public void menuVoluntario()</Member>
+        <Member type="Method">public void fazEntrega()</Member>
+        <Member type="Method">public void mostraHistorico()</Member>
+        <Member type="Method">public void alteraDadosVoluntario()</Member>
+        <Member type="Method">public void avisosVoluntario()</Member>
+        <Member type="Method">public float getLatitude()</Member>
+        <Member type="Method">public float getLongitude()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IAviso</Name>
+        <Access>Public</Access>
+        <Location left="1553" top="454" />
+        <Size width="162" height="95" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">String toString()</Member>
+        <Member type="Method">IAviso clone()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IEmpresa</Name>
+        <Access>Public</Access>
+        <Location left="1683" top="1418" />
+        <Size width="213" height="163" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">float getRaio()</Member>
+        <Member type="Method">float getTaxa()</Member>
+        <Member type="Method">void setTaxa(float taxa)</Member>
+        <Member type="Method">void setNif(String nif)</Member>
+        <Member type="Method">IEmpresa clone()</Member>
+        <Member type="Method">double getDist()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IEncomenda</Name>
+        <Access>Public</Access>
+        <Location left="2883" top="656" />
+        <Size width="502" height="248" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">String getId()</Member>
+        <Member type="Method">IEncomenda clone()</Member>
+        <Member type="Method">float calculaPrecoTotal()</Member>
+        <Member type="Method">boolean containsMed()</Member>
+        <Member type="Method">String getUserId()</Member>
+        <Member type="Method">String getIdTransportadora()</Member>
+        <Member type="Method">float getPeso()</Member>
+        <Member type="Method">String getLojaId()</Member>
+        <Member type="Method">void setIdTransportadora(String idTransportadora)</Member>
+        <Member type="Method">boolean empTransportouTempo(String idEmp, int[] tInicial, int[] tFinal)</Member>
+        <Member type="Method">boolean empTransportouTempo(String idEmp, int[] tempo)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IEntidade</Name>
+        <Access>Public</Access>
+        <Location left="2197" top="884" />
+        <Size width="315" height="282" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">void adicionaEnc(IEncomenda e)</Member>
+        <Member type="Method">String getID()</Member>
+        <Member type="Method">String getPassword()</Member>
+        <Member type="Method">Collection&lt;IEncomenda&gt; getEncomenda()</Member>
+        <Member type="Method">GPS getLocalizacao()</Member>
+        <Member type="Method">String getNome()</Member>
+        <Member type="Method">void setNome(String nome)</Member>
+        <Member type="Method">IEncomenda getEncomenda(String id)</Member>
+        <Member type="Method">void setLocalizacao(GPS novaLoc)</Member>
+        <Member type="Method">Collection&lt;IAviso&gt; getNotificacoes()</Member>
+        <Member type="Method">void addNotificacao(IAviso a)</Member>
+        <Member type="Method">void removeNotificacao(IAviso a)</Member>
+        <Member type="Method">void removeEnc(IEncomenda e)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ILoja</Name>
+        <Access>Public</Access>
+        <Location left="2714" top="1379" />
+        <Size width="355" height="248" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">int calculaTempoFila()</Member>
+        <Member type="Method">ILoja clone()</Member>
+        <Member type="Method">void setSize(int n)</Member>
+        <Member type="Method">void setDFila(boolean dados)</Member>
+        <Member type="Method">Collection&lt;IProduto&gt; getListProds()</Member>
+        <Member type="Method">boolean getDFila()</Member>
+        <Member type="Method">void setTempMed(float temp)</Member>
+        <Member type="Method">void setListProds(Collection&lt;IProduto&gt; listProds)</Member>
+        <Member type="Method">void addProduto(IProduto p)</Member>
+        <Member type="Method">void removeProduto(String codigo)</Member>
+        <Member type="Method">float getTempoMed()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IProduto</Name>
+        <Access>Public</Access>
+        <Location left="3790" top="1241" />
+        <Size width="203" height="163" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">String getCodigo()</Member>
+        <Member type="Method">String getNome()</Member>
+        <Member type="Method">float getPreco()</Member>
+        <Member type="Method">double getPeso()</Member>
+        <Member type="Method">boolean getMedicinal()</Member>
+        <Member type="Method">IProduto clone()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ITrabalhador</Name>
+        <Access>Public</Access>
+        <Location left="1923" top="1076" />
+        <Size width="297" height="265" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">Estado getEstado()</Member>
+        <Member type="Method">void insereVel(float v)</Member>
+        <Member type="Method">boolean aceitoTransporteMedicamentos()</Member>
+        <Member type="Method">void setEstado(Estado e)</Member>
+        <Member type="Method">void setCapMax(int cap)</Member>
+        <Member type="Method">boolean canAddEncomenda()</Member>
+        <Member type="Method">float calculaVelMed()</Member>
+        <Member type="Method">void setRaio(float raio)</Member>
+        <Member type="Method">void aceitaMedicamentos(boolean medic)</Member>
+        <Member type="Method">ITrabalhador clone()</Member>
+        <Member type="Method">void insereClassificacao(int cl)</Member>
+        <Member type="Method">boolean temCapacidade(int qtdTotal)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IUtilizador</Name>
+        <Access>Public</Access>
+        <Location left="1163" top="1336" />
+        <Size width="372" height="129" />
+        <Collapsed>True</Collapsed>
+        <Member type="Method">void setNif(String nif)</Member>
+        <Member type="Method">String getNif()</Member>
+        <Member type="Method">IUtilizador clone()</Member>
+        <Member type="Method">boolean clienteComprouEmpresa(String idEmpresa)</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="3" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="16" second="27">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="12" second="27">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="14" second="27">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="15" second="27">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="13" second="27">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="3" second="29">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="10" second="32">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="1" second="32">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="33">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="33" second="30">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="31" second="30">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="28" second="33">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="1" second="31">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="8" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="20" second="34">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="30" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="30" second="27">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="19" second="31">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="18" second="28">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="22" second="17">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="23" second="18">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="24" second="19">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="25" second="20">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="23" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="24" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="22" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="26" second="21">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="25" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="26" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="30" second="29">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="9" second="34">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="21" second="33">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="28">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="30">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="7" second="34">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="33">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="31">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="29">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="28">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="29">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="21" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="19" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="18" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="17" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="21" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="18" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="20" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="18" second="28">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

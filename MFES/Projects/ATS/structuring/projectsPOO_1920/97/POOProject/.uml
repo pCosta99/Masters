@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="1433.96875">com</node>
+    <node x="1447.0" y="383.0">User</node>
+    <node x="165.0" y="1433.96875">org</node>
+    <node x="399.0480555555555" y="0.0">LinhaEncomenda</node>
+    <node x="781.7650000000001" y="275.0">Encomendas</node>
+    <node x="330.0" y="1433.96875">sun</node>
+    <node x="1355.5" y="830.0">Utilizadores</node>
+    <node x="925.0" y="1284.0">META-INF</node>
+    <node x="495.0" y="1433.96875">jdk</node>
+    <node x="664.0" y="1284.0">groovyjarjarasm</node>
+    <node x="49.5" y="782.0">EmpresasTrans</node>
+    <node x="1500.0" y="1284.0">java</node>
+    <node x="1130.0" y="1284.0">groovy</node>
+    <node x="1125.5" y="794.0">Voluntarios</node>
+    <node x="1319.0" y="1284.0">javax</node>
+    <node x="775.5" y="902.0">EncomendaAceite</node>
+    <node x="347.0" y="1290.46875">groovyjarjarcommonscli</node>
+    <node x="388.5" y="806.0">Lojas</node>
+    <node x="40.0" y="1294.96875">groovyjarjarantlr</node>
+    <node x="312.44972222222214" y="1183.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Lojas" target="Encomendas">
+      <point x="91.75" y="-136.5" />
+      <point x="663.75" y="752.0" />
+      <point x="896.8900000000001" y="752.0" />
+      <point x="-38.375" y="208.5" />
+    </edge>
+    <edge source="Utilizadores" target="User">
+      <point x="28.75" y="-112.5" />
+      <point x="-52.25" y="100.5" />
+    </edge>
+    <edge source="groovyjarjarantlr" target="groovyjarjarantlr">
+      <point x="0.0" y="27.0" />
+      <point x="156.0" y="1378.96875" />
+      <point x="10.0" y="1378.96875" />
+      <point x="10.0" y="1321.96875" />
+      <point x="-116.0" y="-0.0" />
+    </edge>
+    <edge source="Voluntarios" target="Encomendas">
+      <point x="-52.25" y="-148.5" />
+      <point x="1177.75" y="752.0" />
+      <point x="973.6400000000001" y="752.0" />
+      <point x="38.375" y="208.5" />
+    </edge>
+    <edge source="EncomendaAceite" target="Encomendas">
+      <point x="-82.5" y="-40.5" />
+      <point x="858.0" y="762.0" />
+      <point x="922.4733333333334" y="762.0" />
+      <point x="-12.791666666666742" y="208.5" />
+    </edge>
+    <edge source="Main" target="Lojas">
+      <point x="8.899999999999977" y="-28.0" />
+      <point x="410.3497222222221" y="1123.0" />
+      <point x="480.25" y="1123.0" />
+      <point x="-91.75" y="136.5" />
+    </edge>
+    <edge source="Main" target="Voluntarios">
+      <point x="44.5" y="-28.0" />
+      <point x="445.94972222222214" y="1143.0" />
+      <point x="1177.75" y="1143.0" />
+      <point x="-52.25" y="148.5" />
+    </edge>
+    <edge source="Main" target="EmpresasTrans">
+      <point x="-26.700000000000045" y="-28.0" />
+      <point x="374.7497222222221" y="1133.0" />
+      <point x="129.25" y="1133.0" />
+      <point x="-79.75" y="160.5" />
+    </edge>
+    <edge source="Utilizadores" target="Encomendas">
+      <point x="-28.75" y="-112.5" />
+      <point x="1441.75" y="712.0" />
+      <point x="1075.9733333333334" y="712.0" />
+      <point x="140.70833333333326" y="208.5" />
+    </edge>
+    <edge source="Main" target="Encomendas">
+      <point x="80.10000000000002" y="-28.0" />
+      <point x="481.54972222222216" y="1163.0" />
+      <point x="1345.0" y="1163.0" />
+      <point x="1345.0" y="732.0" />
+      <point x="1024.8066666666666" y="732.0" />
+      <point x="89.54166666666652" y="208.5" />
+    </edge>
+    <edge source="EmpresasTrans" target="Encomendas">
+      <point x="-79.75" y="-160.5" />
+      <point x="129.25" y="722.0" />
+      <point x="820.1400000000001" y="722.0" />
+      <point x="-115.125" y="208.5" />
+    </edge>
+    <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli">
+      <point x="68.0" y="27.0" />
+      <point x="551.0" y="1374.46875" />
+      <point x="317.0" y="1374.46875" />
+      <point x="317.0" y="1303.96875" />
+      <point x="-136.0" y="-13.5" />
+    </edge>
+    <edge source="Encomendas" target="LinhaEncomenda">
+      <point x="76.75" y="-208.5" />
+      <point x="1012.0150000000001" y="245.0" />
+      <point x="589.7980555555555" y="245.0" />
+      <point x="81.75000000000006" y="112.5" />
+    </edge>
+    <edge source="Main" target="LinhaEncomenda">
+      <point x="-62.30000000000007" y="-28.0" />
+      <point x="339.14972222222207" y="1153.0" />
+      <point x="28.0" y="1153.0" />
+      <point x="28.0" y="255.0" />
+      <point x="480.7980555555555" y="255.0" />
+      <point x="-27.25" y="112.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="883.4999999999998" y="631.7142857142856" />
+  <SelectedNodes>
+    <node>EmpresasTrans</node>
+    <node>User</node>
+    <node>Voluntarios</node>
+    <node>EncomendaAceite</node>
+    <node>LinhaEncomenda</node>
+    <node>Lojas</node>
+    <node>Encomendas</node>
+    <node>Utilizadores</node>
+    <node>Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

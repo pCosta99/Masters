@@ -1,0 +1,9 @@
+districtServer:
+  id: 2
+  name: Braga
+  size: 32
+  pushPort: 30000
+  pullPort: 10002
+  brokerPort: 22221
+  directoryUrl: http://localhost 
+  directoryPort: 8080

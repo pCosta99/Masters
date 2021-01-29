@@ -1,0 +1,61 @@
+// Modelling a file system
+abstract sig Object {}
+sig File extends Object {}
+sig Dir extends Object {
+	entries : set Entry
+}
+
+one sig Root extends Dir {}
+
+sig Entry {
+	name : one Name,
+	content : one Object
+}
+sig Name {}
+
+// Facts
+
+fact {
+	// Entries cannot be shared between directories
+	// Entries are injective
+	entries.~entries in iden
+}
+
+fact {
+	// Different entries in the same directory must have different names
+	all d : Dir, n : Name | lone (d.entries & name.n)
+}
+
+fact {
+	// Directories cannot contain themselves
+	all d : Dir | d not in d.^(entries.content)
+}
+
+fact {
+	// Entries must belong to exactly one a directory
+	all e : Entry | one entries.e
+	// entries in Dir one -> Entry
+}
+
+fact {
+	// Every object except the root is contained somewhere
+	Entry.content = Object - Root
+}
+
+fact {
+	// No object can be in two directiories, which means, content is injective
+	content.~content in iden
+}
+
+// Properties we must ensure
+assert no_partitions {
+	// Every object is reachable from the root
+	Object - Root = Root.^(entries.content)
+}
+
+check no_partitions
+
+run example {
+	some File
+	some Dir-Root
+} for 4

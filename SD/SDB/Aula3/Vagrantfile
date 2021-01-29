@@ -1,0 +1,59 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+
+
+PUBLIC_KEY = File.read(File.expand_path('~/.ssh/id_rsa.pub')).strip
+
+Vagrant.configure("2") do |config|
+
+ config.vm.box = "bento/ubuntu-20.04"
+
+ config.vm.provider "virtualbox" do |vb|
+    vb.memory = "1024"
+    vb.cpus = 1
+  end
+
+config.vm.provision "file", source: "~/Desktop/Mestrado/SD/SDB/Aula3/docker_env", destination: "$HOME/docker_env"
+
+ config.vm.provision "shell", inline: <<-SHELL
+  echo "#{PUBLIC_KEY}" >> /home/vagrant/.ssh/authorized_keys
+	apt-get -y update
+  apt-get -y upgrade
+  apt-get -y autoremove
+  apt-get install -y vim
+	sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	sudo apt-key fingerprint 0EBFCD88
+ 	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+	sudo apt-get -y update
+	sudo apt-get -y install docker-ce
+	sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  sudo chmod +x /usr/local/bin/docker-compose
+      SHELL
+
+  config.vm.define "vm1" do |vm1|
+
+    vm1.vm.network "private_network", ip: "10.0.0.101"
+
+  end
+
+  #config.vm.define "vm2" do |vm2|
+
+  #  vm2.vm.network "private_network", ip: "10.0.0.102"
+
+
+  #end
+
+  #config.vm.define "vm3" do |vm3|
+
+    #vm3.vm.network "private_network", ip: "10.0.0.103"
+
+
+  #end
+
+end

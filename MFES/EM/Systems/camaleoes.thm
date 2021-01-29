@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Amarelo"/>
+   <type name="Azul"/>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="Verde"/>
+   <type name="seq/Int"/>
+   <set name="$Exemplo_c" type="Camaleao"/>
+</node>
+
+<node shape="Egg">
+   <type name="Camaleao"/>
+</node>
+
+<node showlabel="no" color="Blue">
+   <set name="$allBlue" type="Camaleao"/>
+</node>
+
+<node showlabel="no" color="Green">
+   <set name="$allGreen" type="Camaleao"/>
+</node>
+
+<node showlabel="no" color="Yellow">
+   <set name="$allYellow" type="Camaleao"/>
+</node>
+
+<node visible="no">
+   <type name="Color"/>
+</node>
+
+<edge style="inherit" visible="no" layout="no">
+   <relation name="color"> <type name="Camaleao"/> <type name="Color"/> </relation>
+</edge>
+
+</view>
+
+</alloy>

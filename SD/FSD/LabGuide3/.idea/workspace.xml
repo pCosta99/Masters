@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7c7e5940-fcf7-473f-8963-dcaec13f8a0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../MFES/EM/alloy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFES/EM/aula1.als" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MFES/EM/electrum2.0.1.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1jkAvOZhPLX1tDCP9nradfCsM94" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c7e5940-fcf7-473f-8963-dcaec13f8a0f" name="Default Changelist" comment="" />
+      <created>1604337948613</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604337948613</updated>
+      <workItem from="1604337949981" duration="3951000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="766" y="229" width="376" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1604339368942">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="766" y="229" width="376" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604339368942" />
+    <state x="691" y="270" width="526" height="492" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1604339765237">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="691" y="270" width="526" height="492" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1604339765237" />
+    <state x="735" y="263" width="426" height="475" key="FileChooserDialogImpl" timestamp="1604342394619">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="735" y="263" width="426" height="475" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604342394619" />
+    <state x="442" y="118" width="1026" height="836" key="SettingsEditor" timestamp="1604341116173">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="442" y="118" width="1026" height="836" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604341116173" />
+    <state x="657" y="410" width="585" height="203" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604341107115">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="657" y="410" width="585" height="203" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1604341107115" />
+    <state x="333" y="143" width="1241" height="765" key="new project wizard" timestamp="1604342404888">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="333" y="143" width="1241" height="765" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1604342404888" />
+  </component>
+</project>

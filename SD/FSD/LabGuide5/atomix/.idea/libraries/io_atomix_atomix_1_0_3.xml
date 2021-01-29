@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="io.atomix:atomix:1.0.3" type="repository">
+    <properties maven-id="io.atomix:atomix:1.0.3" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix/1.0.3/atomix-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix-resource-manager/1.0.3/atomix-resource-manager-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix-resource/1.0.3/atomix-resource-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/copycat/copycat-client/1.2.3/copycat-client-1.2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/copycat/copycat-protocol/1.2.3/copycat-protocol-1.2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/copycat/copycat-server/1.2.3/copycat-server-1.2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/catalyst/catalyst-local/1.1.2/catalyst-local-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/catalyst/catalyst-transport/1.1.2/catalyst-transport-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/catalyst/catalyst-concurrent/1.1.2/catalyst-concurrent-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/catalyst/catalyst-serializer/1.1.2/catalyst-serializer-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/catalyst/catalyst-buffer/1.1.2/catalyst-buffer-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/catalyst/catalyst-common/1.1.2/catalyst-common-1.1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix-groups/1.0.3/atomix-groups-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix-variables/1.0.3/atomix-variables-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix-collections/1.0.3/atomix-collections-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/atomix/atomix-concurrent/1.0.3/atomix-concurrent-1.0.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

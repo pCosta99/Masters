@@ -1,0 +1,22 @@
+FSD Teste 7 Janeiro 2019
+
+1) Na programacao por eventos em Java, em que situacoes deve/não deve usar um ReentrantLock em conjunto com CompletableFuture? De exemplos e justifique.
+
+Tendo em conta que utilizar CompletableFuture implica trabalhar assincronamente, significa que perdemos o control sobre que threads estão a reagir
+aos eventos (pode ser qualquer uma da thread pool). Ora, isto traduz-se num problema grande pois perdemos a garantia que a thread que adquire o lock 
+é a mesma que o vai libertar (e isso é ilegal em compile time) ou até mesmo realizar operações na secção critica em causa (o que não é ilegal em
+compile time mas vai contra o propósito dos locks). Uma forma de resolver este problema é através do uso de um Executor para tratar de todos os locks/unlocks.
+Podemos combinar isso com o código a ser executado depois do lock ser adquirido para que a operação em causa ainda seja multi-threaded.
+
+3) Distinga predicado estavel de predicado nao estavel em sistemas distribuıdos e identifique a dificuldade principal na sua avaliacao. De exemplos.
+
+Um predicado estável dita que se o mesmo for verificado uma vez, então é sempre verdade (ex. deadlock).
+Um predicado instável, por sua vez, não partilha da mesma propriedade podendo ser impossível negar que o mesmo ocorreu para um dado subconjunto de estados (por um observador).
+Estes últimos predicados podem não ser verdade em todos os caminhos possíveis! Dualmente, também pode acontecer de serem e, nesse caso, são definitivamente verdade (e um
+observador pode confirmar isso).
+No que toca à dificuldade da sua avaliação, creio que apenas se aplica aos segundos. No caso de predicados estáveis podemos utilizar snapshots periódicos (com o algortimo
+de Chandy-Lamport por exemplo) para inferir sobre eles. Instáveis requerem monitorizar o sistema permanentemente, observando todos os eventos que ocorrem. 
+Como exemplo de predicados instáveis temos:
+-> Uso de memória
+-> Nº de mensagens em trânsito
+-> Tamanho total das filas do sistema

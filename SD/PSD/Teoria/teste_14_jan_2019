@@ -1,0 +1,46 @@
+1) Suponha que pretende utilizar um middleware de RPC, para fazer invocações remotas a um serviço multi-threaded, por clientes multi-threaded, envolvendo um baixo ritmo de criação de threads com tempo de vida longo nos clientes, possivelmente sincronização entre operações e pedidos de tamanho muito variável. Identifique potenciais problemas, e justifique o que seria a escolha apropriada em termos de gestão das conexões.
+ 
+Ora, como potenciais problemas apresentam-se alguns. Clientes com tempo de vida muito longo significa que temos threads bloqueadas durante muito tempo (em comunicação com o cliente).
+Sincronização entre operações implica a capacidade de criar uma noção de tempo obrigando a implementar essa noção para as várias threads de um cliente. 
+Pedidos de tamanho muito variável obriga a comunicar esse mesmo tamanho ao servidor, não podendo usar valores padrão.
+
+Tendo estes problemas em consideração, diria que a escolha mais apropriada é orientada a multi-threaded clients, tratando cada thread do cliente como um conexão independente uma vez
+que lida bem com poucos clientes com vidas longas, começando a falhar quando temos muitos clientes apenas, não sendo isso um problema aqui.
+
+
+3)  Descreva as características fundamentais dos actores, e explique porque estas ultrapassam vários problemas dos sistemas de threads+objectos.
+
+Atores apresentam 4 características fundamentais que os tornam um modelo extremamente poderoso, simples e adapatável.
+
+Estes são, nomeadamente, o facto de serem entidades leves (1), com o seu estado totalmente encapsulado (2), capazes de transmitir mensagens de forma assíncrona (3) e,
+ainda, capazes de especificar localmente o seu comportamento (4). 
+
+Os principais problemas relacionados com threads+objetos advém de problemas com encapsulamento que, consecutivamente, levam a problemas de logística e eficiência.
+
+Sabe-se que é extremamente complicado sincronizar o estado de várias threads, tornando-se praticamente impossível quando se pensa em milhares de threads concorrentes e
+uma quantidade grande de eventos para processar a cada momemento (caso dos jogos multiplayer online). Atores, graças ao ponto (1) e (2), permitem resolver esse problema
+facilmente. Podem ser instanciados em grandes quantidades sem problemas (contrariamente a threads) e, uma vez que não partilham o seu estado com mais ninguém, apaga-se também o
+problema anteriormente mencionado. Deixa de haver concorrência a nível do estado, passando apenas a existir ao nível do sistema, devido à existência de vários atores em simultâneo.
+
+Um outro aspeto favorável dos atores advém do ponto (3) e (4). Sistemas baseados em eventos são uma boa solução para lidar com muitas fontes de eventos independentes, assim como atores devido a (3). No entanto, devido à inversão de controlo torna-se relativamente complicado utilizar estes sistemas, algo que os atores evitam devido a (4) que nos permite especificar de forma simples e isolada as diferentes tarefas de cada ator.
+
+4) Diga em que consiste o selective receive suportado vulgarmente por sistemas de actores, e explique a sua importância.
+
+Selective receive é uma feature presente, por exemplo, no Erlang na primitiva receive. 
+
+Representa a possibilidade de ignorar mensagens presentes na mailbox de um processo caso elas não deiam match com um (de, possivelemente, vários) valores desejados.
+
+Esta feature é extremamente útil e importante uma vez que existem vários use-cases em que brilha. Este padrão cria a possibilidade de apenas reagir a conjuntos limitados de 
+mensagens, tornando-se útil para encapsular serviços isolados e reutilizáveis entre várias aplicações, sob o formato de blocking API's. 
+
+Dum ponto de vista estrutural, temos ainda a vantagem de poder modularizar muito facilmente as diferentes operações presentes no nosso sistema. Uma vez que podemos limitar-nos a
+subconjuntos de mensagens possíveis fica bastante simples arquitetar aplicações. (not sure)
+
+7) Explique em que consiste a restrição “interface uniforme” no padrão arquitectural REST, descrevendo os seus benefícios, e compare (neste aspecto) o desenvolvimento de uma aplicação usando REST versus usando o paradigma de invocação remota de procedimentos/métodos.
+
+"Interface uniforme" descreve um aspeto essencial sobre REST. Este disponibiliza apenas um conjunto limitado de operações com semântica universal, independente da aplicação que a usa.
+Cria assim um standard para todas as aplicações que decidem utilizar a arquitetura REST. 
+
+Isto traz vantagens no sentido em que é mais fácil evoluir em larga escala, ou seja, sem qualquer coordenação global ainda é possível utilizar peças/serviços intermédios que, unicamente, respeitam a tal semântica universal. 
+
+Acaba por ser extremamente diferente do paradigma RPC, praticamente oposto até. Em RPC somos encorajados a definir conjuntos de operações para o cenário particular que queremos abordar, não existindo assim qualquer coordenação global entre os serviços, tornando-se muito complicado obter qualquer reutilização entre sistemas diferentes.

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Cancelled"/>
+   <type name="Int"/>
+   <type name="Issued"/>
+   <type name="String"/>
+   <type name="Unissued"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Ellipse">
+   <type name="Client"/>
+</node>
+
+<node shape="Lined Circle">
+   <type name="Card"/>
+</node>
+
+<node visible="no" numberatoms="no">
+   <type name="Status"/>
+</node>
+
+<node visible="yes" showlabel="no" color="Gray">
+   <set name="$unissuedCards" type="Card"/>
+</node>
+
+<node visible="yes" showlabel="no" color="Green">
+   <set name="$issuedCards" type="Card"/>
+</node>
+
+<node visible="yes" showlabel="no" color="Red">
+   <set name="$cancelledCards" type="Card"/>
+</node>
+
+</view>
+
+</alloy>

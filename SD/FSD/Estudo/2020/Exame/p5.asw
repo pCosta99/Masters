@@ -1,0 +1,7 @@
+5) “Uma vez que tenho filas de mensagens transacionais, nao preciso de usar ˜ 2 phase commit.” Comente esta afirmacao.
+
+Esta afirmação é falsa. Ao utilizar transações (e, consecutivamente, filas transacionais) é que localmente nunca temos
+uma operação a ser exececutada parcialmente quando é interrompida. No entanto, isto não é verdade num sistema distribuído
+ pois perde-se a garantia que cada transação foi efetuada em todos os sistemas participantes.
+
+ https://wiki.c2.com/?TwoPhaseCommit

@@ -1,0 +1,27 @@
+Chandy-Lamport 
+
+Setup inicial: Sistema com N processos que comunicam entre si por canais distintos.
+
+Fase de "lançamento": 
+Um dos processos (não importa qual nem se vários o fizerem) vai iniciar o algoritmo. Para começar, passo pelos seguintes 3 passos:
+	1) Guarda o seu próprio estado
+	2) Envia marcador para os restantes processos
+	3) Fica à espera de mensagens
+
+A partir daqui, quando um processo recebe um marcador vai reagir ao mesmo de uma de duas maneiras:
+
+Caso 1) É o primeiro marcador que o processo vê (quem começa o processo já viu 1 marcador, sendo esse o que enviou):
+Passos a seguir:
+	1) Guarda o seu próprio estado
+	2) Marca o canal por onde recebeu a mensagem como fechado
+	3) Envia marcadores para todos os canais de saída
+	4) Fica à espera de mensagens em todos os canais menos aquele onde recebeu o marcador.
+
+Caso 2) Não é o primeiro marcador que o processo vê:
+Passos a seguir:
+	1) Fechar o canal onde recebeu o marcador
+	2) Associar todas as mensagens recebidas no canal ao estado final do mesmo
+
+O algoritmo termina quando todos os processos tiverem fechado todos os canais (e, consecutivamente, tiverem obtido um estado final para os mesmos).
+
+Com o snapshot final, podemos ignorar os marcadores e temos um corte consistente do nosso sistema (qualquer mensagem recebida no snapshot também foi enviada lá).

@@ -11,20 +11,17 @@ public class Get implements Runnable {
     Collection<Long> keys;
     String msg;
 
-    public Get(Collection<Long> keys, String msg) throws IOException, ExecutionException, InterruptedException {
+    public Get( Collection<Long> keys, String msg) throws IOException, ExecutionException, InterruptedException {
         this.api = new API();
         this.keys = keys;
         this.msg = msg;
     }
 
     public void run() {
+        api.get(this.keys).thenAccept(v -> v.forEach((k, val) -> System.out.println(this.msg + ":" + k + ": " + new String(val))));
         try {
-            api.get(this.keys).thenAccept(v -> {
-                v.forEach((k,val) -> {
-                    System.out.println(this.msg + ":" + k + ": " + new String(val));
-                });
-            });
-        } catch (ExecutionException | InterruptedException e) {
+            Thread.sleep(Long.MAX_VALUE);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

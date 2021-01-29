@@ -1,4 +1,6 @@
-# [Mattermost](https://mattermost.com) - Systems Deployment and Benchmarking
+# Systems Deployment and Benchmarking
+
+# Project - [Mattermost](https://mattermost.com)
 
 Using [Ansible](https://ansible.com) we created a fully-automated deployment for Mattermost.
 We used Google Cloud Platform to host our on-the-fly-generated VM's which makes it even more scalable.

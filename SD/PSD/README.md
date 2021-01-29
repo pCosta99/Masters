@@ -1,4 +1,6 @@
-# Stayaway Covid - Paradigms of Distributed Systems
+# Distributed Systems Paradigms
+
+# Project - Stayaway Covid
 
 In this project we designed a potential StayawayCovid-like application using several tecnologies:
 - Client Application - Made in Java, used TCP sockets to communicate with the Frontend Server.

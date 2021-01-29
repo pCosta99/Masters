@@ -1,4 +1,6 @@
-# Distributed Key-Value Store - Fundamentals of Distributed Systems
+# Distributed Systems Fundamentals
+
+# Project - Distributed Key-Value Store
 
 In this project we designed an algorithm to create a distributed key-value store API in Java.
 

@@ -19,7 +19,7 @@ sig Message {
 	type : one Type			// Tipo da mensagem
 }
 
-// Um nó considera-se ready quando já leu e processou mensagens de todos os seus vizinhos. 
+// Um nó considera-se ready quando já leu e processou mensagens de todos os seus vizinhos.
 // A execução do protocolo termina quando todos os nós estão ready.
 fun ready : set Node {
 	{ n : Node | n.adj in n.rcvd }
@@ -40,7 +40,7 @@ fact Ligado {
 	all disj x,y : Node | x in y.^adj
 }
 
-// Inicialmente rcvd, parent e children estão vazias 
+// Inicialmente rcvd, parent e children estão vazias
 // e o initiator envia um Ping para todos os vizinhos
 
 fact init {
@@ -54,7 +54,7 @@ fact init {
 }
 
 
-// Um finish pode ocorrer quando um nó está ready, enviando esse nó 
+// Um finish pode ocorrer quando um nó está ready, enviando esse nó
 // uma mensagem do tipo Echo ao seu parent.
 pred finish [n : Node] {
 	n in ready
@@ -70,13 +70,13 @@ pred finish [n : Node] {
 	children' = children
 }
 
-// Um read pode ocorrer quando um nó tem uma mensagem 
+// Um read pode ocorrer quando um nó tem uma mensagem
 // ainda não processada na sua inbox. Se o nó não é o initiator
-// e é a primeira mensagem que processa (necessariamente um Ping) 
+// e é a primeira mensagem que processa (necessariamente um Ping)
 // então o nó que enviou a mensagem passa a ser o seu parent
-// na spanning tree e é enviado um Ping a todos os 
-// restantes vizinhos (todos menos o novo parent). 
-// Se a mensagem recebida é um Echo então o nó que enviou 
+// na spanning tree e é enviado um Ping a todos os
+// restantes vizinhos (todos menos o novo parent).
+// Se a mensagem recebida é um Echo então o nó que enviou
 // a mensagem é adicionado ao conjunto dos seus children na spanning tree.
 
 pred read [n : Node] {
@@ -125,22 +125,17 @@ assert Invariante {
 pred spanning_tree[n : Node]{
 	// Só há um caminho para cada folha
 	// Children tem de ser aciclico e conetado e todos os nodos estão ao longo dos filhos de children
-	Node - n in n.^children 
+	Node - n in n.^children
 	no ^children & iden
 	all disj x,y : Node | x in y.^children
 }
 
 assert SpanningTree {
-	// Quando todos os nós estão ready a relação children forma uma 
+	// Quando todos os nós estão ready a relação children forma uma
 	// spanning tree com raiz no initiator.
 	always (Node in ready implies always spanning_tree[initiator])
 }
-/*
-// A mesa é redonda, ou seja, as coisas formam um anel
-	all c : Coisa | Coisa in c.^prox
-	// Os garfos e os filósofos estão intercalados
-	all c : Coisa | c in Filosofo iff c.prox in Garfo
-*/
+
 run {
 	all n : Node |  #n.adj = 2
 } for exactly 5 Node, 10 Message

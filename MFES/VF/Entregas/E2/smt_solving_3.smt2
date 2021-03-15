@@ -11,8 +11,6 @@
 (assert (= 5 (select (select a 2) 3)))
 (assert (= 6 (select (select a 3) 3)))
 
-(get-value (a))
-
 (declare-const i Int)
 (declare-const j Int)
 
@@ -86,7 +84,7 @@
 (assert (not (= (+ (select (select a i) j) (select (select a (+ i 1)) (+ j 1))) (+ (select (select a (+ i 1)) j) (select (select a i) (+ j 1))))))
 
 (check-sat)
-;(get-model)
+(get-model)
 
 (echo "e) Obtemos UNSAT quando procuramos por um contra-exemplo pelo que se conclui que a propriedade é válida.")
 

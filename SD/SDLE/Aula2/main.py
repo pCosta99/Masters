@@ -2,6 +2,8 @@ import networkx as nx
 import random as r
 import matplotlib.pyplot as mplot
 import numpy as np
+import itertools as it
+import math
 
 def calcProbs(G, size):
     probs = []
@@ -37,15 +39,20 @@ def massTesting(lb, ub, step, rep, x, y):
         trackWeights = list(map(lambda x: x / rep, trackWeights))
 
         # Compose a list that associates each vertice with it's previsouly counted number and sort it by that number
-        degrees = list(zip(range(size), trackWeights))
+        # After that, group by the second element of each pair and we have our desired comparison of degrees and how many vertices match that degree
+        degrees = list(zip(range(size), list(map(math.floor, trackWeights))))
         degrees.sort(key=lambda x: x[1])
+        howManyDegree = [ list(v) for k, v in it.groupby(degrees, lambda x: x[1]) ]
+        print(howManyDegree)
+        howManyDegree = list(map(lambda x: (len(x), x[0][1]), howManyDegree))
+        howManyDegree.sort(key=lambda x: x[0])
 
         # Save the bar plot to a pdf
-        mplot.bar(range(len(degrees)), list(map(lambda x:x[1], degrees)))
-        mplot.xticks(range(len(degrees)), list(map(lambda x:x[0], degrees)))
-        mplot.title("Degree " + str(size))
-        mplot.xlabel("Vertice")
-        mplot.ylabel("Degree")
+        mplot.bar(range(len(howManyDegree)), list(map(lambda x:x[0], howManyDegree)))
+        mplot.xticks(range(len(howManyDegree)), list(map(lambda x:x[1], howManyDegree)))
+        mplot.title("Size: " + str(size))
+        mplot.xlabel("Degree")
+        mplot.ylabel("How many")
         mplot.savefig("Plot" + str(size) + ".pdf")
         print("Saved Plot", str(size), " to pdf!")
         mplot.clf()

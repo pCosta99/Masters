@@ -6,7 +6,9 @@ def untilConnected(nVert):
     G = nx.Graph()
     G.add_nodes_from(range(nVert))
     while not nx.is_connected(G):
-        G.add_edge(r.randint(0,nVert), r.randint(0,nVert))
+        edge1 = r.randint(0,nVert)
+        edge2 = r.randint(0,nVert)
+        if not G.has_edge(edge1,edge2): G.add_edge(edge1,edge2)
     return G.number_of_edges()
 
 def massTesting(lb, ub, step, rep, x, y):

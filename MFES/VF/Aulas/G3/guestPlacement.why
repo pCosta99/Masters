@@ -1,0 +1,29 @@
+
+theory GuestPlacement
+
+type person = Anne | Susan | Peter
+
+type chair = Left | Middle | Right
+
+predicate sits person chair
+
+(* alternativa:
+function sits person : chair
+*)
+
+
+(*
+
+COMPLETAR
+
+*)
+
+
+
+goal PlacementNotPossible: false
+
+goal RightAnne: sits Anne Right
+goal RightSusan: sits Susan Right
+goal RightPeter: sits Peter Right
+
+end

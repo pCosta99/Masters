@@ -1,0 +1,151 @@
+
+
+
+
+module Division
+
+  use int.Int
+  use ref.Ref
+
+  let division (a:int) (b:int) : int
+    requires { 0 <= a && 0 < b }
+    ensures  { exists r: int. result * b + r = a && 0 <= r < b }
+  =
+    let q = ref 0 in
+    let r = ref a in
+    while !r >= b do
+      invariant { !q * b + !r = a && 0 <= !r }
+      variant   { !r }
+      q := !q+1;
+      r := !r-b
+    done;
+    !q
+
+end
+
+
+
+
+
+module EuclideanAlgorithm
+
+  use int.Int
+  use int.EuclideanDivision
+  use ref.Refint
+  use number.Gcd
+
+
+
+
+  let rec euclid (u v: int) : int
+    variant  { v }
+    requires { u >= 0 /\ v >= 0 }
+    ensures  { result = gcd u v }
+  =
+  if v = 0 then u
+  else euclid v (mod u v)
+
+
+
+(* Complete: 
+
+
+  let euclidit (u0 v0: int) : int
+    requires { u0 >= 0 /\ v0 >= 0 }
+    ensures  { result = gcd u0 v0 }
+  = 
+
+*)  
+ 
+
+end
+
+
+
+
+
+
+module Fib
+
+  use int.Int
+  use ref.Ref
+
+
+  inductive isFib (n:int) (r:int) =
+  | case0 : isFib 0 0
+  | case1 : isFib 1 1
+  | caseInd : forall n f1 f2 :int. isFib (n-1) f1 -> isFib (n-2) f2 -> isFib n (f1+f2)
+  
+
+
+  let rec function fib (n: int) : int
+    requires { n >= 0 }
+    variant  { n }
+    ensures { isFib n result }
+  =
+    if n = 0 then 0
+    else if n = 1 then 1
+    	 else fib (n-1) + fib (n-2)
+
+
+  lemma fib_lm : forall n:int. n >= 1 -> fib n >= 1
+
+
+(* Complete :
+
+  let fib_i m : int
+    requires { m >= 0 }
+    ensures  { result = fib m }
+  =
+
+
+*)                    
+
+
+
+end
+
+
+
+
+
+
+module SelectionSort
+       
+  use int.Int
+  use ref.Ref
+  use array.Array
+  use array.IntArraySorted
+  use array.ArrayPermut
+  use array.ArrayEq
+
+
+
+    
+
+  let select (a: array int) (i: int)
+    requires { 0 <= i < length a }
+    ensures  { i <= result < length a }
+    ensures  { forall k: int. i <= k < length a -> a[result] <= a[k] }
+    ensures  { permut_all (old a) a }
+    = let min = ref i in
+      for j = i + 1 to length a - 1 do
+        invariant { true }
+        if a[j] < a[!min] then min := j
+      done;
+    !min
+
+
+
+
+(* Complete: 
+
+  let selection_sort_sort (a: array int) 
+    ensures { sorted a }
+  =
+
+*)
+
+
+end      
+

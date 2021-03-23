@@ -1,0 +1,116 @@
+
+
+
+
+
+module MapArray
+
+use int.Int
+use int.Fibonacci
+use array.Array
+
+
+(* 
+Este módulo define uma função map_fib que aplica a função de Fibonacci
+a todos os elementos de um array. No entanto a função concreta que é usada 
+para calcular esses números não é definida, é apenas declarada com 'val', 
+com um contrato, como se segue.
+*)
+
+
+
+val fibimp (x:int) : int
+    requires { x >= 0 }
+    ensures  { result = fib x }
+
+
+
+(* 
+A função map_fib usa fibimp, e o seu contrato especifica que em cada posição 
+teremos à saida o número de fibonacci correspondente ao valor que estava
+antes naquela posição.
+
+As VCs desta função serão provadas -- isto é possível porque será usado apenas
+o contrato de fibimp, não a sua implementação.
+*)
+
+let map_fib (a: array int) 
+    requires { forall j. 0<=j<length a -> a[j] >= 0  }
+    ensures  { forall j. 0<=j<length a -> a[j] = fib(old(a[j])) }
+=
+for i = 0 to (length a)-1 do
+    invariant { forall j. 0<=j<i -> a[j] = fib(old(a[j])) }
+    invariant { forall j. i<=j<length a  -> a[j] = old(a[j]) }
+    a[i] <- fibimp(a[i])
+done
+
+end
+
+
+
+
+
+module MapFib
+
+use int.Int
+use int.Fibonacci
+use array.Array
+use ref.Ref
+
+
+(* 
+Este módulo utilizará o anterior, clonando-o, e passará a ter disponível
+a função map_fib. No entanto, para poder clonar, tem de antes definir
+uma implementação concreta de fibimp para ser usada. 
+
+Começamos então por definir uma implementação concreta eficiente. As 
+VCs geradas asseguram que a função calcula de facto os número de Fibonacci
+*)
+
+
+
+
+let calcfib (m : int) : int =
+    requires { m >= 0 }
+    ensures  { result = fib m }
+let n = ref 0 in
+let x = ref 0 in
+let y = ref 1 in
+while !n < m do
+      invariant { 0 <= !n <= m }
+      invariant { !x = fib !n }
+      invariant { !y = fib (!n+1) }
+      variant { m - !n }
+  let tmp = !x in
+  x := !y;
+  y := !y + tmp;
+  n := !n + 1;
+done;
+!x
+
+
+
+
+(* 
+Podemos finalmente clonar MapArray. Note-se que isto gerará VCs 
+para garantir que o contrato de calcfib está de acordo com o de 
+fibimp... neste caso é trivial, porque são exactamente iguais, 
+mas o contrato de calcfib poderia ser mais forte (não mais fraco).
+*)
+
+
+clone MapArray with
+      val fibimp = calcfib
+
+
+
+(*
+Pode agora utilizar-se map_fib
+*)
+
+
+
+
+
+end
+

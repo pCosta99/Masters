@@ -1,0 +1,169 @@
+
+
+module InsertionSortList
+
+  use  int.Int
+  use  list.List
+  use  list.Mem
+  use  list.SortedInt
+  use  list.Permut
+  use  list.Length
+
+
+     
+let rec insert x l
+    requires { sorted l }
+    ensures { sorted result /\ permut result (Cons x l) }
+    variant { length l  }
+ =  match l with
+    | Nil -> Cons x Nil
+    | Cons y l' -> if x <= y then Cons x l else Cons y (insert x l')
+    end
+
+     
+let rec insertionSort (l: list int) =
+    ensures { sorted result /\ permut result l }
+    (* COMPLETAR *)
+    l 
+
+
+
+end
+
+
+
+
+
+
+module InsertionSort
+
+  use int.Int
+  use ref.Ref
+  use array.Array
+  use array.IntArraySorted
+  use array.ArrayPermut
+  use array.ArrayEq
+
+  let insertion_sort (a: array int) =
+    ensures { sorted a }
+    for i = 1 to length a - 1 do
+      invariant { true }
+      let v = a[i] in
+      let j = ref i in
+      while !j > 0 && a[!j - 1] > v do
+          invariant { true }
+          variant { !j }
+          a[!j] <- a[!j - 1];
+          j := !j - 1
+      done;
+      a[!j] <- v
+    done
+
+
+  let insertion_sort2 (a: array int) =
+    ensures { permut_all (old a) a }
+  label L in
+    for i = 1 to length a - 1 do
+      invariant { permut_all (a at L) a }
+  label L1 in
+      let v = a[i] in
+      let j = ref i in
+      while !j > 0 && a[!j - 1] > v do
+        invariant { 0 <= !j <= i }
+        invariant { permut_all (a at L1) a[!j <- v] }
+        variant { !j }
+  label L2 in
+        a[!j] <- a[!j - 1];
+        assert { exchange (a at L2)[!j <- v] a[!j-1 <- v] (!j - 1) !j};
+        j := !j - 1
+      done;
+      a[!j] <- v
+  done
+
+    
+
+  let swap (a: array int) (i: int) (j: int) =
+    requires { 0 <= i < length a /\ 0 <= j < length a }
+    ensures { exchange (old a) a i j }
+   let v = a[i] in
+    a[i] <- a[j];
+    a[j] <- v
+
+
+(* versão com swap, só permutação *) 
+    
+  let insertion_sort3 (a: array int) =
+    ensures {permut_all (old a) a }
+  label L in
+    for i = 1 to length a - 1 do
+      invariant { true }
+      let j = ref i in
+      while !j > 0 && a[!j - 1] > a[!j] do
+        invariant { true }
+        variant { !j }
+        swap a (!j-1) !j;
+        j := !j - 1
+      done
+  done
+
+
+
+(* versão com swap, completa *)   
+
+  let insertion_sort4 (a: array int) =
+    ensures { sorted a /\ permut_all (old a) a }
+  label L in
+    for i = 1 to length a - 1 do
+      invariant { true }
+      let j = ref i in
+      while !j > 0 && a[!j - 1] > a[!j] do
+        invariant { true }
+        variant { !j }
+        swap a (!j-1) !j;
+        j := !j - 1
+      done
+    done
+
+end
+
+
+
+
+module SelectionSort
+
+  use int.Int
+  use ref.Ref
+  use array.Array
+  use array.IntArraySorted
+  use array.ArrayPermut
+  use array.ArrayEq
+
+
+
+  let swap (a: array int) (i: int) (j: int) =
+    requires { 0 <= i < length a /\ 0 <= j < length a }
+    ensures { exchange (old a) a i j }
+  let v = a[i] in
+    a[i] <- a[j];
+    a[j] <- v
+
+
+
+
+  let selection_sort_2 (a: array int) =
+    ensures { sorted a }
+    ensures { permut_all (old a) a }
+  for i = 0 to length a - 1 do
+      invariant { true }
+      let min = ref i in
+      for j = i + 1 to length a - 1 do
+        invariant { true }
+        if a[j] < a[!min] then min := j
+      done;
+      if !min <> i then swap a !min i
+    done
+
+
+
+end      
+

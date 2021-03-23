@@ -1,0 +1,168 @@
+
+
+
+theory Exprs
+
+use map.Map
+use map.Const
+
+use int.Int 
+
+
+
+
+(* identifiers *)
+
+type ident
+
+function mk_ident int : ident
+
+
+
+
+(* expressions *)
+
+type operator = Oplus | Ominus | Omult
+
+type expr =
+  | Econst int
+  | Evar ident
+  | Ebin expr operator expr
+
+
+(* program states *)
+
+type state = map ident int
+
+
+
+(* semantics of expressions *)
+
+function eval_expr (s:state) (e:expr) : int =
+  0	 
+
+
+
+  goal Test13 :
+    let s = const 0 in
+    eval_expr s (Econst 13) = 13
+
+  goal Test42 :
+    let x = mk_ident 0 in
+    let s = set (const 0) x 42 in
+    eval_expr s (Evar x) = 42
+
+  goal Test55 :
+    let x = mk_ident 0 in
+    let s = set (const 0) x 42 in
+    eval_expr s (Ebin (Evar x) Oplus (Econst 13)) = 55
+
+
+
+(* semantics of expressions as an evaluation relation   *)
+(* this always terminates, and thus was written as a    *)
+(* function before, but we can write it as an inductive *)
+(* predicate and prove a correspondence between the two *)
+
+inductive eval_expr_rel state expr state int =
+    | econst : forall n:int, s:state.
+               eval_expr_rel s (Econst n) s n
+
+
+
+  goal Test13r :
+    let s = const 0 in
+    eval_expr_rel s (Econst 13) s 13
+
+  goal Test42r :
+    let x = mk_ident 0 in
+    let s = set (const 0) x 42 in
+    eval_expr_rel s (Evar x) s 42
+
+  goal Test55r :
+    let x = mk_ident 0 in
+    let s = set (const 0) x 42 in
+    eval_expr_rel s (Ebin (Evar x) Oplus (Econst 13)) s 55
+
+
+lemma no_side_effects:
+      true
+lemma expr_eval:
+      true
+
+
+goal Test55r2 :
+    let x = mk_ident 0 in
+    let s = set (const 0) x 42 in
+    eval_expr_rel s (Ebin (Evar x) Oplus (Econst 13)) s 55
+
+
+
+
+end
+
+
+
+theory Programs
+
+use map.Map 
+use map.Const
+
+use Exprs
+
+
+
+(* statements *)
+
+type stmt =
+  | Sskip
+  | Sassign ident expr
+  | Sseq stmt stmt
+  | Sif expr stmt stmt
+  | Swhile expr stmt
+
+
+
+(* big step semantics *)
+
+  inductive big_step state stmt state =
+
+  | big_step_seq:
+    forall s1 s2 s3:state, i1 i2:stmt.
+      big_step s1 i1 s2  ->
+      big_step s2 i2 s3  ->
+      big_step s1 (Sseq i1 i2) s3 
+
+
+
+  goal Assign42 :
+    let x = mk_ident 0 in
+    let s = const 0 in
+    forall s':state.
+      big_step s (Sassign x (Econst 42)) s' ->
+        get s' x = 42
+
+
+  goal If42 :
+    let x = mk_ident 0 in
+    let s = set (const 0) x 0 in
+    forall s1:state, i:stmt.
+      big_step s
+        (Sif (Evar x)
+             (Sassign x (Econst 13))
+             (Sassign x (Econst 42)))
+	 s1 ->
+	 get s1 x = 13
+
+
+
+  goal big_step_determinism:
+    forall s s':state, i :stmt.
+      big_step s i s'  ->  forall s'': state. big_step s i s''  -> s' = s''
+
+
+
+
+end
+
+

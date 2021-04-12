@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<prover id="0" name="Alt-Ergo" version="2.0.0" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="1" name="Z3" version="4.8.6" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="2" name="CVC4" version="1.6" timelimit="1" steplimit="0" memlimit="1000"/>
+<file format="whyml">
+<path name=".."/><path name="imp.why"/>
+<theory name="Exprs">
+ <goal name="Test13" proved="true">
+ <proof prover="2"><result status="valid" time="0.04" steps="4989"/></proof>
+ </goal>
+ <goal name="Test42" proved="true">
+ <proof prover="2"><result status="valid" time="0.04" steps="5165"/></proof>
+ </goal>
+ <goal name="Test55" proved="true">
+ <proof prover="2"><result status="valid" time="0.04" steps="5634"/></proof>
+ </goal>
+ <goal name="TestDiv" proved="true">
+ <proof prover="2"><result status="valid" time="0.16" steps="17188"/></proof>
+ </goal>
+ <goal name="TestInc">
+ </goal>
+ <goal name="Test13r" proved="true">
+ <proof prover="2"><result status="valid" time="0.03" steps="5738"/></proof>
+ </goal>
+ <goal name="Test42r" proved="true">
+ <proof prover="2"><result status="valid" time="0.04" steps="5927"/></proof>
+ </goal>
+ <goal name="Test55r" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="Test55r.0" proved="true">
+  <transf name="assert" proved="true" arg1="(eval_expr_rel s (Evar x) s 42)">
+   <goal name="Test55r.0.0" expl="asserted formula" proved="true">
+   <proof prover="2"><result status="valid" time="0.05" steps="5927"/></proof>
+   </goal>
+   <goal name="Test55r.0.1" proved="true">
+   <transf name="assert" proved="true" arg1="(eval_expr_rel s (Econst 13) s 13)">
+    <goal name="Test55r.0.1.0" expl="asserted formula" proved="true">
+    <proof prover="2"><result status="valid" time="0.05" steps="5775"/></proof>
+    </goal>
+    <goal name="Test55r.0.1.1" proved="true">
+    <proof prover="2"><result status="valid" time="0.07" steps="8453"/></proof>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="TestDivr" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="TestDivr.0" proved="true">
+  <transf name="assert" proved="true" arg1="(eval_expr_rel s (Evar x) s 52)">
+   <goal name="TestDivr.0.0" expl="asserted formula" proved="true">
+   <proof prover="2"><result status="valid" time="0.05" steps="5927"/></proof>
+   </goal>
+   <goal name="TestDivr.0.1" proved="true">
+   <transf name="assert" proved="true" arg1="(eval_expr_rel s (Econst 13) s 13)">
+    <goal name="TestDivr.0.1.0" expl="asserted formula" proved="true">
+    <proof prover="2"><result status="valid" time="0.05" steps="5775"/></proof>
+    </goal>
+    <goal name="TestDivr.0.1.1" proved="true">
+    <proof prover="2"><result status="valid" time="0.08" steps="8449"/></proof>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="TestIncr" proved="true">
+ <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="1.00" steps="813323"/></proof>
+ <proof prover="2"><result status="valid" time="0.07" steps="9420"/></proof>
+ </goal>
+ <goal name="no_side_effects">
+ <transf name="induction_pr" >
+  <goal name="no_side_effects.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.03" steps="5466"/></proof>
+  </goal>
+  <goal name="no_side_effects.1" proved="true">
+  <proof prover="0" obsolete="true"><result status="timeout" time="1.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="highfailure" time="0.46" steps="520409"/></proof>
+  <proof prover="2"><result status="valid" time="0.03" steps="5443"/></proof>
+  </goal>
+  <goal name="no_side_effects.2">
+  <proof prover="2" obsolete="true"><result status="valid" time="0.03" steps="5470"/></proof>
+  </goal>
+  <goal name="no_side_effects.3" proved="true">
+  <proof prover="2"><result status="valid" time="0.03" steps="6002"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="expr_eval" proved="true">
+ <proof prover="1"><result status="valid" time="0.04" steps="25261"/></proof>
+ <proof prover="2"><result status="unknown" time="0.13" steps="12504"/></proof>
+ <transf name="induction_ty_lex" >
+  <goal name="expr_eval.0">
+  <proof prover="2" obsolete="true"><result status="valid" time="0.13" steps="14115"/></proof>
+  </goal>
+ </transf>
+ <transf name="split_all_full" proved="true" >
+  <goal name="expr_eval.0" proved="true">
+  <transf name="induction_pr" proved="true" >
+   <goal name="expr_eval.0.0" proved="true">
+   <proof prover="2"><result status="valid" time="0.05" steps="6433"/></proof>
+   </goal>
+   <goal name="expr_eval.0.1" proved="true">
+   <proof prover="2"><result status="valid" time="0.05" steps="6443"/></proof>
+   </goal>
+   <goal name="expr_eval.0.2" proved="true">
+   <proof prover="2"><result status="valid" time="0.04" steps="6587"/></proof>
+   </goal>
+   <goal name="expr_eval.0.3" proved="true">
+   <proof prover="2"><result status="valid" time="0.05" steps="7342"/></proof>
+   </goal>
+  </transf>
+  </goal>
+  <goal name="expr_eval.1" proved="true">
+  <transf name="induction_ty_lex" proved="true" >
+   <goal name="expr_eval.1.0" proved="true">
+   <proof prover="2"><result status="valid" time="0.08" steps="9231"/></proof>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="expr_eval_pr" proved="true">
+ <transf name="induction_pr" proved="true" >
+  <goal name="expr_eval_pr.0" proved="true">
+  <proof prover="2"><result status="valid" time="0.05" steps="6130"/></proof>
+  </goal>
+  <goal name="expr_eval_pr.1" proved="true">
+  <proof prover="2"><result status="valid" time="0.04" steps="6152"/></proof>
+  </goal>
+  <goal name="expr_eval_pr.2" proved="true">
+  <proof prover="2"><result status="valid" time="0.05" steps="6204"/></proof>
+  </goal>
+  <goal name="expr_eval_pr.3" proved="true">
+  <proof prover="2"><result status="valid" time="0.04" steps="7030"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="Test55r2" proved="true">
+ <proof prover="2"><result status="valid" time="0.06" steps="6554"/></proof>
+ </goal>
+ <goal name="TestDivr2" proved="true">
+ <proof prover="2"><result status="valid" time="0.06" steps="6554"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>

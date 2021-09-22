@@ -10,3 +10,7 @@ In this project we designed a potential StayawayCovid-like application using sev
 - REST API - Made in Java using [DropWizard](https://dropwizard.io/).
 
 We also worked with Google's Protocol Buffers for this project and, I must say, they are absolutely amazing.
+
+# Collaborators
+Joel Ferreira[https://github.com/joel98ferreira]
+Flávio Martins[https://github.com/FlavioMartins93]

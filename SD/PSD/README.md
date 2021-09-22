@@ -17,3 +17,5 @@ Joel Ferreira[https://github.com/joel98ferreira]
 Flávio Martins[https://github.com/FlavioMartins93]
 
 Bruno Santos[https://github.com/BrunoXBSantos]
+
+Margarida Ferreira
